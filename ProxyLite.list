@@ -5,6 +5,13 @@ DOMAIN-SUFFIX,qichiyu.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
+DOMAIN-KEYWORD,decentralized-content
+DOMAIN-KEYWORD,phncdn
+DOMAIN-KEYWORD,ghcr.io
+DOMAIN-KEYWORD,huggingface.co
+DOMAIN-KEYWORD,hf.co
+DOMAIN-KEYWORD,docker
+DOMAIN-KEYWORD,steamcontent
 
 # IP段匹配
 IP-CIDR,142.171.133.131/32,no-resolve
