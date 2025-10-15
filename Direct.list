@@ -596,3 +596,6 @@ DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zhipin.com
 DOMAIN-SUFFIX,zhongsou.com
 DOMAIN-SUFFIX,zhuihd.com
+# port pt drop
+DST-PORT,26881,DIRECT
+DST-PORT,36881,DIRECT
