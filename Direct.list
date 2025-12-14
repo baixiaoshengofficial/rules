@@ -10,13 +10,14 @@ DOMAIN-KEYWORD,277177
 DOMAIN-KEYWORD,deovr
 DOMAIN-KEYWORD,jillvr
 DOMAIN-KEYWORD,sweetang
+DOMAIN-KEYWORD,baidu
 
 # MyList
 # 域名后缀匹配
 DOMAIN-SUFFIX,time.windows.com
-
-# 域名关键字匹配
-DOMAIN-KEYWORD,baidu
+DOMAIN-SUFFIX,078899.xyz
+DOMAIN-SUFFIX,huohuoaa.asia
+DOMAIN-SUFFIX,hao123.com
 
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
