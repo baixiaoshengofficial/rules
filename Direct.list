@@ -12,11 +12,7 @@ DOMAIN-KEYWORD,jillvr
 DOMAIN-KEYWORD,sweetang
 DOMAIN-KEYWORD,baidu
 
-# MyList
-# 域名后缀匹配
 DOMAIN-SUFFIX,time.windows.com
-
-DOMAIN-SUFFIX,hao123.com
 
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
