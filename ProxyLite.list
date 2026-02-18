@@ -12,6 +12,7 @@ DOMAIN-KEYWORD,huggingface.co
 DOMAIN-KEYWORD,hf.co
 DOMAIN-KEYWORD,docker
 DOMAIN-KEYWORD,steamcontent
+DOMAIN-KEYWORD,hohai
 
 # IP段匹配
 IP-CIDR,142.171.133.131/32,no-resolve
