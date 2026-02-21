@@ -13,12 +13,14 @@ DOMAIN-KEYWORD,sweetang
 DOMAIN-KEYWORD,baidu
 DOMAIN-KEYWORD,emos
 DOMAIN-KEYWORD,200038
+
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
 DOMAIN-SUFFIX,078899.xyz
 DOMAIN-SUFFIX,huohuoaa.asia
 DOMAIN-SUFFIX,ct.cdn.bgp.yt
+DOMAIN-SUFFIX,ap-cn01.emby.bangumi.ca
 
 
 # IP段匹配
