@@ -1,0 +1,25 @@
+# HongGuoAD.list
+# 红果短剧 / 字节穿山甲广告过滤
+# 透明网关场景：仅按域名过滤，不按 App 包名过滤
+
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao2.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao3.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao4.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao5.com
+
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+
+DOMAIN,ad.toutiao.com
+DOMAIN,ad.zijieapi.com
+
+DOMAIN,ads3-normal-hl.zijieapi.com
+DOMAIN,ads3-normal-lf.zijieapi.com
+DOMAIN,ads3-normal-lq.zijieapi.com
+DOMAIN,ads3-normal.zijieapi.com
+DOMAIN,ads5-normal-hl.zijieapi.com
+DOMAIN,ads5-normal-lf.zijieapi.com
+DOMAIN,ads5-normal-lq.zijieapi.com
+DOMAIN,ads5-normal.zijieapi.com
