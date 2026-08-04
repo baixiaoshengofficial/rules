@@ -77,6 +77,11 @@ type = "select"
 rule = ["[]DIRECT"]
 
 [[custom_groups]]
+name = "红果广告"
+type = "select"
+rule = ["[]REJECT"]
+
+[[custom_groups]]
 name = "🛑 QUIC"
 type = "select"
 rule = ["[]REJECT", "[]🚀 节点选择", "[]DIRECT"]
@@ -186,6 +191,10 @@ rule = ["(?i)(jpl$|twl$|hkl$)"]
 # ----------------------------------------------------------
 # 规则集定义 (Rulesets)
 # ----------------------------------------------------------
+
+[[rulesets]]
+group = "红果广告"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/HongGuoAD.list"
 
 [[rulesets]]
 group = "🎯 全球直连"

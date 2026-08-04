@@ -1,6 +1,19 @@
 # HongGuoAD.list
-# 红果短剧 / 字节穿山甲广告过滤
-# 透明网关场景：仅按域名过滤，不按 App 包名过滤
+# 红果短剧 / 字节广告过滤
+# 适用于 Clash/Mihomo 经 Subconverter 生成的经典规则。
+# 透明网关场景：仅按域名/IP 过滤，不按 App 包名过滤。
+
+# 广告请求与落地页
+DOMAIN,ad.toutiao.com
+DOMAIN,ad.zijieapi.com
+DOMAIN,ad.oceanengine.com
+DOMAIN,clue.oceanengine.com
+
+# 字节广告 SDK
+DOMAIN,pangolin.snssdk.com
+DOMAIN,mcs.snssdk.com
+DOMAIN,security-lq.snssdk.com
+DOMAIN,activity-ag.awemeughun.com
 
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
@@ -12,9 +25,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao5.com
 
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 
-DOMAIN,ad.toutiao.com
-DOMAIN,ad.zijieapi.com
-
+# 广告调度分片
 DOMAIN,ads3-normal-hl.zijieapi.com
 DOMAIN,ads3-normal-lf.zijieapi.com
 DOMAIN,ads3-normal-lq.zijieapi.com
@@ -24,20 +35,41 @@ DOMAIN,ads5-normal-lf.zijieapi.com
 DOMAIN,ads5-normal-lq.zijieapi.com
 DOMAIN,ads5-normal.zijieapi.com
 
-# 红果/番茄当前广告素材域名
-DOMAIN,pangolin.snssdk.com
-DOMAIN,sf3-ttcdn-tos.pstatp.com
-
+# 广告素材分片（服务端可轮换 p1-p9）
+DOMAIN,p1-ad-sign.byteimg.com
+DOMAIN,p2-ad-sign.byteimg.com
 DOMAIN,p3-ad-sign.byteimg.com
+DOMAIN,p4-ad-sign.byteimg.com
+DOMAIN,p5-ad-sign.byteimg.com
 DOMAIN,p6-ad-sign.byteimg.com
+DOMAIN,p7-ad-sign.byteimg.com
+DOMAIN,p8-ad-sign.byteimg.com
 DOMAIN,p9-ad-sign.byteimg.com
 
+# 广告日志/实时上报
 DOMAIN,log3-applog-hl.fqnovel.com
+DOMAIN,log3-applog-lf.fqnovel.com
+DOMAIN,log3-applog-lq.fqnovel.com
 DOMAIN,log3-applog.fqnovel.com
 DOMAIN,log5-applog-hl.fqnovel.com
+DOMAIN,log5-applog-lf.fqnovel.com
+DOMAIN,log5-applog-lq.fqnovel.com
 DOMAIN,log5-applog.fqnovel.com
 
 DOMAIN,rtlog3-applog-hl.fqnovel.com
+DOMAIN,rtlog3-applog-lf.fqnovel.com
+DOMAIN,rtlog3-applog-lq.fqnovel.com
 DOMAIN,rtlog3-applog.fqnovel.com
 DOMAIN,rtlog5-applog-hl.fqnovel.com
+DOMAIN,rtlog5-applog-lf.fqnovel.com
+DOMAIN,rtlog5-applog-lq.fqnovel.com
 DOMAIN,rtlog5-applog.fqnovel.com
+
+# 阻止 App 通过 HTTPDNS 将广告域名解析为 IP 后绕过域名规则。
+# 101.36.166.16/30 精确覆盖 APK 7.3.1.65 内置的 .16-.19。
+DOMAIN,dig.bdurl.net
+DOMAIN,dig.zjurl.cn
+IP-CIDR,101.36.166.16/30,no-resolve
+
+# 不封禁 sf*-ttcdn-tos.pstatp.com、byteimg.com 或 snssdk.com 整个大域：
+# 它们与正常封面、视频、登录和阅读资源混用，透明网关下会误杀。
