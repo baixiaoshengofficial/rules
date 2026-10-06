@@ -1,1 +1,3 @@
-AND,((NETWORK,UDP),(DST-PORT,443)
+# UDP/443；通过 Mihomo 原生 provider 加载，避免 Subconverter 过滤 AND。
+# TCP/443、UDP/53、UDP/3478 等不匹配此规则。
+AND,((NETWORK,UDP),(DST-PORT,443))

@@ -1,6 +1,6 @@
 # HongGuoAD.list
 # 红果短剧 / 字节广告过滤
-# 适用于 Clash/Mihomo 经 Subconverter 生成的经典规则。
+# 通过 Mihomo classical/text provider 加载，保留分片正则。
 # 透明网关场景：仅按域名/IP 过滤，不按 App 包名过滤。
 
 # 广告请求与落地页
@@ -26,6 +26,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao5.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 
 # 广告调度分片
+DOMAIN-REGEX,^ads[0-9]+-normal(-[a-z0-9]+)?\.zijieapi\.com$
 DOMAIN,ads3-normal-hl.zijieapi.com
 DOMAIN,ads3-normal-lf.zijieapi.com
 DOMAIN,ads3-normal-lq.zijieapi.com
@@ -36,6 +37,7 @@ DOMAIN,ads5-normal-lq.zijieapi.com
 DOMAIN,ads5-normal.zijieapi.com
 
 # 广告素材分片（服务端可轮换 p1-p9）
+DOMAIN-REGEX,^p[0-9]+-ad-sign\.byteimg\.com$
 DOMAIN,p1-ad-sign.byteimg.com
 DOMAIN,p2-ad-sign.byteimg.com
 DOMAIN,p3-ad-sign.byteimg.com
@@ -47,6 +49,7 @@ DOMAIN,p8-ad-sign.byteimg.com
 DOMAIN,p9-ad-sign.byteimg.com
 
 # 广告日志/实时上报
+DOMAIN-REGEX,^(rt)?log[0-9]+-applog(-[a-z0-9]+)?\.fqnovel\.com$
 DOMAIN,log3-applog-hl.fqnovel.com
 DOMAIN,log3-applog-lf.fqnovel.com
 DOMAIN,log3-applog-lq.fqnovel.com

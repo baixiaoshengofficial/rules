@@ -1,0 +1,82 @@
+# 开发下载与大流量；2026-10-06 整理。仅 DOMAIN / DOMAIN-SUFFIX，可由 Subconverter 展开。
+# 优先于 GitHub / Microsoft / Google 等通用服务规则；国内镜像不收录。
+# 域名规则无法区分请求路径、文件大小、上传/下载；同主机的元数据也走下载组。
+# GitHub: https://docs.github.com/en/actions/reference/runners/self-hosted-runners
+# Docker: https://docs.docker.com/desktop/enterprise/allow-list/
+# Hugging Face: https://huggingface.co/blog/migrating-the-hub-to-xet
+# VS Code: https://code.visualstudio.com/docs/setup/network
+
+# GitHub Release、源码、Raw、LFS 及 Packages；网页/API 留在原策略。
+DOMAIN,codeload.github.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN,objects.githubusercontent.com
+DOMAIN,objects-origin.githubusercontent.com
+DOMAIN,release-assets.githubusercontent.com
+DOMAIN,github-releases.githubusercontent.com
+DOMAIN,github-registry-files.githubusercontent.com
+DOMAIN,github-cloud.s3.amazonaws.com
+DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com
+DOMAIN-SUFFIX,pkg.github.com
+DOMAIN,pkg-containers.githubusercontent.com
+
+# 容器注册表、镜像层及 Docker Desktop 安装包；鉴权与镜像使用同组。
+DOMAIN-SUFFIX,ghcr.io
+DOMAIN,auth.docker.io
+DOMAIN,registry-1.docker.io
+DOMAIN,production.cloudflare.docker.com
+DOMAIN,production.cloudfront.docker.com
+DOMAIN,desktop.docker.com
+DOMAIN,download.docker.com
+DOMAIN-SUFFIX,quay.io
+DOMAIN-SUFFIX,gcr.io
+DOMAIN,registry.k8s.io
+# Artifact Registry 使用区域前缀（如 us-west1-docker.pkg.dev），覆盖其包/镜像专用域。
+DOMAIN-SUFFIX,pkg.dev
+
+# Hugging Face Hub 与模型存储；主站的网页/API 也会匹配，独立推理域名不收录。
+DOMAIN,huggingface.co
+DOMAIN,hf.co
+DOMAIN-SUFFIX,cdn.hf.co
+DOMAIN-SUFFIX,xethub.hf.co
+DOMAIN-SUFFIX,xethub-eu.hf.co
+DOMAIN,cdn-lfs.huggingface.co
+DOMAIN,cdn-lfs.hf.co
+DOMAIN,cdn-lfs-us-1.hf.co
+DOMAIN,cdn-lfs-eu-1.hf.co
+
+# 包管理器；注册表元数据与包体一起分流。
+DOMAIN,registry.npmjs.org
+DOMAIN,registry.yarnpkg.com
+DOMAIN,pypi.org
+DOMAIN,files.pythonhosted.org
+DOMAIN,repo.maven.apache.org
+DOMAIN,repo1.maven.org
+DOMAIN,plugins.gradle.org
+DOMAIN,plugins-artifacts.gradle.org
+DOMAIN,services.gradle.org
+DOMAIN,downloads.gradle.org
+DOMAIN,api.nuget.org
+DOMAIN,globalcdn.nuget.org
+DOMAIN,crates.io
+DOMAIN,index.crates.io
+DOMAIN,static.crates.io
+DOMAIN,rubygems.org
+DOMAIN,index.rubygems.org
+DOMAIN,proxy.golang.org
+DOMAIN,sum.golang.org
+
+# 工具链、IDE 和扩展下载；不收录通用登录、设置同步、遥测及整站云存储。
+DOMAIN,static.rust-lang.org
+DOMAIN,nodejs.org
+DOMAIN,download.jetbrains.com
+DOMAIN,download-cdn.jetbrains.com
+DOMAIN,download-cf.jetbrains.com
+DOMAIN,update.code.visualstudio.com
+DOMAIN,vscode.download.prss.microsoft.com
+DOMAIN,download.visualstudio.microsoft.com
+DOMAIN,marketplace.visualstudio.com
+DOMAIN-SUFFIX,gallery.vsassets.io
+DOMAIN-SUFFIX,gallerycdn.vsassets.io
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,vscode-unpkg.net
+# dl.google.com 已由前置 UnBan 白名单直连，不重复加入。

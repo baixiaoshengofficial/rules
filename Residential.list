@@ -1,0 +1,95 @@
+# 家宽候选覆盖列表；人工整理于 2026-10-06，默认未接入 INI/TOML。
+# 没有证据表明这些服务普遍强制家宽；本文件用于按症状对照测试。
+# 各段均为有效规则，接入整份文件会覆盖所有分段；只需要某服务时请裁剪。
+# 使用说明与证据：README.md 的“家宽候选列表”。
+# 包含 DOMAIN-REGEX：必须用 Mihomo 原生 classical/text provider，不能让 Subconverter 展开。
+# 只覆盖服务专属域名及明确端点，不保证认证、语音、共享 CDN 全链路同出口。
+# 域名来源：本仓库 AI.list、TikTok.list；Netflix 使用以下上游：
+# https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/netflix
+
+# OpenAI / ChatGPT / Sora：出现出口 IP 异常时优先对照测试
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaiassets.blob.core.windows.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN-REGEX,^chatgpt-async-webps-prod-[a-z0-9-]+-[0-9]+\.webpubsub\.azure\.com$
+
+# Claude：地区可用性候选，不是家宽硬性要求
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Gemini / AI Studio / NotebookLM：地区可用性候选
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,ai.google.dev
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,notebooklm.googleapis.com
+
+# TikTok：账号/API、直播、商店及专属 CDN；完整服务仍用 TikTok.list
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tik-tokapi.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.eu
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokw.eu
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-eu.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,tiktokeu-cdn.com
+DOMAIN-SUFFIX,tiktokrow-cdn.com
+DOMAIN-SUFFIX,tiktok-row.net
+DOMAIN-SUFFIX,tiktokd.net
+DOMAIN-SUFFIX,tiktokd.org
+DOMAIN-SUFFIX,tiktok-minis.com
+DOMAIN-SUFFIX,tiktokminis.us
+DOMAIN-SUFFIX,tiktokglobalshopv.com
+DOMAIN-SUFFIX,tiktokmusic.app
+DOMAIN-SUFFIX,ttcdn-us.com
+DOMAIN-SUFFIX,ttlivecdn.com
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,tiktokcdn-us.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokcdn.com.akamaized.net
+DOMAIN-SUFFIX,tiktokcdn.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokv.com.edgekey.net
+DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
+DOMAIN,p16-tiktokcdn-com.akamaized.net
+
+# Netflix：仅在普通出口播放异常时试用；家宽不保证解锁
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN,netflix.com.edgesuite.net

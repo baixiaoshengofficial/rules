@@ -1,26 +1,63 @@
-# 内容：OpenAi Bard anthropic
-# 域名关键字匹配
-DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,Claude
-# 域名后缀匹配
-DOMAIN-SUFFIX,perplexity.ai
+# AI 服务；限定服务域名，避免共享云服务、支付和监控整站进入 AI。
+# 来源：v2fly/domain-list-community 的 openai、anthropic、perplexity、deepseek
+# 及 blackmatrix7/ios_rule_script 的 OpenAI、Gemini；2026-10-06 核对。
+# 由 Mihomo classical/text provider 加载，保留 DOMAIN-REGEX。
+
+# OpenAI / ChatGPT / Sora，包括语音和文件
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,intercom.io
-DOMAIN-SUFFIX,intercomcdn.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,sentry.io
-DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaiassets.blob.core.windows.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,client-api.arkoselabs.com
+DOMAIN,api.statsig.com
+DOMAIN-REGEX,^chatgpt-async-webps-prod-[a-z0-9-]+-[0-9]+\.webpubsub\.azure\.com$
+
+# Claude，避免 claude.ai.com 拼写和 Claude 宽泛关键字
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN,servd-anthropic-website.b-cdn.net
+
+# Gemini / AI Studio / NotebookLM；不收录整个 googleapis.com
 DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,ai.google.dev
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,notebooklm.googleapis.com
+
+# Perplexity / DeepSeek
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,deepseeksvc.com
+DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
+DOMAIN,pplx-res.cloudinary.com
