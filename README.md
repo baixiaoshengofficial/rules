@@ -114,6 +114,30 @@ AI/TikTok/Netflix 原分组。正则必须由原生 provider 加载。
 
 ## 修改与验证
 
+### DNS 与 Nikki
+
+末尾的 `GEOIP,CN` 使用 `no-resolve`：只对已有目标 IP 做国内判断，不为了匹配该规则
+额外解析未知域名。未分类、尚无真实 IP 的域名会进入漏网之鱼；这不等于禁止所有 DNS 查询。
+`clash-base.yaml` 未定义 DNS/TUN，需要由客户端或 Nikki 混入提供；它本身不保证 DNS 防泄露。
+
+Nikki 排查应查看**用于启动的最终配置**中的 `dns`，并核对 IPv4/IPv6 DNS 劫持和客户端访问控制，
+不能仅查看订阅原文。浏览器安全 DNS、局域网设备自身的解析路径也需要分别验证。
+DNS 测试网站显示的是递归解析器出口，其地区不一定等于节点地区；请结合 IP、服务商和预期 DNS 策略判断。
+Nikki 的订阅更新不会自动重载服务，更新后需手动重载/重启，见
+[Nikki 官方说明](https://github.com/nikkinikki-org/OpenWrt-nikki/wiki)。
+
+以下专项测试读取集成测试生成的配置，用本地 DNS 记录器对比“去掉 no-resolve”与实际配置：
+
+```sh
+python3 tests/test_dns_routing.py --config /tmp/rules-test-results/ini/config.yaml \
+  --mihomo /path/to/mihomo --geodata-dir /tmp/rules-test-results
+```
+
+对照应出现未知域名查询，实际配置应为零。测试验证规则匹配不额外触发解析；
+不代替 Nikki 路由器、浏览器及真实 DNS 上游的端到端泄露测试。
+
+### 常规回归
+
 ```sh
 python3 scripts/sync_config.py
 python3 scripts/sync_config.py --check

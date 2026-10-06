@@ -219,7 +219,7 @@ class RuleTests(unittest.TestCase):
             self.assertFalse(matches("ProxyLite.list", host), host)
         self.assertNotIn("DOMAIN-KEYWORD,steamcontent", rules("ProxyLite.list"))
         self.assertFalse(any("jokerknight" in s or "GEOIP,!CN" in s for s in sources))
-        self.assertEqual(sources[-2:], ["[]GEOIP,CN", "[]FINAL"])
+        self.assertEqual(sources[-2:], ["[]GEOIP,CN,no-resolve", "[]FINAL"])
         groups = {g["name"]: g for g in config["custom_groups"]}
         self.assertEqual(groups["红果广告"]["rule"], ["[]REJECT"])
         for rule in config["rulesets"]:

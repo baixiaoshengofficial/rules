@@ -373,7 +373,7 @@ ruleset = "[]GEOSITE,geolocation-!cn"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "[]GEOIP,CN"
+ruleset = "[]GEOIP,CN,no-resolve"
 
 [[rulesets]]
 group = "🐟 漏网之鱼"
