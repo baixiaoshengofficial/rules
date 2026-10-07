@@ -47,6 +47,21 @@ Mihomo 内核；本次集成验证使用 v1.19.32。此配置不面向原版 Cla
   修改它会影响所有引用它的服务。如需为某服务单独固定地区，在该服务 INI 分组中
   添加对应引用（例如 `` `[]🇯🇵 日本节点``），再同步 TOML。
 
+## Google 分组边界
+
+`Google.list` 合并 Google、GoogleCN、FCM 和 YouTube，统一交给 `🎵 Google`；
+YouTube 网页、API、视频和图片 CDN 使用同一分组，FCM 推送也跟随该组。
+AI、下载和广告过滤仍优先；`dl.google.com`、`dl.l.google.com`、`time.google.com`
+及其子域在 INI 中明确直连，不跟随 Google。
+
+该快照去掉 `google`、`gmail`、`youtube` 等任意子串关键字，保留明确域名、后缀及
+带 `no-resolve` 的 IP 规则。无关名称不会因此进入 Google 组；其他通用代理列表仍可能命中它们。
+`dns.google` 属于 Google 组，但 Mihomo 内置 DNS 是否使用该组取决于最终 DNS 上游配置。
+
+运行 `python3 scripts/update_google_rules.py` 从文件头列出的四个上游重新生成快照，
+审阅差异后运行离线与集成测试。网关无法可靠识别客户端进程，快照不收录进程名规则。
+与直接订阅上游不同，该快照需要显式更新并发布，随后更新订阅。
+
 ## 家宽候选列表
 
 `Residential.list` 是按服务分段的可选覆盖列表，默认未接入 INI/TOML。

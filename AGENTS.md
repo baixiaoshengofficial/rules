@@ -5,6 +5,7 @@
 This repository contains Subconverter configuration and routing rules for generating Clash/Mihomo subscriptions.
 
 - `baixiaosheng.ini` is primary; `scripts/sync_config.py` generates the external `baixiaosheng.toml` configuration.
+- `Google.list` combines scoped Google, FCM and YouTube rules; refresh it with `python3 scripts/update_google_rules.py`, then review the diff and run tests.
 - Root-level `.list` files provide routing and blocking rules, including `AI.list`, `TikTok.list`, `Download.list`, regional `*Mandatory.list` files, `HongGuoAD.list`, and `block_quic.list`. `Residential.list` is an optional candidate list, not enabled by default.
 - `clash-base.yaml` defines native Mihomo providers for AI, TikTok, HongGuo and QUIC. `iptvsh.m3u` contains IPTV channel metadata and stream URLs.
 - `tests/` contains offline and integration checks; `README.md` explains routing, deployment and validation.

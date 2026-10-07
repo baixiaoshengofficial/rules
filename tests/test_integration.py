@@ -32,6 +32,7 @@ import yaml
 from test_rules import NEGATIVE, POSITIVE, ROOT, rules
 
 OWNER = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/"
+GOOGLE_EXCEPTIONS = ["dl.google.com", "dl.l.google.com", "time.google.com"]
 
 
 def fetch(url):
@@ -225,6 +226,7 @@ def runtime_checks(document, mihomo, directory, label):
                           if row.split(",")[0] in ("DOMAIN", "DOMAIN-SUFFIX")]
         fixture_hosts += ["cdn.steamcontent.com", "normal-content.example.org",
                           "hm.baidu.com", "xdrig.com"]
+        fixture_hosts += GOOGLE_EXCEPTIONS
         document["hosts"] = {host: "203.0.113.250" for host in fixture_hosts}
         runtime_path = work / "runtime.yaml"
         runtime_path.write_text(yaml.safe_dump(document, allow_unicode=True))
@@ -269,7 +271,7 @@ def probe_routes(port, log, sink_port, results_path):
     expected = {"AI.list": ("ai", "🤖 AI"), "TikTok.list": ("tiktok", "🎵 TikTok"),
                 "HongGuoAD.list": ("hongguo-ad", "红果广告")}
 
-    def tcp(host, provider=None, group=None, target_port=443):
+    def tcp(host, provider=None, group=None, target_port=443, excluded_group=None):
         nonlocal count
         offset = len(log.read_text())
         sock = socks_request(port, host, target_port)
@@ -289,6 +291,8 @@ def probe_routes(port, log, sink_port, results_path):
             if group:
                 choices = group if isinstance(group, tuple) else (group,)
                 assert any(f"using {choice}[" in entry for choice in choices), (host, entry)
+            if excluded_group:
+                assert f"using {excluded_group}[" not in entry, (host, entry)
             if provider == "hongguo-ad" or group in ("🍃 应用净化", "🛑 广告拦截"):
                 assert "[REJECT]" in entry, entry
             results.append({"network": "tcp", "host": host, "port": target_port,
@@ -307,6 +311,12 @@ def probe_routes(port, log, sink_port, results_path):
         for host in dict.fromkeys(hosts):
             tcp(host, provider, group)
     # Real order checks against fetched upstream lists and shared-content domains.
+    for host in POSITIVE["Google.list"]:
+        tcp(host, group="🎵 Google")
+    for host in GOOGLE_EXCEPTIONS:
+        tcp(host, group="🎯 全球直连")
+    for host in NEGATIVE["Google.list"]:
+        tcp(host, excluded_group="🎵 Google")
     download_hosts = POSITIVE["Download.list"] + [row.split(",")[1] for row in rules("Download.list")]
     for host in dict.fromkeys(download_hosts):
         tcp(host, group="📦 下载节点")

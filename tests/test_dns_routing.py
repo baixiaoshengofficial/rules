@@ -17,7 +17,7 @@ import threading
 import time
 
 import yaml
-from test_integration import ROOT, free_port, socks_request, wait_for
+from test_integration import ROOT, fetch, free_port, socks_request, wait_for
 
 
 class DNSRecorder(socketserver.BaseRequestHandler):
@@ -50,8 +50,9 @@ def run(config, mihomo, geodata, control):
                 (work / name).symlink_to(source.resolve())
         document = copy.deepcopy(config)
         port = free_port()
+        controller = free_port()
         document.update({'port': 0, 'socks-port': 0, 'mixed-port': port,
-                         'external-controller': '', 'allow-lan': False,
+                         'external-controller': f'127.0.0.1:{controller}', 'allow-lan': False,
                          'log-level': 'debug', 'hosts': {}, 'tun': {'enable': False}})
         document['proxies'] = [{'name': 'dns-test-node', 'type': 'ss',
                                'server': '127.0.0.1', 'port': sink.getsockname()[1],
@@ -88,6 +89,17 @@ def run(config, mihomo, geodata, control):
                                            stdout=log, stderr=subprocess.STDOUT)
                 try:
                     wait_for(lambda: 'Mixed(http+socks) proxy listening' in log_path.read_text())
+                    # The listener starts before asynchronous rule/group providers.
+                    # Probing earlier can hit an uninitialized selection instead of MATCH.
+                    def ready():
+                        api = f'http://127.0.0.1:{controller}'
+                        groups = json.loads(fetch(api + '/proxies')).get('proxies', {})
+                        providers = json.loads(fetch(api + '/providers/rules')).get('providers', {})
+                        return (set(providers) == set(document['rule-providers'])
+                                and all(p.get('ruleCount', 0) > 0 for p in providers.values())
+                                and all(groups.get(g['name'], {}).get('all') == g['proxies']
+                                        for g in document['proxy-groups']))
+                    wait_for(ready)
                     host = 'unclassified-dns-regression.example.org'
                     with socks_request(port, host, 443) as sock:
                         sock.sendall(b'probe')

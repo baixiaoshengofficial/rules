@@ -32,6 +32,12 @@ def matches(name, host):
 
 
 POSITIVE = {
+    "Google.list": [
+        "www.google.com", "accounts.google.com", "mail.google.com", "gmail.com",
+        "maps.googleapis.com", "dns.google", "mtalk.google.com", "alt1-mtalk.google.com",
+        "firebaseinstallations.googleapis.com", "www.youtube.com", "rr1.googlevideo.com",
+        "i.ytimg.com", "youtubei.googleapis.com", "www.youtube-nocookie.com", "recaptcha.net",
+    ],
     "Download.list": [
         "release-assets.githubusercontent.com", "codeload.github.com",
         "objects.githubusercontent.com", "raw.githubusercontent.com", "ghcr.io",
@@ -80,6 +86,11 @@ POSITIVE = {
     ],
 }
 NEGATIVE = {
+    "Google.list": [
+        "notgoogle.example.org", "google.com.example.org", "fakegmail.example.org",
+        "notyoutube.example.org", "notrecaptcha.example.org", "notblogspot.example.org",
+        "notappspot.example.org",
+    ],
     "Download.list": [
         "github.com", "api.github.com", "avatars.githubusercontent.com",
         "login.microsoftonline.com", "account.jetbrains.com", "hub.docker.com",
@@ -215,6 +226,11 @@ class RuleTests(unittest.TestCase):
         self.assertLess(ads, download)
         self.assertLess(download, github)
         self.assertLess(download, direct)
+        google = sources.index("https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/Google.list")
+        self.assertLess(download, google)
+        for host in ("dl.google.com", "dl.l.google.com", "time.google.com"):
+            self.assertLess(sources.index("[]DOMAIN-SUFFIX," + host), google)
+        self.assertFalse(any(row.startswith("DOMAIN-KEYWORD,") for row in rules("Google.list")))
         for host in ("notdocker.example.org", "ghcr.io.example.org", "evil-huggingface.co"):
             self.assertFalse(matches("ProxyLite.list", host), host)
         self.assertNotIn("DOMAIN-KEYWORD,steamcontent", rules("ProxyLite.list"))
