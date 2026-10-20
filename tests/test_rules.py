@@ -49,7 +49,8 @@ POSITIVE = {
         "files.pythonhosted.org", "repo.maven.apache.org", "api.nuget.org",
         "static.crates.io", "proxy.golang.org", "static.rust-lang.org",
         "download-cdn.jetbrains.com", "vscode.download.prss.microsoft.com",
-        "ms-python.gallerycdn.vsassets.io",
+        "ms-python.gallerycdn.vsassets.io", "cdn.steamcontent.com",
+        "steamcommunity.akamai.steamusercontent.com",
     ],
     "Residential.list": [
         "chatgpt.com", "api.openai.com", "sora.com", "files.oaiusercontent.com",
@@ -97,7 +98,7 @@ NEGATIVE = {
         "api.openai.com", "router.huggingface.co", "inference.hf.co",
         "chatgpt.com", "www.tiktok.com", "www.netflix.com",
         "mirrors.tuna.tsinghua.edu.cn", "registry.npmmirror.com",
-        "pypi.tuna.tsinghua.edu.cn", "cdn.steamcontent.com",
+        "pypi.tuna.tsinghua.edu.cn",
         "download-cdn.clf.jetbrains.com.cn", "dl.google.com",
         "other.s3.amazonaws.com", "other.blob.core.windows.net",
         "storage.googleapis.com", "other.cloudfront.net",
