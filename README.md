@@ -29,8 +29,7 @@ Mihomo 内核；本次集成验证使用 v1.19.32。此配置不面向原版 Cla
   Perplexity、DeepSeek。共享支付、认证、监控和云平台大域不再整体归入 AI。
 - TikTok 补充欧美 CDN、直播和商店，优先于通用国内/媒体规则；排除共享 `snssdk.com` 和其他产品。
   分流命中不能替代地区限制、账号、SIM 卡或节点出口的验证。
-- `Download.list` 中的 Steam 内容域名先于 SteamCN 直连列表命中下载组；其他 SteamCN 规则仍可直连。
-  大范围国内直连在广告规则之后，必要 `UnBan` 白名单保留。
+- Steam 下载例外先于代理补充规则；大范围国内直连在广告规则之后，必要 `UnBan` 白名单保留。
 - 均衡组采用 `consistent-hashing`；地区筛选支持英文代码、中文和 emoji 名称，故转及自动选择可从选择组使用。
   节点确实缺少某地区时仍需检查生成后的组成员，不能靠正则创造可用节点。
 - 默认保留 BanAD、BanProgramAD 和隐私规则；移除未使用的 AdBlock 分组及停用配置。
@@ -112,19 +111,17 @@ AI/TikTok/Netflix 原分组。正则必须由原生 provider 加载。
 | 模型 | Hugging Face 主站、LFS、Xet 和模型 CDN；独立推理主机保留原代理策略。 |
 | 包管理器 | npm/Yarn、PyPI、Maven/Gradle、NuGet、Cargo、RubyGems、Go 模块；国内镜像维持直连。 |
 | 工具 | Rust/Node、JetBrains 安装包、VS Code/Visual Studio 更新及扩展。 |
-| Steam | `steamcontent.com` 游戏内容和 `steamusercontent.com` 用户内容域名走下载组；SteamCN 其余命中仍按直连规则处理。 |
 
 下载组默认跟随 `🚀 节点选择`，同时直接列出订阅节点，可单独固定大带宽、流量充足的普通节点，
 不会改动共享的手动选择器。配置不能识别套餐额度或真实带宽；若主选择组当前使用家宽，
-下载组默认也会跟随，需在下载组直接选择合适节点。视频、直播继续由各服务组负责；JetBrains 国内 CDN 及前置白名单中的 `dl.google.com` 直连。
+下载组默认也会跟随，需在下载组直接选择合适节点。视频、直播继续由各服务组负责；Steam 国内 CDN、JetBrains 国内 CDN 及前置白名单中的 `dl.google.com` 直连。
 
 域名规则无法区分 URL 路径、文件大小和传输方向：例如 `huggingface.co`、`nodejs.org` 的网页，
 包注册表的元数据和上传也会走下载组。GitHub 的初始 Release 页面仍走主策略，重定向后的文件主机走下载组。
 未把 `amazonaws.com`、`cloudfront.net`、`blob.core.windows.net`、`storage.googleapis.com`
 等共享云域名整体收录；未明确归属的下载跳转继续原策略，需要结合连接日志逐个补充。
 
-域名依据包括 [Steam 网络连接说明](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB)、
-[GitHub 网络说明](https://docs.github.com/en/actions/reference/runners/self-hosted-runners)、
+域名依据包括 [GitHub 网络说明](https://docs.github.com/en/actions/reference/runners/self-hosted-runners)、
 [Docker 允许列表](https://docs.docker.com/desktop/enterprise/allow-list/)、
 [Hugging Face Xet 迁移说明](https://huggingface.co/blog/migrating-the-hub-to-xet)和
 [VS Code 网络说明](https://code.visualstudio.com/docs/setup/network)。更新列表时同时添加下载命中、

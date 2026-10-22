@@ -335,6 +335,7 @@ def probe_routes(port, log, sink_port, results_path):
         ("reading.snssdk.com", ("🎯 全球直连", "🎞️ 国内媒体")),
         ("p3-reading.byteimg.com", "🎯 全球直连"),
         ("api.fqnovel.com", None),
+        ("cdn.steamcontent.com", "🎯 全球直连"),
         ("hm.baidu.com", "🍃 应用净化"),
         ("xdrig.com", "🛑 广告拦截"),
     ]:

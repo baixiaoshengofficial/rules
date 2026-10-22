@@ -19,10 +19,6 @@ DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com
 DOMAIN-SUFFIX,pkg.github.com
 DOMAIN,pkg-containers.githubusercontent.com
 
-# Steam 游戏内容与创意工坊内容；规则优先于 INI 中的 SteamCN 直连列表。
-DOMAIN-SUFFIX,steamcontent.com
-DOMAIN-SUFFIX,steamusercontent.com
-
 # 容器注册表、镜像层及 Docker Desktop 安装包；鉴权与镜像使用同组。
 DOMAIN-SUFFIX,ghcr.io
 DOMAIN,auth.docker.io
