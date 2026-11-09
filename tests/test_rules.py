@@ -133,6 +133,21 @@ NEGATIVE = {
 
 
 class RuleTests(unittest.TestCase):
+    def test_chain_group_is_declared_by_the_template(self):
+        config = tomllib.loads((ROOT / "baixiaosheng.toml").read_text())
+        name = config["custom"]["subscribemanager_chain_group"]
+        groups = {group["name"]: group for group in config["custom_groups"]}
+        self.assertEqual(name, "代理链")
+        self.assertEqual(groups[name]["type"], "select")
+        self.assertEqual(groups[name]["rule"], ["[]REJECT"])
+        for parent in ("🐸 手动切换", "🚀 节点选择", "🤖 AI", "🎵 Google", "🎵 TikTok", "🐟 漏网之鱼"):
+            self.assertIn("[]" + name, groups[parent]["rule"])
+        self.assertIn(".*", groups["🐸 手动切换"]["rule"])
+        self.assertEqual(groups["🚀 节点选择"]["rule"][0], "[]🐸 手动切换")
+        self.assertEqual(groups["♻️ Speedtest"]["rule"][0], "[]DIRECT")
+        for parent in ("红果广告", "🎯 全球直连", "🛑 广告拦截", "♻️ 自动选择"):
+            self.assertNotIn("[]" + name, groups[parent]["rule"])
+
     def test_list_syntax_and_duplicates(self):
         for path in ROOT.glob("*.list"):
             entries = rules(path.name)

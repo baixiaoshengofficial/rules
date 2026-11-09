@@ -190,3 +190,9 @@ MIHOMO_BIN=/path/to/mihomo sh tests/run_integration.sh --output /tmp/rules-test-
 和 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash)，
 按服务用途筛选；红果分片正则由已有明确广告域名归纳，保留正常内容反例。
 其他广告与分流源仍沿用 ACL4SSR / blackmatrix7，自定义规则统一指向本仓库。
+
+## SubscribeManager 代理链
+
+分组及其引用由本仓库模板定义，SubscribeManager 不向其他分组自动追加代理链入口。INI 的 `subscribemanager_chain_group=代理链` 指定现有的 select 分组，TOML 由同步脚本生成同一设置；管理器只把当前订阅已启用的链路填入该组。`🐸 手动切换` 的 `.*` 同时列出节点和链路，其他选择组使用 `[]代理链` 引用整组。原默认选项和规则优先级保持不变。
+
+此设置是 SubscribeManager 扩展，不在规则源中定义链路节点、协议或凭据。普通 Subconverter 不生成链路，该组保留模板中声明的 `REJECT` 占位；管理器中没有启用链路时也保留这一占位，避免选择空组后意外直连。
