@@ -11,6 +11,17 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# These names must survive the converter's regex implementation as well as
+# Python's; integration checks compare the actual generated group members.
+REGION_MEMBERS = {
+    "🇭🇰 香港节点": ["HK-01", "🇭🇰 香港 02 hkl", "🇭🇰 03", "Hong Kong 04"],
+    "🇭🇰 台湾节点": ["TW-01", "🇹🇼 台湾 02 twl", "🇹🇼 03", "Taiwan 04"],
+    "🇯🇵 日本节点": ["JP-01", "🇯🇵 日本 02 jpl", "🇯🇵 03", "Japan Tokyo 04"],
+    "🇸🇬 新加坡节点": ["SG-01", "新加坡 02 sgoracle", "🇸🇬 03", "Singapore 04"],
+    "🇺🇲 美国节点": ["US-01", "美国 ATT 家宽", "🇺🇸 03", "United States 04"],
+    "🌐 其他地区": ["DE-01", "英国 UK-02", "🇩🇪 03", "Germany 04"],
+}
+
 
 def rules(name):
     return [line for line in (ROOT / name).read_text().splitlines()
@@ -238,6 +249,11 @@ class RuleTests(unittest.TestCase):
         self.assertFalse(any("jokerknight" in s or "GEOIP,!CN" in s for s in sources))
         self.assertEqual(sources[-2:], ["[]GEOIP,CN,no-resolve", "[]FINAL"])
         groups = {g["name"]: g for g in config["custom_groups"]}
+        for name in ("🇭🇰 香港节点", "🇭🇰 台湾节点", "🇯🇵 日本节点",
+                     "🇸🇬 新加坡节点", "🇺🇲 美国节点", "🌐 其他地区"):
+            self.assertEqual(groups[name]["type"], "fallback", name)
+            self.assertEqual(groups[name]["interval"], 60, name)
+        self.assertEqual(groups["🐸 手动切换"]["type"], "select")
         self.assertEqual(groups["红果广告"]["rule"], ["[]REJECT"])
         for rule in config["rulesets"]:
             self.assertIn(rule["group"], groups)

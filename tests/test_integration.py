@@ -10,6 +10,7 @@ import argparse
 import base64
 import concurrent.futures
 from contextlib import contextmanager
+import copy
 import functools
 import hashlib
 import http.server
@@ -29,10 +30,14 @@ import urllib.request
 
 import yaml
 
-from test_rules import NEGATIVE, POSITIVE, ROOT, rules
+from test_rules import NEGATIVE, POSITIVE, REGION_MEMBERS, ROOT, rules
 
 OWNER = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/"
 GOOGLE_EXCEPTIONS = ["dl.google.com", "dl.l.google.com", "time.google.com"]
+DIRECT_EXCEPTIONS = GOOGLE_EXCEPTIONS + [
+    "ddxq.mobi", "api.ddxq.mobi", "time.apple.com", "time.asia.apple.com",
+    "time.windows.com",
+]
 
 
 def fetch(url):
@@ -113,11 +118,10 @@ def prepare_fixtures(directory, prefix, cache):
         (directory / name).write_text(text)
 
 
-def convert(url, prefix, name):
+def convert(url, prefix, name, names=None):
     # Exercise ASCII, emoji, Chinese and suffix-based node names.
-    names = ["HK-01", "🇭🇰 香港 02 hkl", "TW-01", "🇹🇼 台湾 02 twl",
-             "JP-01", "🇯🇵 日本 02 jpl", "SG-01", "新加坡 02 sgoracle",
-             "US-01", "美国 ATT 家宽", "DE-01", "英国 UK-02"]
+    if names is None:
+        names = [node for members in REGION_MEMBERS.values() for node in members]
     credential = base64.b64encode(b"aes-128-gcm:integration-test").decode()
     nodes = "|".join(f"ss://{credential}@127.0.0.1:19999#{urllib.parse.quote(n)}"
                      for n in names)
@@ -126,10 +130,19 @@ def convert(url, prefix, name):
     })
     document = yaml.safe_load(fetch(url.rstrip("/") + "/sub?" + query))
     assert isinstance(document, dict) and document.get("rules"), document
+    return document
+
+
+def check_conversion(document):
     assert set(document["rule-providers"]) == {"hongguo-ad", "quic", "ai", "tiktok"}
     for provider in document["rule-providers"]:
         assert any(r.startswith(f"RULE-SET,{provider},") for r in document["rules"])
     groups = {g["name"]: g for g in document["proxy-groups"]}
+    for name, members in REGION_MEMBERS.items():
+        group = groups[name]
+        assert group["type"] == "fallback", group
+        assert group["interval"] == 60, group
+        assert group["proxies"] == members + ["REJECT"], group
     for name in ("🇭🇰 香港均衡", "🇯🇵 日本均衡", "🇭🇰 TW均衡", "🇸🇬 SG均衡"):
         assert groups[name]["strategy"] == "consistent-hashing", groups[name]
         assert len(groups[name]["proxies"]) >= 2, groups[name]
@@ -138,8 +151,8 @@ def convert(url, prefix, name):
     assert "♻️ 自动选择" in groups["🚀 节点选择"]["proxies"]
     download = groups["📦 下载节点"]["proxies"]
     assert download[0] == "🚀 节点选择", download
-    assert {p["name"] for p in document["proxies"]} <= set(download), download
-    return document
+    assert set(REGION_MEMBERS) <= set(download), download
+    assert groups["🏡 家宽节点"]["proxies"] == ["美国 ATT 家宽", "REJECT"]
 
 
 class SinkHandler(socketserver.BaseRequestHandler):
@@ -176,6 +189,106 @@ def socks_request(port, host, target_port, command=1):
     sock.sendall(bytes([5, command, 0, 3, len(address)]) + address
                  + struct.pack("!H", target_port))
     return sock
+
+
+class HealthProxyHandler(socketserver.BaseRequestHandler):
+    """Local SOCKS transport that answers health probes without network access."""
+
+    def handle(self):
+        self.request.settimeout(3)
+        if not self.server.available.is_set():
+            return
+        try:
+            greeting = receive(self.request, 2)
+            receive(self.request, greeting[1])
+            self.request.sendall(b"\x05\x00")
+            request = receive(self.request, 4)
+            length = {1: 4, 4: 16}.get(request[3])
+            if request[3] == 3:
+                length = receive(self.request, 1)[0]
+            receive(self.request, length + 2)
+            self.request.sendall(b"\x05\x00\x00\x01\x7f\x00\x00\x01\x00\x00")
+            headers = b""
+            while b"\r\n\r\n" not in headers and len(headers) < 8192:
+                chunk = self.request.recv(4096)
+                if not chunk:
+                    return
+                headers += chunk
+            self.request.sendall(b"HTTP/1.1 204 No Content\r\nContent-Length: 0\r\n"
+                                 b"Connection: close\r\n\r\n")
+        except OSError:
+            pass
+
+
+def fallback_checks(document, mihomo, directory):
+    """Prove failover and recovery with healthy/down local SOCKS transports."""
+    work = directory / "fallback"
+    work.mkdir(exist_ok=True)
+    group = copy.deepcopy(next(g for g in document["proxy-groups"]
+                               if g["name"] == "🇭🇰 香港节点"))
+    members = group["proxies"][:2]
+    mixed, controller = free_port(), free_port()
+    with Sink(("127.0.0.1", 0), HealthProxyHandler) as first, \
+            Sink(("127.0.0.1", 0), HealthProxyHandler) as second:
+        for server in (first, second):
+            server.available = threading.Event()
+            server.available.set()
+            threading.Thread(target=server.serve_forever, daemon=True).start()
+        # Keep the generated fallback type and ordering. Only transports and
+        # health URL/interval are isolated so the test never uses real nodes.
+        group.update(proxies=members + ["REJECT"], url="http://probe.invalid/health",
+                     interval=1)
+        config = {
+            "mixed-port": mixed, "allow-lan": False, "mode": "rule",
+            "external-controller": f"127.0.0.1:{controller}",
+            "proxies": [{"name": name, "type": "socks5", "server": "127.0.0.1",
+                         "port": server.server_address[1]}
+                        for name, server in zip(members, (first, second))],
+            "proxy-groups": [group], "rules": ["MATCH," + group["name"]],
+        }
+        path = work / "config.yaml"
+        path.write_text(yaml.safe_dump(config, allow_unicode=True))
+        log_path = work / "runtime.log"
+        api = f"http://127.0.0.1:{controller}/proxies/"
+        with log_path.open("w") as log:
+            process = subprocess.Popen([mihomo, "-d", str(work), "-f", str(path)],
+                                       stdout=log, stderr=subprocess.STDOUT)
+            try:
+                wait_for(lambda: fetch(api + urllib.parse.quote(group["name"])))
+
+                def check_delay(name):
+                    query = urllib.parse.urlencode({"timeout": 500, "url": group["url"]})
+                    try:
+                        fetch(api + urllib.parse.quote(name) + "/delay?" + query)
+                    except urllib.error.HTTPError:
+                        pass  # An unavailable fixture must fail its health probe.
+
+                def route(expected):
+                    offset = len(log_path.read_text())
+                    with socks_request(mixed, "probe.invalid", 80) as sock:
+                        sock.sendall(b"GET / HTTP/1.1\r\nHost: probe.invalid\r\n\r\n")
+                        entry = wait_for(lambda: next((line for line in
+                            log_path.read_text()[offset:].splitlines()
+                            if " match " in line and f"[{expected}]" in line), None))
+                    return entry
+
+                for name in members:
+                    check_delay(name)
+                evidence = [route(members[0])]
+                first.available.clear()
+                check_delay(members[0])
+                evidence.append(route(members[1]))
+                first.available.set()
+                check_delay(members[0])
+                evidence.append(route(members[0]))
+                (work / "routes.json").write_text(json.dumps(evidence, ensure_ascii=False,
+                                                              indent=2) + "\n")
+                print("Fallback: primary → secondary on failure → primary on recovery OK")
+            finally:
+                process.terminate()
+                process.wait(timeout=10)
+                first.shutdown()
+                second.shutdown()
 
 
 def runtime_checks(document, mihomo, directory, label):
@@ -226,7 +339,7 @@ def runtime_checks(document, mihomo, directory, label):
                           if row.split(",")[0] in ("DOMAIN", "DOMAIN-SUFFIX")]
         fixture_hosts += ["cdn.steamcontent.com", "normal-content.example.org",
                           "hm.baidu.com", "xdrig.com"]
-        fixture_hosts += GOOGLE_EXCEPTIONS
+        fixture_hosts += DIRECT_EXCEPTIONS
         document["hosts"] = {host: "203.0.113.250" for host in fixture_hosts}
         runtime_path = work / "runtime.yaml"
         runtime_path.write_text(yaml.safe_dump(document, allow_unicode=True))
@@ -313,7 +426,7 @@ def probe_routes(port, log, sink_port, results_path):
     # Real order checks against fetched upstream lists and shared-content domains.
     for host in POSITIVE["Google.list"]:
         tcp(host, group="🎵 Google")
-    for host in GOOGLE_EXCEPTIONS:
+    for host in DIRECT_EXCEPTIONS:
         tcp(host, group="🎯 全球直连")
     for host in NEGATIVE["Google.list"]:
         tcp(host, excluded_group="🎵 Google")
@@ -400,7 +513,16 @@ def main():
             documents = {kind: convert(args.subconverter_url, prefix, "baixiaosheng." + kind)
                          for kind in ("ini", "toml")}
             assert documents["ini"] == documents["toml"], "INI/TOML conversion differs"
+            for document in documents.values():
+                check_conversion(document)
+            for kind in ("ini", "toml"):
+                empty = convert(args.subconverter_url, prefix, "baixiaosheng." + kind,
+                                names=["LOCAL-ONLY"])
+                groups = {g["name"]: g for g in empty["proxy-groups"]}
+                for name in (*REGION_MEMBERS, "🏡 家宽节点"):
+                    assert groups[name]["proxies"] == ["REJECT"], groups[name]
             print("Subconverter:", fetch(args.subconverter_url.rstrip("/") + "/version").decode().strip())
+            fallback_checks(documents["ini"], args.mihomo, directory)
             total = sum(runtime_checks(doc, args.mihomo, directory, kind)
                         for kind, doc in documents.items())
             print(f"Integration: {total} native route probes passed; INI/TOML output identical")
