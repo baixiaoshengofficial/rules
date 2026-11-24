@@ -342,7 +342,7 @@ def runtime_checks(document, mihomo, directory, label):
         fixture_hosts += ["cdn.steamcontent.com", "normal-content.example.org",
                           "hm.baidu.com", "xdrig.com"]
         fixture_hosts += ["fast.com", "api.fast.com", "www.netflix.com",
-                          "www.disneyplus.com", "media-probe.example.org"]
+                          "www.disneyplus.com", "disneyplus.com", "media-probe.example.org"]
         fixture_hosts += DIRECT_EXCEPTIONS
         document["hosts"] = {host: "203.0.113.250" for host in fixture_hosts}
         runtime_path = work / "runtime.yaml"
@@ -433,7 +433,8 @@ def probe_routes(port, log, sink_port, results_path):
     for host in ("fast.com", "api.fast.com"):
         tcp(host, group="♻️ Speedtest")
     tcp("www.netflix.com", group="🎥 Netflix")
-    tcp("www.disneyplus.com", group="🌍 国外媒体")
+    tcp("www.disneyplus.com", group="🎬 国外流媒体")
+    tcp("disneyplus.com", group="🌍 国外媒体")
     tcp("media-probe.example.org", group="🎬 国外流媒体")
     for host in DIRECT_EXCEPTIONS:
         tcp(host, group="🎯 全球直连")
