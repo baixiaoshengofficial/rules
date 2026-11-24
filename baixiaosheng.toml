@@ -215,6 +215,10 @@ group = "红果广告"
 ruleset = "[]RULE-SET,hongguo-ad"
 
 [[rulesets]]
+group = "♻️ Speedtest"
+ruleset = "[]DOMAIN-SUFFIX,fast.com"
+
+[[rulesets]]
 group = "🛑 QUIC"
 ruleset = "[]RULE-SET,quic"
 
@@ -257,10 +261,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanPro
 [[rulesets]]
 group = "🛡️ 隐私防护"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
-
-[[rulesets]]
-group = "🎬 国外流媒体"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/ForeignStreaming.list"
 
 [[rulesets]]
 group = "📦 下载节点"
@@ -357,6 +357,10 @@ ruleset = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master
 [[rulesets]]
 group = "🌍 国外媒体"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+
+[[rulesets]]
+group = "🎬 国外流媒体"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/ForeignStreaming.list"
 
 [[rulesets]]
 group = "🚀 节点选择"

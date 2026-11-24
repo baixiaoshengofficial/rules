@@ -226,8 +226,8 @@ class RuleTests(unittest.TestCase):
         self.assertTrue(config["custom"]["overwrite_original_rules"])
         sources = [r["ruleset"] for r in config["rulesets"]]
         self.assertIn("LocalAreaNetwork.list", sources[0])
-        self.assertEqual(sources[1:5], [
-            "[]RULE-SET,hongguo-ad", "[]RULE-SET,quic",
+        self.assertEqual(sources[1:6], [
+            "[]RULE-SET,hongguo-ad", "[]DOMAIN-SUFFIX,fast.com", "[]RULE-SET,quic",
             "[]RULE-SET,ai", "[]RULE-SET,tiktok",
         ])
         direct = next(i for i, s in enumerate(sources) if s.endswith("/Direct.list"))

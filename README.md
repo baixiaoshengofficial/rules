@@ -16,14 +16,14 @@ Mihomo 内核；本次集成验证使用 v1.19.34。此配置不面向原版 Cla
 
 ## 分流顺序
 
-局域网 → 红果广告 → UDP/443 → AI/TikTok → 必要白名单 → 广告/隐私 → 开发下载 → 地区与服务 →
+局域网 → 红果广告 → fast.com 测速 → UDP/443 → AI/TikTok → 必要白名单 → 广告/隐私 → 开发下载 → 地区与服务 →
 国内直连 → GEOSITE/GEOIP → 漏网之鱼。
 
 - 红果固定 `REJECT`；广告调度、素材和日志分片使用限定域名的正则，覆盖编号及区域轮换。
   保留正常封面、播放、登录所用的大域，避免把 `byteimg.com`、`snssdk.com`、`pstatp.com` 整站封禁。
   更新后重启红果并清理旧广告缓存；命中应显示 `红果广告 / REJECT`。
 - QUIC 集合只匹配 **UDP/443**，默认 `REJECT`，不阻断 TCP/443、UDP/53 或 UDP/3478。
-  局域网及红果规则先匹配；若要允许 UDP/443，可切换 `🛑 QUIC` 到代理或直连。
+  局域网、红果及 fast.com 测速规则先匹配；若要允许 UDP/443，可切换 `🛑 QUIC` 到代理或直连。
   其他端口的 QUIC 不在这个端口规则的覆盖范围内。
 - AI 补充 Claude 文件/MCP、ChatGPT 语音/异步 WebSocket、Gemini API、NotebookLM、
   Perplexity、DeepSeek。共享支付、认证、监控和云平台大域不再整体归入 AI。
@@ -51,7 +51,9 @@ Mihomo 内核；本次集成验证使用 v1.19.34。此配置不面向原版 Cla
 
 在 [ForeignStreaming.list](ForeignStreaming.list) 中用 `DOMAIN` 指定单个主机，用 `DOMAIN-SUFFIX` 指定域名及其子域。文件初始仅含注释。发布列表、更新订阅并重载 Nikki 后，匹配的连接进入 `🎬 国外流媒体`，默认跟随 `🌍 国外媒体`，也可在面板中单独选择地区或家宽。
 
-例外优先于下载、地区强制、Google、Netflix 和通用媒体列表。排在它前面的 QUIC、AI/TikTok、直连白名单及广告规则仍先匹配。
+自维护列表放在 Netflix、国内媒体及通用国外媒体列表之后，通用代理列表之前。已有媒体规则先匹配，漏收的域名才进入自定义组。
+
+`fast.com` 及其子域单独走 `♻️ Speedtest`，优先于 UDP/443 规则。
 
 ## Google 分组边界
 

@@ -96,6 +96,8 @@ def prepare_fixtures(directory, prefix, cache):
         if url.startswith(OWNER):
             name = url.removeprefix(OWNER)
             data = (ROOT / name).read_bytes()
+            if name == "ForeignStreaming.list":
+                data += b"\nDOMAIN,media-probe.example.org\nDOMAIN,www.netflix.com\nDOMAIN,www.disneyplus.com\n"
         else:
             name = hashlib.sha256(url.encode()).hexdigest() + ".list"
             data = cached[url].read_bytes() if url in cached else fetch(url)
@@ -339,6 +341,8 @@ def runtime_checks(document, mihomo, directory, label):
                           if row.split(",")[0] in ("DOMAIN", "DOMAIN-SUFFIX")]
         fixture_hosts += ["cdn.steamcontent.com", "normal-content.example.org",
                           "hm.baidu.com", "xdrig.com"]
+        fixture_hosts += ["fast.com", "api.fast.com", "www.netflix.com",
+                          "www.disneyplus.com", "media-probe.example.org"]
         fixture_hosts += DIRECT_EXCEPTIONS
         document["hosts"] = {host: "203.0.113.250" for host in fixture_hosts}
         runtime_path = work / "runtime.yaml"
@@ -426,6 +430,11 @@ def probe_routes(port, log, sink_port, results_path):
     # Real order checks against fetched upstream lists and shared-content domains.
     for host in POSITIVE["Google.list"]:
         tcp(host, group="🎵 Google")
+    for host in ("fast.com", "api.fast.com"):
+        tcp(host, group="♻️ Speedtest")
+    tcp("www.netflix.com", group="🎥 Netflix")
+    tcp("www.disneyplus.com", group="🌍 国外媒体")
+    tcp("media-probe.example.org", group="🎬 国外流媒体")
     for host in DIRECT_EXCEPTIONS:
         tcp(host, group="🎯 全球直连")
     for host in NEGATIVE["Google.list"]:
@@ -472,6 +481,7 @@ def probe_routes(port, log, sink_port, results_path):
                 ("api.openai.com", 3478, "ai"),
                 ("api.openai.com", 53, "ai"),
                 ("www.tiktok.com", 443, "quic"),
+                ("fast.com", 443, "♻️ Speedtest"),
                 ("ad.zijieapi.com", 443, "hongguo-ad"),
                 ("127.0.0.1", 443, "全球直连"),
         ]:
