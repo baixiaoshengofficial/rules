@@ -65,6 +65,11 @@ type = "select"
 rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
+name = "🎬 国外流媒体"
+type = "select"
+rule = ["[]🌍 国外媒体", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
 name = "🌍 国外媒体"
 type = "select"
 rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
@@ -252,6 +257,10 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanPro
 [[rulesets]]
 group = "🛡️ 隐私防护"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+
+[[rulesets]]
+group = "🎬 国外流媒体"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/ForeignStreaming.list"
 
 [[rulesets]]
 group = "📦 下载节点"

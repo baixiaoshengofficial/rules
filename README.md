@@ -47,6 +47,12 @@ Mihomo 内核；本次集成验证使用 v1.19.34。此配置不面向原版 Cla
 - `time.apple.com`、`time.asia.apple.com` 和 `time.windows.com` 在 Apple/Microsoft 整站规则之前明确直连。
 - Microsoft、Apple、Speedtest、Netflix、游戏和国外媒体默认跟随 `🚀 节点选择`，各组也可单独选择地区。
 
+## 自定义国外流媒体例外
+
+在 [ForeignStreaming.list](ForeignStreaming.list) 中用 `DOMAIN` 指定单个主机，用 `DOMAIN-SUFFIX` 指定域名及其子域。文件初始仅含注释。发布列表、更新订阅并重载 Nikki 后，匹配的连接进入 `🎬 国外流媒体`，默认跟随 `🌍 国外媒体`，也可在面板中单独选择地区或家宽。
+
+例外优先于下载、地区强制、Google、Netflix 和通用媒体列表。排在它前面的 QUIC、AI/TikTok、直连白名单及广告规则仍先匹配。
+
 ## Google 分组边界
 
 `Google.list` 合并 Google、GoogleCN、FCM 和 YouTube，统一交给 `🎵 Google`；
