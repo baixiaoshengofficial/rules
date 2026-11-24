@@ -10,6 +10,7 @@ DOMAIN,ad.oceanengine.com
 DOMAIN,clue.oceanengine.com
 
 # 字节广告 SDK
+DOMAIN-SUFFIX,pangle.io
 DOMAIN,pangolin.snssdk.com
 DOMAIN,mcs.snssdk.com
 DOMAIN,security-lq.snssdk.com
@@ -25,6 +26,13 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao5.com
 
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 
+# 广告归因与曝光上报（snssdk 分片）
+DOMAIN,i.snssdk.com
+DOMAIN,i-lq.snssdk.com
+DOMAIN,vas-lf-x.snssdk.com
+DOMAIN-REGEX,^tnc[0-9]+-[a-z0-9]+\.snssdk\.com$
+DOMAIN,tnc3-bjlgy.snssdk.com
+
 # 广告调度分片
 DOMAIN-REGEX,^ads[0-9]+-normal(-[a-z0-9]+)?\.zijieapi\.com$
 DOMAIN,ads3-normal-hl.zijieapi.com
@@ -35,6 +43,26 @@ DOMAIN,ads5-normal-hl.zijieapi.com
 DOMAIN,ads5-normal-lf.zijieapi.com
 DOMAIN,ads5-normal-lq.zijieapi.com
 DOMAIN,ads5-normal.zijieapi.com
+
+# 广告调度扩展（A/B 测试、小游戏广告位、TNC 流量分配、监控与数据管道）
+DOMAIN-REGEX,^abtest[0-9]+-misc(-[a-z0-9]+)?\.zijieapi\.com$
+DOMAIN,abtest3-misc-hl.zijieapi.com
+DOMAIN-REGEX,^minigame[0-9]+-normal(-[a-z0-9]+)?\.zijieapi\.com$
+DOMAIN,minigame3-normal-hl.zijieapi.com
+DOMAIN,minigame3-normal-lf.zijieapi.com
+DOMAIN,minigame3-normal-lq.zijieapi.com
+DOMAIN,minigame5-normal-hl.zijieapi.com
+DOMAIN,minigame5-normal-lf.zijieapi.com
+DOMAIN,minigame5-normal-lq.zijieapi.com
+DOMAIN-REGEX,^tnc[0-9]+-[a-z0-9]+\.zijieapi\.com$
+DOMAIN,tnc0-aliec2.zijieapi.com
+DOMAIN,tnc0-alisc1.zijieapi.com
+DOMAIN,tnc3-aliec2.zijieapi.com
+DOMAIN,tnc3-alisc1.zijieapi.com
+DOMAIN,mon.zijieapi.com
+DOMAIN,thanos.zijieapi.com
+DOMAIN,timon.zijieapi.com
+DOMAIN,feedback-c.zijieapi.com
 
 # 广告素材分片（服务端可轮换 p1-p9）
 DOMAIN-REGEX,^p[0-9]+-ad-sign\.byteimg\.com$
@@ -67,6 +95,28 @@ DOMAIN,rtlog5-applog-hl.fqnovel.com
 DOMAIN,rtlog5-applog-lf.fqnovel.com
 DOMAIN,rtlog5-applog-lq.fqnovel.com
 DOMAIN,rtlog5-applog.fqnovel.com
+
+# 广告监控（mon 分片，区别于 log/rtlog 日志上报）
+DOMAIN-REGEX,^mon[0-9]+-misc(-[a-z0-9]+)?\.fqnovel\.com$
+DOMAIN,mon3-misc-lf.fqnovel.com
+DOMAIN,mon11-misc-hl.fqnovel.com
+DOMAIN,mon11-misc-lf.fqnovel.com
+
+# 广告视频 CDN（qznovelvod.com；-reading-ad 为广告，-reading-video 为正片，不混用）
+DOMAIN-REGEX,^v[0-9]+-reading-ad\.qznovelvod\.com$
+DOMAIN,v5-reading-ad.qznovelvod.com
+DOMAIN,v6-reading-ad.qznovelvod.com
+DOMAIN,v9-reading-ad.qznovelvod.com
+DOMAIN,v11-reading-ad.qznovelvod.com
+DOMAIN,v13-reading-ad.qznovelvod.com
+DOMAIN,v26-reading-ad.qznovelvod.com
+DOMAIN,v96-reading-ad.qznovelvod.com
+
+# 激励广告弹窗 SDK
+DOMAIN,praisewindow.ugsdk.cn
+
+# 随机子域广告 CDN
+DOMAIN-SUFFIX,wmzfylgdsz.com
 
 # 阻止 App 通过 HTTPDNS 将广告域名解析为 IP 后绕过域名规则。
 # 101.36.166.16/30 精确覆盖 APK 7.3.1.65 内置的 .16-.19。

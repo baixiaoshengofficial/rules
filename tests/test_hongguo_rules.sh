@@ -56,7 +56,29 @@ for host in \
   p19-ad-sign.byteimg.com \
   rtlog12-applog-newregion.fqnovel.com \
   dig.bdurl.net \
-  dig.zjurl.cn
+  dig.zjurl.cn \
+  pangle.io \
+  i.snssdk.com \
+  i-lq.snssdk.com \
+  tnc3-bjlgy.snssdk.com \
+  tnc7-somedc.snssdk.com \
+  abtest3-misc-hl.zijieapi.com \
+  abtest9-misc-lq.zijieapi.com \
+  minigame3-normal-lf.zijieapi.com \
+  minigame5-normal-hl.zijieapi.com \
+  tnc0-aliec2.zijieapi.com \
+  tnc3-alisc1.zijieapi.com \
+  mon.zijieapi.com \
+  thanos.zijieapi.com \
+  timon.zijieapi.com \
+  feedback-c.zijieapi.com \
+  mon3-misc-lf.fqnovel.com \
+  mon11-misc-hl.fqnovel.com \
+  mon99-misc-newregion.fqnovel.com \
+  v5-reading-ad.qznovelvod.com \
+  v96-reading-ad.qznovelvod.com \
+  praisewindow.ugsdk.cn \
+  sub.wmzfylgdsz.com
 do
   if ! match_domain "$host"; then
     printf 'expected ad host to match: %s\n' "$host" >&2
@@ -70,7 +92,8 @@ for host in \
   p3-reading.byteimg.com \
   v3-reading-video.fqnovelvod.com \
   sf3-ttcdn-tos.pstatp.com \
-  hongguoduanju.com
+  hongguoduanju.com \
+  v9-reading-video.qznovelvod.com
 do
   if match_domain "$host"; then
     printf 'normal-content host must not match: %s\n' "$host" >&2
