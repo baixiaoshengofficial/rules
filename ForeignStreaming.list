@@ -1,3 +1,8 @@
 # 自定义国外流媒体例外，每行一条。将示例域名替换为实际域名，并删除行首的 #。
 # DOMAIN,video.example.com
 # DOMAIN-SUFFIX,stream.example.com
+DOMAIN-KEYWORD,emby.staryuki.com
+DOMAIN-KEYWORD,emby.bbqwq.com
+DOMAIN-KEYWORD,porhub
+DOMAIN-KEYWORD,xvideo
+
