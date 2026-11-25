@@ -1133,3 +1133,7 @@ DOMAIN,live5.tdm.com.mo
 DOMAIN,10.fast.hidns.vip
 DOMAIN,petclub-samsungaus.amagi.tv
 DOMAIN,php.jdshipin.com
+
+# HOY 76–78 的公开 HLS 入口和媒体主机。
+DOMAIN,hoytv-live-stream.hoy.tv
+DOMAIN,ch77-live-stream.hoy.tv

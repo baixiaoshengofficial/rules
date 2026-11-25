@@ -15,3 +15,6 @@ DOMAIN,mgugaklive.nowcdn.co.kr
 DOMAIN,onair.cdn.tvchosun.com
 DOMAIN,onair2.cdn.tvchosun.com
 DOMAIN,vod2.abn.co.kr
+
+# SBS JTV 全州当前的公开 HLS 主机。
+IP-CIDR,61.85.197.53/32,no-resolve
