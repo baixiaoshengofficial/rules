@@ -1493,217 +1493,217 @@
       "kind": "DOMAIN",
       "value": "amdlive-ch01-ctnd-com.akamaized.net",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "stream8.cinerama.uz",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "cache1.cinerama.uz",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "hlive.ktv.go.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "ebsonair.ebs.co.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "cdntv.tbs.seoul.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "live.knou.ac.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "media.joycorp.co.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "mediaworks.dema.mil.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "mgugaklive.nowcdn.co.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "onair.cdn.tvchosun.com",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "onair2.cdn.tvchosun.com",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "vod2.abn.co.kr",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "IP-CIDR",
       "value": "61.85.197.53/32",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "IP-CIDR",
       "value": "61.82.49.4/32",
       "policy": "🇰🇷 韩国节点",
-      "file": "IPTV-KR.list"
+      "file": "KrMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "d8975dc3.wurl.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "d1si3n1st4nkgb.cloudfront.net",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "livestream.pbskids.org",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "2-fss-1.streamhoster.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "cdn-uw2-prod.tsv2.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "aka-live1050.delivery.roku.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "d3hqevbyoxtkoi.cloudfront.net",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "d3mr43kyql7wgk.cloudfront.net",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "hls-kmosdt.lls.cdn.pbs.org",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "linear-859.frequency.stream",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "sk.delivery.roku.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "tgn.bozztv.com",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "pb-ehs1glsha1juy.akamaized.net",
       "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
+      "file": "USMandatory.list"
     }
   ]
 }

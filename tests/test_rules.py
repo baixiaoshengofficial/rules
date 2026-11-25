@@ -48,8 +48,8 @@ IPTV_POLICIES = {
     "HkMandatory.list": "🇭🇰 香港节点",
     "JpMandatory.list": "🇯🇵 日本节点",
     "TwMandatory.list": "🇭🇰 台湾节点",
-    "IPTV-KR.list": "🇰🇷 韩国节点",
-    "IPTV-US.list": "🇺🇲 美国节点",
+    "KrMandatory.list": "🇰🇷 韩国节点",
+    "USMandatory.list": "🇺🇲 美国节点",
 }
 
 

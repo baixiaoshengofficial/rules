@@ -291,11 +291,11 @@ ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/HkM
 
 [[rulesets]]
 group = "🇰🇷 韩国节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-KR.list"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/KrMandatory.list"
 
 [[rulesets]]
 group = "🇺🇲 美国节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-US.list"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/USMandatory.list"
 
 [[rulesets]]
 group = "🎯 全球直连"
