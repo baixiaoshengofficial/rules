@@ -50,7 +50,6 @@ IPTV_POLICIES = {
     "TwMandatory.list": "🇭🇰 台湾节点",
     "IPTV-KR.list": "🇰🇷 韩国节点",
     "IPTV-US.list": "🇺🇲 美国节点",
-    "IPTV-Relay.list": "📺 IPTV中转",
 }
 
 
@@ -69,11 +68,15 @@ IPTV_ROUTE_CASES = [
     ("d2p4mrcwl6ly4.cloudfront.net", "🇯🇵 日本节点"),
     ("amdlive-ch01-ctnd-com.akamaized.net", "🇰🇷 韩国节点"),
     ("d8975dc3.wurl.com", "🇺🇲 美国节点"),
+    ("video.bread-tv.com", "🇭🇰 香港节点"),
+    ("amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv", "🇭🇰 香港节点"),
+    ("pb-ehs1glsha1juy.akamaized.net", "🇺🇲 美国节点"),
     ("cdn3.indevs.in", "🇭🇰 香港节点"),
     ("cdn.qd.je", "🇭🇰 香港节点"),
     ("cdn6.cc.cd", "🇭🇰 香港节点"),
     ("stream8.cinerama.uz", "🇰🇷 韩国节点"),
     ("cache1.cinerama.uz", "🇰🇷 韩国节点"),
+    ("61.82.49.4", "🇰🇷 韩国节点"),
     ("38.64.72.148", "🇭🇰 台湾节点"),
     ("2.fast.hidns.vip", "🎯 全球直连"),
     ("218.13.170.98", "🎯 全球直连"),
@@ -219,7 +222,8 @@ class RuleTests(unittest.TestCase):
         for address in ("38.64.72.149", "218.13.170.99", "192.168.100.252", "233.18.204.1"):
             self.assertFalse(any(ipaddress.ip_address(address) in n for n in networks))
         groups = {g["name"]: g for g in config["custom_groups"]}
-        self.assertEqual(groups["📺 IPTV中转"]["rule"][0], "[]🇭🇰 香港节点")
+        self.assertNotIn("📺 IPTV中转", groups)
+        self.assertFalse(any(source.endswith("/IPTV-Relay.list") for source in sources))
         self.assertEqual(groups["🇰🇷 韩国节点"]["type"], "fallback")
         self.assertEqual(groups["🇰🇷 韩国节点"]["rule"][-1], "[]REJECT")
 

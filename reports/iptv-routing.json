@@ -1,11 +1,11 @@
 {
-  "verified_at": "2026-11-26T00:57:01+08:00",
+  "verified_at": "2026-11-26T01:25:20+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 98,
-  "previous_public_streams": 74,
-  "new_public_streams": 24,
+  "public_streams": 101,
+  "previous_public_streams": 98,
+  "new_public_streams": 3,
   "exact_domain_rules": 80,
-  "single_ip_rules": 3,
+  "single_ip_rules": 4,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
     {
@@ -37,7 +37,7 @@
       "hosts": [
         {
           "host": "pb-ehs1glsha1juy.akamaized.net",
-          "policy": "📺 IPTV中转"
+          "policy": "🇺🇲 美国节点"
         }
       ]
     },
@@ -233,7 +233,7 @@
       "hosts": [
         {
           "host": "video.bread-tv.com",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -244,7 +244,7 @@
       "hosts": [
         {
           "host": "amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -1153,6 +1153,51 @@
           "policy": "🇺🇲 美国节点"
         }
       ]
+    },
+    {
+      "channel": "TVB明珠台HD [公网中转]",
+      "url": "https://php.jdshipin.com/TVOD/iptv.php?id=mzt2",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "10.fast.hidns.vip",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "cdn.qd.je",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "php.jdshipin.com",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "ViuTVsixHD [公网中转]",
+      "url": "https://cdn.qd.je/163189/viu6",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "10.fast.hidns.vip",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "cdn.qd.je",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 江原 G1HD [公网]",
+      "url": "http://61.82.49.4:1935/live/_definst_/tv.stream/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "61.82.49.4",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1197,6 +1242,18 @@
       "value": "218.13.170.98/32",
       "policy": "🎯 全球直连",
       "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "video.bread-tv.com",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
@@ -1368,13 +1425,13 @@
     },
     {
       "kind": "DOMAIN",
-      "value": "cdn-apne1.tsv2.amagi.tv",
+      "value": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
       "policy": "🇯🇵 日本节点",
       "file": "JpMandatory.list"
     },
     {
       "kind": "DOMAIN",
-      "value": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
+      "value": "cdn-apne1.tsv2.amagi.tv",
       "policy": "🇯🇵 日本节点",
       "file": "JpMandatory.list"
     },
@@ -1517,6 +1574,12 @@
       "file": "IPTV-KR.list"
     },
     {
+      "kind": "IP-CIDR",
+      "value": "61.82.49.4/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
       "kind": "DOMAIN",
       "value": "d8975dc3.wurl.com",
       "policy": "🇺🇲 美国节点",
@@ -1578,31 +1641,7 @@
     },
     {
       "kind": "DOMAIN",
-      "value": "linear-859.frequency.stream",
-      "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
-      "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "d3mr43kyql7wgk.cloudfront.net",
-      "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "tgn.bozztv.com",
-      "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "sk.delivery.roku.com",
+      "value": "aka-live1050.delivery.roku.com",
       "policy": "🇺🇲 美国节点",
       "file": "IPTV-US.list"
     },
@@ -1614,7 +1653,19 @@
     },
     {
       "kind": "DOMAIN",
+      "value": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
       "value": "d3hqevbyoxtkoi.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d3mr43kyql7wgk.cloudfront.net",
       "policy": "🇺🇲 美国节点",
       "file": "IPTV-US.list"
     },
@@ -1626,33 +1677,33 @@
     },
     {
       "kind": "DOMAIN",
-      "value": "aka-live1050.delivery.roku.com",
-      "policy": "🇺🇲 美国节点",
-      "file": "IPTV-US.list"
-    },
-    {
-      "kind": "DOMAIN",
       "value": "hls-kmosdt.lls.cdn.pbs.org",
       "policy": "🇺🇲 美国节点",
       "file": "IPTV-US.list"
     },
     {
       "kind": "DOMAIN",
-      "value": "video.bread-tv.com",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
+      "value": "linear-859.frequency.stream",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "sk.delivery.roku.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "tgn.bozztv.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
     },
     {
       "kind": "DOMAIN",
       "value": "pb-ehs1glsha1juy.akamaized.net",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
     }
   ]
 }

@@ -120,11 +120,6 @@ type = "select"
 rule = ["(?i)(家宽|住宅|(^|[^A-Za-z])(ATT|HGC|HKBN|Alice|home)([^A-Za-z]|$))", "[]REJECT"]
 
 [[custom_groups]]
-name = "📺 IPTV中转"
-type = "select"
-rule = ["[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
-
-[[custom_groups]]
 name = "🇭🇰 香港节点"
 type = "fallback"
 url = "https://cp.cloudflare.com/generate_204"
@@ -301,10 +296,6 @@ ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPT
 [[rulesets]]
 group = "🇺🇲 美国节点"
 ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-US.list"
-
-[[rulesets]]
-group = "📺 IPTV中转"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-Relay.list"
 
 [[rulesets]]
 group = "🎯 全球直连"

@@ -18,3 +18,6 @@ DOMAIN,vod2.abn.co.kr
 
 # SBS JTV 全州当前的公开 HLS 主机。
 IP-CIDR,61.85.197.53/32,no-resolve
+
+# SBS 江原 G1 地方联播媒体主机。
+IP-CIDR,61.82.49.4/32,no-resolve

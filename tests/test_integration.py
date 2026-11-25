@@ -141,6 +141,7 @@ def check_conversion(document):
     for provider in document["rule-providers"]:
         assert any(r.startswith(f"RULE-SET,{provider},") for r in document["rules"])
     groups = {g["name"]: g for g in document["proxy-groups"]}
+    assert "📺 IPTV中转" not in groups
     for name, members in REGION_MEMBERS.items():
         group = groups[name]
         assert group["type"] == "fallback", group

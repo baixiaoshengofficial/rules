@@ -1108,6 +1108,10 @@ DOMAIN-SUFFIX,matureporner.com
 DOMAIN-SUFFIX,fabhairypussy.com
 
 # IPTV 强制地区分流
+# 面包台和 CGTN Rakuten 的入口及媒体主机，均已在香港出口实测。
+DOMAIN,video.bread-tv.com
+DOMAIN,amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv
+
 # 港台电视与香港电台；只匹配专用主机，不接管整个 Akamai。
 DOMAIN,rthktv31-live.akamaized.net
 DOMAIN,rthktv32-live.akamaized.net
