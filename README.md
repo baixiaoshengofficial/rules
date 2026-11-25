@@ -57,15 +57,15 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 ## IPTV 按地区分流（2026-11-25）
 
-主播放列表的 42 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
+主播放列表的 68 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
 
 | 规则文件 | 节点组 | IPTV 线路 |
 | --- | --- | --- |
-| `HkMandatory.list` | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus、凤凰中文 / 资讯。澳视澳门和澳门资讯也走香港，当前配置没有澳门节点 |
-| `TwMandatory.list` | 台湾 | TVBS 欢乐线路、台视新闻、客家电视台 |
-| `JpMandatory.list` | 日本 | NHK WORLD-JAPAN、CGNTV Japan、Weathernews LiVE、GSTV |
-| `IPTV-KR.list` | 韩国 | Arirang、KBS WORLD、KTV、EBS |
-| `IPTV-US.list` | 美国 | Bloomberg TV+ 4K、NBC News NOW、PBS KIDS |
+| `HkMandatory.list` | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus、凤凰中文 / 资讯、ViuTV、Pet Club TV。澳视澳门、澳门资讯和澳门卫星 96 也走香港，当前配置没有澳门节点 |
+| `TwMandatory.list` | 台湾 | TVBS 欢乐线路、台视新闻、客家电视台、人间卫视、大立电视台、CGNTV 中文台、GOOD 2 |
+| `JpMandatory.list` | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台 |
+| `IPTV-KR.list` | 韩国 | Arirang、KBS WORLD、KTV、EBS、ABN、Gugak TV、NBS、OUN、TBS、TV Chosun、国防电视 |
+| `IPTV-US.list` | 美国 | Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台 |
 | `IPTV-Direct.list` | 直连 | 国内 4K 和广东珠江公网线路 |
 | `IPTV-Relay.list` | 📺 IPTV中转 | BreadTV、Love Nature 4K、CGTN 的 Rakuten 公网线路。默认香港，可单独切换 |
 

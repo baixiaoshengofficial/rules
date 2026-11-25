@@ -1128,3 +1128,8 @@ DOMAIN,cdn6.cc.cd
 
 # 当前路由器使用香港出口承接澳广视。
 DOMAIN,live5.tdm.com.mo
+
+# 公开直播补源的入口和媒体主机。
+DOMAIN,10.fast.hidns.vip
+DOMAIN,petclub-samsungaus.amagi.tv
+DOMAIN,php.jdshipin.com

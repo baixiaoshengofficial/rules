@@ -5,3 +5,13 @@ DOMAIN,cache1.cinerama.uz
 
 DOMAIN,hlive.ktv.go.kr
 DOMAIN,ebsonair.ebs.co.kr
+
+# 公开直播补源的入口和媒体主机。
+DOMAIN,cdntv.tbs.seoul.kr
+DOMAIN,live.knou.ac.kr
+DOMAIN,media.joycorp.co.kr
+DOMAIN,mediaworks.dema.mil.kr
+DOMAIN,mgugaklive.nowcdn.co.kr
+DOMAIN,onair.cdn.tvchosun.com
+DOMAIN,onair2.cdn.tvchosun.com
+DOMAIN,vod2.abn.co.kr

@@ -9,3 +9,8 @@ DOMAIN,d2p4mrcwl6ly4.cloudfront.net
 
 DOMAIN,rch01e-alive-hls.akamaized.net
 DOMAIN,japaneast.av.mk.io
+
+# 公开直播补源的入口和媒体主机。
+DOMAIN,d1flvb4iqlercm.cloudfront.net
+DOMAIN,stream3.shopch.jp
+DOMAIN,tv-stream-test.daydreamer-json.cc

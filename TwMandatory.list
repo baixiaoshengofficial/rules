@@ -12,3 +12,9 @@ IP-CIDR,38.64.72.148/32,no-resolve
 # 客家电视台、台视新闻的网络分发主机。
 DOMAIN,h5cul1yar48um3t.wcetv.com
 DOMAIN,live.wcetv.com
+
+# 公开直播补源的入口和媒体主机。
+DOMAIN,5ddce30eb4b55.streamlock.net
+DOMAIN,d3e05csss9c272.cloudfront.net
+DOMAIN,live.streamingfast.net
+DOMAIN,www.dalitv.com.tw
