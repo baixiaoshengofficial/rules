@@ -1,0 +1,545 @@
+{
+  "verified_at": "2026-11-25T21:41:31+08:00",
+  "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
+  "public_streams": 29,
+  "previous_public_streams": 26,
+  "new_public_streams": 3,
+  "exact_domain_rules": 30,
+  "single_ip_rules": 2,
+  "scope": "入口、跳转、已下载分片及主清单显式音轨主机；新规则尚需更新订阅和重载才能应用到家庭路由。",
+  "streams": [
+    {
+      "channel": "苏州4K [公网]",
+      "url": "https://live-auth.51kandianshi.com/szgd/csztv4k_4k.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live-auth.51kandianshi.com",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "美丽河北4K [公网]",
+      "url": "https://event.pull.hebtv.com/live/live101.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "event.pull.hebtv.com",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "Love Nature 4K [公网]",
+      "url": "https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "pb-ehs1glsha1juy.akamaized.net",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "Bloomberg TV+ 4K [公网]",
+      "url": "https://d8975dc3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9CbG9vbWJlcmdUVlBsdXNfSExT/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d8975dc3.wurl.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "湖南卫视4K [公网备用]",
+      "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "hlsal-ldvt.qing.mgtv.com",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "浙江卫视4K [公网备用]",
+      "url": "http://ali-xwl.cztv.com/live/channel4k2160p.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ali-xwl.cztv.com",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "广东珠江HD [EMOS]",
+      "url": "http://r.jdshipin.com/sE5vO",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "2.fast.hidns.vip",
+          "policy": "🎯 全球直连"
+        },
+        {
+          "host": "r.jdshipin.com",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "广东珠江HD [EMOS 2]",
+      "url": "http://218.13.170.98:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "218.13.170.98",
+          "policy": "🎯 全球直连"
+        }
+      ]
+    },
+    {
+      "channel": "TVB翡翠台HD [公网中转]",
+      "url": "https://cdn3.indevs.in/stream/tvb/fct/",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn3.indevs.in",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "港台电视31HD [官方CDN]",
+      "url": "https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthktv31-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "凤凰卫视资讯台HD [公网中转]",
+      "url": "https://cdn.qd.je/163189/fhzx",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn.qd.je",
+          "policy": "📺 IPTV中转"
+        },
+        {
+          "host": "cdn6.cc.cd",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "凤凰卫视中文台HD [公网中转]",
+      "url": "https://cdn.qd.je/163189/fhzw",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn.qd.je",
+          "policy": "📺 IPTV中转"
+        },
+        {
+          "host": "cdn6.cc.cd",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "TVB PlusHD [公网中转]",
+      "url": "https://cdn3.indevs.in/stream/tvb/tvbp/",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn3.indevs.in",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "TVBS欢乐节目线路HD [公网中转]",
+      "url": "http://38.64.72.148/hls/modn/list/4005/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "38.64.72.148",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "NHK WORLD-JAPANHD [官方CDN]",
+      "url": "https://masterpl.hls.nhkworld.jp/hls/w/live/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "masterpl.hls.nhkworld.jp",
+          "policy": "🇯🇵 日本节点"
+        },
+        {
+          "host": "media-tyo.hls.nhkworld.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "Arirang TVHD [官方CDN]",
+      "url": "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amdlive-ch01-ctnd-com.akamaized.net",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "KBS WORLDHD [公网中转]",
+      "url": "https://stream8.cinerama.uz/1448/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cache1.cinerama.uz",
+          "policy": "📺 IPTV中转"
+        },
+        {
+          "host": "stream8.cinerama.uz",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "CGNTVJapanHD [EMOS]",
+      "url": "https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGNWebLiveJP.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d2p4mrcwl6ly4.cloudfront.net",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "BreadTVHD [EMOS]",
+      "url": "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "video.bread-tv.com",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "CGTNHD [EMOS]",
+      "url": "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv",
+          "policy": "📺 IPTV中转"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK第一台 [EMOS]",
+      "url": "https://rthkradio1-live.akamaized.net/hls/live/2035313/radio1/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradio1-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK第二台 [EMOS]",
+      "url": "https://rthkradio2-live.akamaized.net/hls/live/2040078/radio2/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradio2-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK第三台 [EMOS]",
+      "url": "https://rthkradio3-live.akamaized.net/hls/live/2040079/radio3/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradio3-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK第四台 [EMOS]",
+      "url": "https://rthkradio4-live.akamaized.net/hls/live/2040080/radio4/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradio4-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK第五台 [EMOS]",
+      "url": "https://rthkradio5-live.akamaized.net/hls/live/2040081/radio5/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradio5-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "RTHK普通话台 [EMOS]",
+      "url": "https://rthkradiopth-live.akamaized.net/hls/live/2040082/radiopth/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthkradiopth-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "港台电视33",
+      "url": "https://rthktv33-live.akamaized.net/hls/live/2101641/RTHKTV33/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthktv33-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "港台电视32",
+      "url": "https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthktv32-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "港台电视34",
+      "url": "https://rthktv34-live.akamaized.net/hls/live/2101642/RTHKTV34/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rthktv34-live.akamaized.net",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "kind": "DOMAIN",
+      "value": "live-auth.51kandianshi.com",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "event.pull.hebtv.com",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "hlsal-ldvt.qing.mgtv.com",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "ali-xwl.cztv.com",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "r.jdshipin.com",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "2.fast.hidns.vip",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "IP-CIDR",
+      "value": "218.13.170.98/32",
+      "policy": "🎯 全球直连",
+      "file": "IPTV-Direct.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthktv31-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthktv32-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthktv33-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthktv34-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthktv35-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradio1-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradio2-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradio3-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradio4-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradio5-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rthkradiopth-live.akamaized.net",
+      "policy": "🇭🇰 香港节点",
+      "file": "IPTV-HK.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "masterpl.hls.nhkworld.jp",
+      "policy": "🇯🇵 日本节点",
+      "file": "IPTV-JP.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "media-tyo.hls.nhkworld.jp",
+      "policy": "🇯🇵 日本节点",
+      "file": "IPTV-JP.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d2p4mrcwl6ly4.cloudfront.net",
+      "policy": "🇯🇵 日本节点",
+      "file": "IPTV-JP.list"
+    },
+    {
+      "kind": "IP-CIDR",
+      "value": "38.64.72.148/32",
+      "policy": "🇭🇰 台湾节点",
+      "file": "IPTV-TW.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amdlive-ch01-ctnd-com.akamaized.net",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d8975dc3.wurl.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn3.indevs.in",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn.qd.je",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn6.cc.cd",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "stream8.cinerama.uz",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cache1.cinerama.uz",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "video.bread-tv.com",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "pb-ehs1glsha1juy.akamaized.net",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv",
+      "policy": "📺 IPTV中转",
+      "file": "IPTV-Relay.list"
+    }
+  ]
+}

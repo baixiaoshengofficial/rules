@@ -30,7 +30,8 @@ import urllib.request
 
 import yaml
 
-from test_rules import NEGATIVE, POSITIVE, REGION_MEMBERS, ROOT, rules
+from test_rules import (NEGATIVE, POSITIVE, REGION_MEMBERS, ROOT, rules,
+                        IPTV_POLICIES, IPTV_ROUTE_CASES)
 
 OWNER = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/"
 GOOGLE_EXCEPTIONS = ["dl.google.com", "dl.l.google.com", "time.google.com"]
@@ -344,6 +345,10 @@ def runtime_checks(document, mihomo, directory, label):
         fixture_hosts += ["fast.com", "api.fast.com", "www.netflix.com",
                           "www.disneyplus.com", "disneyplus.com", "media-probe.example.org"]
         fixture_hosts += DIRECT_EXCEPTIONS
+        fixture_hosts += [host for host, _ in IPTV_ROUTE_CASES
+                          if not host[0].isdigit()]
+        fixture_hosts += [row.split(",")[1] for name in IPTV_POLICIES for row in rules(name)
+                          if row.startswith("DOMAIN,")]
         document["hosts"] = {host: "203.0.113.250" for host in fixture_hosts}
         runtime_path = work / "runtime.yaml"
         runtime_path.write_text(yaml.safe_dump(document, allow_unicode=True))
@@ -438,6 +443,13 @@ def probe_routes(port, log, sink_port, results_path):
     tcp("media-probe.example.org", group="🎬 国外流媒体")
     for host in DIRECT_EXCEPTIONS:
         tcp(host, group="🎯 全球直连")
+    for name, policy in IPTV_POLICIES.items():
+        for row in rules(name):
+            if row.startswith("DOMAIN,"):
+                tcp(row.split(",")[1], group=policy)
+    for host, policy in IPTV_ROUTE_CASES:
+        if host[0].isdigit():
+            tcp(host, group=policy)
     for host in NEGATIVE["Google.list"]:
         tcp(host, excluded_group="🎵 Google")
     download_hosts = POSITIVE["Download.list"] + [row.split(",")[1] for row in rules("Download.list")]

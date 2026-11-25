@@ -1,0 +1,8 @@
+# 国内公网电视与当前广东珠江中转；不把国内直播绕到境外。
+DOMAIN,live-auth.51kandianshi.com
+DOMAIN,event.pull.hebtv.com
+DOMAIN,hlsal-ldvt.qing.mgtv.com
+DOMAIN,ali-xwl.cztv.com
+DOMAIN,r.jdshipin.com
+DOMAIN,2.fast.hidns.vip
+IP-CIDR,218.13.170.98/32,no-resolve

@@ -17,6 +17,7 @@ REGION_MEMBERS = {
     "🇭🇰 香港节点": ["HK-01", "🇭🇰 香港 02 hkl", "🇭🇰 03", "Hong Kong 04"],
     "🇭🇰 台湾节点": ["TW-01", "🇹🇼 台湾 02 twl", "🇹🇼 03", "Taiwan 04"],
     "🇯🇵 日本节点": ["JP-01", "🇯🇵 日本 02 jpl", "🇯🇵 03", "Japan Tokyo 04"],
+    "🇰🇷 韩国节点": ["KR-01", "🇰🇷 韩国 02", "🇰🇷 03", "Korea Seoul 04"],
     "🇸🇬 新加坡节点": ["SG-01", "新加坡 02 sgoracle", "🇸🇬 03", "Singapore 04"],
     "🇺🇲 美国节点": ["US-01", "美国 ATT 家宽", "🇺🇸 03", "United States 04"],
     "🌐 其他地区": ["DE-01", "英国 UK-02", "🇩🇪 03", "Germany 04"],
@@ -40,6 +41,35 @@ def matches(name, host):
         if kind == "DOMAIN-REGEX" and re.search(value, host):
             return True
     return False
+
+
+IPTV_POLICIES = {
+    "IPTV-Direct.list": "🎯 全球直连",
+    "IPTV-HK.list": "🇭🇰 香港节点",
+    "IPTV-JP.list": "🇯🇵 日本节点",
+    "IPTV-TW.list": "🇭🇰 台湾节点",
+    "IPTV-KR.list": "🇰🇷 韩国节点",
+    "IPTV-US.list": "🇺🇲 美国节点",
+    "IPTV-Relay.list": "📺 IPTV中转",
+}
+
+IPTV_ROUTE_CASES = [
+    ("rthktv32-live.akamaized.net", "🇭🇰 香港节点"),
+    ("rthkradio2-live.akamaized.net", "🇭🇰 香港节点"),
+    ("masterpl.hls.nhkworld.jp", "🇯🇵 日本节点"),
+    ("media-tyo.hls.nhkworld.jp", "🇯🇵 日本节点"),
+    ("d2p4mrcwl6ly4.cloudfront.net", "🇯🇵 日本节点"),
+    ("amdlive-ch01-ctnd-com.akamaized.net", "🇰🇷 韩国节点"),
+    ("d8975dc3.wurl.com", "🇺🇲 美国节点"),
+    ("cdn3.indevs.in", "📺 IPTV中转"),
+    ("cdn.qd.je", "📺 IPTV中转"),
+    ("cdn6.cc.cd", "📺 IPTV中转"),
+    ("stream8.cinerama.uz", "📺 IPTV中转"),
+    ("cache1.cinerama.uz", "📺 IPTV中转"),
+    ("38.64.72.148", "🇭🇰 台湾节点"),
+    ("2.fast.hidns.vip", "🎯 全球直连"),
+    ("218.13.170.98", "🎯 全球直连"),
+]
 
 
 POSITIVE = {
@@ -144,6 +174,47 @@ NEGATIVE = {
 
 
 class RuleTests(unittest.TestCase):
+    def test_iptv_regions_and_boundaries(self):
+        config = tomllib.loads((ROOT / "baixiaosheng.toml").read_text())
+        positions = {}
+        entries = {}
+        for i, row in enumerate(config["rulesets"]):
+            filename = row["ruleset"].rsplit("/", 1)[-1]
+            if filename in IPTV_POLICIES:
+                self.assertEqual(row["group"], IPTV_POLICIES[filename])
+                positions[filename] = i
+                for rule in rules(filename):
+                    kind, value, *_ = rule.split(",")
+                    self.assertIn(kind, ("DOMAIN", "IP-CIDR"))
+                    self.assertNotIn((kind, value), entries, "Conflicting IPTV routes")
+                    entries[kind, value] = row["group"]
+        self.assertEqual(set(positions), set(IPTV_POLICIES))
+        sources = [row["ruleset"] for row in config["rulesets"]]
+        download = next(i for i, s in enumerate(sources) if s.endswith("/rules/main/Download.list"))
+        broad = next(i for i, s in enumerate(sources) if s.endswith("/JpMandatory.list"))
+        for index in positions.values():
+            self.assertLess(download, index)
+            self.assertLess(index, broad)
+        for host, policy in IPTV_ROUTE_CASES:
+            matched = entries.get(("DOMAIN", host))
+            if matched is None:
+                address = ipaddress.ip_address(host)
+                matched = next((p for (kind, network), p in entries.items()
+                                if kind == "IP-CIDR" and address in ipaddress.ip_network(network)), None)
+            self.assertEqual(matched, policy, host)
+        for host in ("unrelated.akamaized.net", "other.cloudfront.net", "other.wurl.com",
+                     "other.cinerama.uz", "cdn6.cc.cd.example.org", "notcdn3.indevs.in"):
+            for name in IPTV_POLICIES:
+                self.assertFalse(matches(name, host), (name, host))
+        networks = [ipaddress.ip_network(v) for kind, v in entries if kind == "IP-CIDR"]
+        self.assertTrue(all(n.prefixlen == 32 for n in networks))
+        for address in ("38.64.72.149", "218.13.170.99", "192.168.100.252", "233.18.204.1"):
+            self.assertFalse(any(ipaddress.ip_address(address) in n for n in networks))
+        groups = {g["name"]: g for g in config["custom_groups"]}
+        self.assertEqual(groups["📺 IPTV中转"]["rule"][0], "[]🇭🇰 香港节点")
+        self.assertEqual(groups["🇰🇷 韩国节点"]["type"], "fallback")
+        self.assertEqual(groups["🇰🇷 韩国节点"]["rule"][-1], "[]REJECT")
+
     def test_list_syntax_and_duplicates(self):
         for path in ROOT.glob("*.list"):
             entries = rules(path.name)

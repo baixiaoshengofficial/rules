@@ -17,62 +17,62 @@ rule = [".*"]
 [[custom_groups]]
 name = "🚀 节点选择"
 type = "select"
-rule = ["[]🐸 手动切换", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🇭🇰 香港均衡", "[]🇯🇵 日本均衡", "[]🇭🇰 TW均衡", "[]🇸🇬 SG均衡", "[]♻️ 自动选择", "[]DIRECT"]
+rule = ["[]🐸 手动切换", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🇭🇰 香港均衡", "[]🇯🇵 日本均衡", "[]🇭🇰 TW均衡", "[]🇸🇬 SG均衡", "[]♻️ 自动选择", "[]DIRECT"]
 
 [[custom_groups]]
 name = "📦 下载节点"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🤖 AI"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🪟 Microsoft"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🍎 Apple"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "♻️ Speedtest"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎵 Google"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎵 TikTok"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎥 Netflix"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]🎥 奈飞节点", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]🎥 奈飞节点", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎮 游戏"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎬 国外流媒体"
 type = "select"
-rule = ["[]🌍 国外媒体", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🌍 国外媒体", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🌍 国外媒体"
 type = "select"
-rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+rule = ["[]🚀 节点选择", "[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
 
 [[custom_groups]]
 name = "🎞️ 国内媒体"
@@ -120,6 +120,11 @@ type = "select"
 rule = ["(?i)(家宽|住宅|(^|[^A-Za-z])(ATT|HGC|HKBN|Alice|home)([^A-Za-z]|$))", "[]REJECT"]
 
 [[custom_groups]]
+name = "📺 IPTV中转"
+type = "select"
+rule = ["[]🇭🇰 香港节点", "[]🇭🇰 台湾节点", "[]🇯🇵 日本节点", "[]🇰🇷 韩国节点", "[]🇸🇬 新加坡节点", "[]🇺🇲 美国节点", "[]🌐 其他地区", "[]🏡 家宽节点", "[]🐸 手动切换", "[]DIRECT"]
+
+[[custom_groups]]
 name = "🇭🇰 香港节点"
 type = "fallback"
 url = "https://cp.cloudflare.com/generate_204"
@@ -139,6 +144,13 @@ type = "fallback"
 url = "https://cp.cloudflare.com/generate_204"
 interval = 60
 rule = ["(?i)(日本|🇯🇵|japan|tokyo|osaka|(^|[^A-Za-z])JP([^A-Za-z]|$)|jpl$)", "[]REJECT"]
+
+[[custom_groups]]
+name = "🇰🇷 韩国节点"
+type = "fallback"
+url = "https://cp.cloudflare.com/generate_204"
+interval = 60
+rule = ["(?i)(韩国|韓國|南韩|南韓|🇰🇷|korea|seoul|(^|[^A-Za-z])KR([^A-Za-z]|$))", "[]REJECT"]
 
 [[custom_groups]]
 name = "🇸🇬 新加坡节点"
@@ -265,6 +277,34 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEas
 [[rulesets]]
 group = "📦 下载节点"
 ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/Download.list"
+
+[[rulesets]]
+group = "🎯 全球直连"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-Direct.list"
+
+[[rulesets]]
+group = "🇭🇰 香港节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-HK.list"
+
+[[rulesets]]
+group = "🇯🇵 日本节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-JP.list"
+
+[[rulesets]]
+group = "🇭🇰 台湾节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-TW.list"
+
+[[rulesets]]
+group = "🇰🇷 韩国节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-KR.list"
+
+[[rulesets]]
+group = "🇺🇲 美国节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-US.list"
+
+[[rulesets]]
+group = "📺 IPTV中转"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-Relay.list"
 
 [[rulesets]]
 group = "🇯🇵 日本节点"

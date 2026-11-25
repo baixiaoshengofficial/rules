@@ -55,6 +55,30 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 `fast.com` 及其子域单独走 `♻️ Speedtest`，优先于 UDP/443 规则。
 
+## IPTV 按地区分流（2026-11-25）
+
+为 [shtelcomiptv 主播放列表](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/shtelconiptv.m3u) 增加七份规则集，覆盖当前公网源的入口、重定向及已观察到的视频/音频分片主机。规则放在下载规则之后、通用地区和媒体规则之前；最前面的局域网规则继续保护家庭组播代理。
+
+| 文件 | 出口 | 范围 |
+| --- | --- | --- |
+| `IPTV-HK.list` | 香港节点 | 港台电视 31–35、香港电台六路广播的专用主机 |
+| `IPTV-JP.list` | 日本节点 | NHK WORLD-JAPAN 入口及分离音视频主机、CGNTV Japan |
+| `IPTV-TW.list` | 台湾节点 | TVBS 欢乐节目中转当前的单一 IP |
+| `IPTV-KR.list` | 新增韩国节点组 | Arirang 专用直播主机 |
+| `IPTV-US.list` | 美国节点 | Bloomberg TV+ 4K 当前 Wurl 主机 |
+| `IPTV-Relay.list` | 新增 `📺 IPTV中转`，默认香港 | TVB/凤凰/KBS 公共中转、BreadTV、Love Nature、CGTN 国际线路 |
+| `IPTV-Direct.list` | 直连 | 苏州、河北、湖南、浙江 4K 和广东珠江公网线路 |
+
+只使用精确 `DOMAIN` 和两条 `/32,no-resolve` IP 规则，没有把 `akamaized.net`、`cloudfront.net`、`wurl.com` 等共享域名整体交给某地区。凤凰的 `cdn.qd.je` → `cdn6.cc.cd`、KBS 的 `stream8.cinerama.uz` → `cache1.cinerama.uz` 均覆盖。域名分流不能区分同一中转主机上的频道或 URL 路径；裸 IP 规则也会影响该 IP 上其他流量。
+
+韩国组沿用 60 秒检查和无匹配节点时 `REJECT` 的行为。`📺 IPTV中转` 可独立切换地区或直连，避免调整电视线路时改变通用出口。地区名称按现有配置保留，包括台湾组现有的 emoji。
+
+发布后需要在 Nikki/OpenClash **更新订阅，再重载配置**，让 Subconverter 展开新的七份 `.list`。它们不是原生定时 provider，仅刷新旧 provider 缓存不会加载此次改动。在面板确认有 `📺 IPTV中转` 和 `🇰🇷 韩国节点`，再重新打开播放器连接。
+
+已对原有 26 条公网线路下载媒体并解码：25 条首轮通过，香港电台第二台一次 TLS 超时后复测通过。港台电视 32、33、34 也通过两轮媒体解码和画面核对，已补入 IPTV 仓库；33、34 分别是央视一套和 CGTN Documentary 的转播线路。35 台虽然入口 HTTP 探测成功，但后续媒体清单返回 404，因此没有加入播放列表。
+
+地区出口 HTTP 探测中，NHK 日本节点响应约 60 ms、直连约 319 ms；Arirang 韩国节点约 61 ms、直连约 223 ms。这些是当次 HTTP 健康探测，不能代表视频吞吐、长时间稳定性或所有频道都会加速。未把新订阅部署到路由器，也未切换全局模式或现有策略选择。媒体测试及当前连接证据见 [IPTV 验证报告](reports/iptv-validation.md)。
+
 ## Google 分组边界
 
 `Google.list` 合并 Google、GoogleCN、FCM 和 YouTube，统一交给 `🎵 Google`；
