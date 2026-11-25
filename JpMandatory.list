@@ -14,3 +14,8 @@ DOMAIN,japaneast.av.mk.io
 DOMAIN,d1flvb4iqlercm.cloudfront.net
 DOMAIN,stream3.shopch.jp
 DOMAIN,tv-stream-test.daydreamer-json.cc
+
+# 2026-11-26 补源的入口和媒体主机。
+DOMAIN,amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv
+DOMAIN,cdn-apne1.tsv2.amagi.tv
+DOMAIN,livetv.fastv.jp

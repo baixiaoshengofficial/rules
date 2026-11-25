@@ -1,8 +1,8 @@
 {
   "mihomo": "v1.19.34",
   "subconverter": "v0.9.0-a0d4eab",
-  "full_suite_route_probes": 852,
-  "unique_iptv_targets_per_config": 70,
+  "full_suite_route_probes": 878,
+  "unique_iptv_targets_per_config": 83,
   "scope": "真实转换器及 Mihomo 隔离测试，出口为本地测试接收端。",
   "routes": {
     "ini": [
@@ -12,7 +12,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.598821000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62506 --> live-auth.51kandianshi.com:443 match Domain(live-auth.51kandianshi.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.365228000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52439 --> live-auth.51kandianshi.com:443 match Domain(live-auth.51kandianshi.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -20,7 +20,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.656757000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62508 --> event.pull.hebtv.com:443 match Domain(event.pull.hebtv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.426997000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52441 --> event.pull.hebtv.com:443 match Domain(event.pull.hebtv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -28,7 +28,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.711986000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62510 --> hlsal-ldvt.qing.mgtv.com:443 match Domain(hlsal-ldvt.qing.mgtv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.476417000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52443 --> hlsal-ldvt.qing.mgtv.com:443 match Domain(hlsal-ldvt.qing.mgtv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -36,7 +36,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.769173000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62512 --> ali-xwl.cztv.com:443 match Domain(ali-xwl.cztv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.538676000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52445 --> ali-xwl.cztv.com:443 match Domain(ali-xwl.cztv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -44,7 +44,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.831564000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62514 --> r.jdshipin.com:443 match Domain(r.jdshipin.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.597199000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52447 --> r.jdshipin.com:443 match Domain(r.jdshipin.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -52,7 +52,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.896145000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62516 --> 2.fast.hidns.vip:443 match Domain(2.fast.hidns.vip) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.659976000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52449 --> 2.fast.hidns.vip:443 match Domain(2.fast.hidns.vip) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -60,7 +60,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:26.946674000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62518 --> 218.13.170.98:443 match IPCIDR(218.13.170.98/32) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.720885000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52451 --> 218.13.170.98:443 match IPCIDR(218.13.170.98/32) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -68,7 +68,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.014036000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62520 --> rthktv31-live.akamaized.net:443 match Domain(rthktv31-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.781272000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52453 --> rthktv31-live.akamaized.net:443 match Domain(rthktv31-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -76,7 +76,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.069810000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62523 --> rthktv32-live.akamaized.net:443 match Domain(rthktv32-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.833087000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52455 --> rthktv32-live.akamaized.net:443 match Domain(rthktv32-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -84,7 +84,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.136382000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62525 --> rthktv33-live.akamaized.net:443 match Domain(rthktv33-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.895986000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52457 --> rthktv33-live.akamaized.net:443 match Domain(rthktv33-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -92,7 +92,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.204022000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62527 --> rthktv34-live.akamaized.net:443 match Domain(rthktv34-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:50.950354000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52459 --> rthktv34-live.akamaized.net:443 match Domain(rthktv34-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -100,7 +100,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.257149000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62529 --> rthktv35-live.akamaized.net:443 match Domain(rthktv35-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.016807000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52461 --> rthktv35-live.akamaized.net:443 match Domain(rthktv35-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -108,7 +108,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.317066000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62531 --> rthkradio1-live.akamaized.net:443 match Domain(rthkradio1-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.076032000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52463 --> rthkradio1-live.akamaized.net:443 match Domain(rthkradio1-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -116,7 +116,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.370273000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62533 --> rthkradio2-live.akamaized.net:443 match Domain(rthkradio2-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.132900000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52465 --> rthkradio2-live.akamaized.net:443 match Domain(rthkradio2-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -124,7 +124,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.434049000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62535 --> rthkradio3-live.akamaized.net:443 match Domain(rthkradio3-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.189436000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52467 --> rthkradio3-live.akamaized.net:443 match Domain(rthkradio3-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -132,7 +132,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.498734000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62537 --> rthkradio4-live.akamaized.net:443 match Domain(rthkradio4-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.247535000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52469 --> rthkradio4-live.akamaized.net:443 match Domain(rthkradio4-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -140,7 +140,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.557807000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62539 --> rthkradio5-live.akamaized.net:443 match Domain(rthkradio5-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.305351000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52471 --> rthkradio5-live.akamaized.net:443 match Domain(rthkradio5-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -148,7 +148,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.622497000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62541 --> rthkradiopth-live.akamaized.net:443 match Domain(rthkradiopth-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.361881000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52473 --> rthkradiopth-live.akamaized.net:443 match Domain(rthkradiopth-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -156,7 +156,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.681950000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62543 --> cdn3.indevs.in:443 match Domain(cdn3.indevs.in) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.428552000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52475 --> cdn3.indevs.in:443 match Domain(cdn3.indevs.in) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -164,7 +164,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.738970000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62545 --> cdn.qd.je:443 match Domain(cdn.qd.je) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.490631000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52478 --> cdn.qd.je:443 match Domain(cdn.qd.je) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -172,7 +172,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.795799000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62547 --> cdn6.cc.cd:443 match Domain(cdn6.cc.cd) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.551168000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52480 --> cdn6.cc.cd:443 match Domain(cdn6.cc.cd) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -180,7 +180,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.848223000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62549 --> live5.tdm.com.mo:443 match Domain(live5.tdm.com.mo) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.607969000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52484 --> live5.tdm.com.mo:443 match Domain(live5.tdm.com.mo) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -188,7 +188,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.910349000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62551 --> 10.fast.hidns.vip:443 match Domain(10.fast.hidns.vip) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.667290000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52486 --> 10.fast.hidns.vip:443 match Domain(10.fast.hidns.vip) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -196,7 +196,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:27.970139000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62553 --> petclub-samsungaus.amagi.tv:443 match Domain(petclub-samsungaus.amagi.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.735276000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52488 --> petclub-samsungaus.amagi.tv:443 match Domain(petclub-samsungaus.amagi.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -204,7 +204,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:28.028973000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62555 --> php.jdshipin.com:443 match Domain(php.jdshipin.com) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.793246000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52490 --> php.jdshipin.com:443 match Domain(php.jdshipin.com) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -212,7 +212,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:28.086149000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62557 --> hoytv-live-stream.hoy.tv:443 match Domain(hoytv-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.846874000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52493 --> hoytv-live-stream.hoy.tv:443 match Domain(hoytv-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -220,7 +220,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:28.145706000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62559 --> ch77-live-stream.hoy.tv:443 match Domain(ch77-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.902903000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52495 --> ch77-live-stream.hoy.tv:443 match Domain(ch77-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -228,7 +228,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.211214000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62561 --> masterpl.hls.nhkworld.jp:443 match Domain(masterpl.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:51.962273000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52498 --> masterpl.hls.nhkworld.jp:443 match Domain(masterpl.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -236,7 +236,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.269824000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62563 --> media-tyo.hls.nhkworld.jp:443 match Domain(media-tyo.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.028988000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52500 --> media-tyo.hls.nhkworld.jp:443 match Domain(media-tyo.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -244,7 +244,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.334231000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62565 --> d2p4mrcwl6ly4.cloudfront.net:443 match Domain(d2p4mrcwl6ly4.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.087389000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52503 --> d2p4mrcwl6ly4.cloudfront.net:443 match Domain(d2p4mrcwl6ly4.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -252,7 +252,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.401923000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62567 --> rch01e-alive-hls.akamaized.net:443 match Domain(rch01e-alive-hls.akamaized.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.149391000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52505 --> rch01e-alive-hls.akamaized.net:443 match Domain(rch01e-alive-hls.akamaized.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -260,7 +260,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.457198000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62569 --> japaneast.av.mk.io:443 match Domain(japaneast.av.mk.io) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.212223000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52508 --> japaneast.av.mk.io:443 match Domain(japaneast.av.mk.io) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -268,7 +268,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.523001000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62571 --> d1flvb4iqlercm.cloudfront.net:443 match Domain(d1flvb4iqlercm.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.272997000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52511 --> d1flvb4iqlercm.cloudfront.net:443 match Domain(d1flvb4iqlercm.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -276,7 +276,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.574621000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62573 --> stream3.shopch.jp:443 match Domain(stream3.shopch.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.335313000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52514 --> stream3.shopch.jp:443 match Domain(stream3.shopch.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -284,7 +284,31 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:28.637774000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62575 --> tv-stream-test.daydreamer-json.cc:443 match Domain(tv-stream-test.daydreamer-json.cc) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.395144000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52516 --> tv-stream-test.daydreamer-json.cc:443 match Domain(tv-stream-test.daydreamer-json.cc) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:58:52.454940000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52518 --> amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv:443 match Domain(amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "cdn-apne1.tsv2.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:58:52.516465000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52520 --> cdn-apne1.tsv2.amagi.tv:443 match Domain(cdn-apne1.tsv2.amagi.tv) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "livetv.fastv.jp",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:58:52.578469000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52528 --> livetv.fastv.jp:443 match Domain(livetv.fastv.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -292,7 +316,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:28.699934000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62577 --> 38.64.72.148:443 match IPCIDR(38.64.72.148/32) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.633988000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52530 --> 38.64.72.148:443 match IPCIDR(38.64.72.148/32) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -300,7 +324,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:28.756871000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62579 --> h5cul1yar48um3t.wcetv.com:443 match Domain(h5cul1yar48um3t.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.685186000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52532 --> h5cul1yar48um3t.wcetv.com:443 match Domain(h5cul1yar48um3t.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -308,7 +332,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:28.815682000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62581 --> live.wcetv.com:443 match Domain(live.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.753145000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52535 --> live.wcetv.com:443 match Domain(live.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -316,7 +340,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:28.875292000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62583 --> 5ddce30eb4b55.streamlock.net:443 match Domain(5ddce30eb4b55.streamlock.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.816636000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52538 --> 5ddce30eb4b55.streamlock.net:443 match Domain(5ddce30eb4b55.streamlock.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -324,7 +348,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:28.935181000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62585 --> d3e05csss9c272.cloudfront.net:443 match Domain(d3e05csss9c272.cloudfront.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.868286000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52540 --> d3e05csss9c272.cloudfront.net:443 match Domain(d3e05csss9c272.cloudfront.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -332,7 +356,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:29.000681000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62587 --> live.streamingfast.net:443 match Domain(live.streamingfast.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.935215000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52544 --> live.streamingfast.net:443 match Domain(live.streamingfast.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -340,7 +364,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:29.062611000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62589 --> www.dalitv.com.tw:443 match Domain(www.dalitv.com.tw) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:52.995577000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52547 --> www.dalitv.com.tw:443 match Domain(www.dalitv.com.tw) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -348,7 +372,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:29.120899000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62591 --> streamipcfapp.akamaized.net:443 match Domain(streamipcfapp.akamaized.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.060717000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52549 --> streamipcfapp.akamaized.net:443 match Domain(streamipcfapp.akamaized.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -356,7 +380,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.187961000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62593 --> amdlive-ch01-ctnd-com.akamaized.net:443 match Domain(amdlive-ch01-ctnd-com.akamaized.net) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.118570000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52553 --> amdlive-ch01-ctnd-com.akamaized.net:443 match Domain(amdlive-ch01-ctnd-com.akamaized.net) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -364,7 +388,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.241071000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62595 --> stream8.cinerama.uz:443 match Domain(stream8.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.170440000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52556 --> stream8.cinerama.uz:443 match Domain(stream8.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -372,7 +396,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.305153000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62597 --> cache1.cinerama.uz:443 match Domain(cache1.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.231381000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52558 --> cache1.cinerama.uz:443 match Domain(cache1.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -380,7 +404,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.371074000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62599 --> hlive.ktv.go.kr:443 match Domain(hlive.ktv.go.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.296059000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52560 --> hlive.ktv.go.kr:443 match Domain(hlive.ktv.go.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -388,7 +412,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.432491000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62601 --> ebsonair.ebs.co.kr:443 match Domain(ebsonair.ebs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.358312000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52562 --> ebsonair.ebs.co.kr:443 match Domain(ebsonair.ebs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -396,7 +420,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.491225000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62603 --> cdntv.tbs.seoul.kr:443 match Domain(cdntv.tbs.seoul.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.421851000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52564 --> cdntv.tbs.seoul.kr:443 match Domain(cdntv.tbs.seoul.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -404,7 +428,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.553079000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62605 --> live.knou.ac.kr:443 match Domain(live.knou.ac.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.476978000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52566 --> live.knou.ac.kr:443 match Domain(live.knou.ac.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -412,7 +436,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.603697000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62607 --> media.joycorp.co.kr:443 match Domain(media.joycorp.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.531508000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52568 --> media.joycorp.co.kr:443 match Domain(media.joycorp.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -420,7 +444,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.670336000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62609 --> mediaworks.dema.mil.kr:443 match Domain(mediaworks.dema.mil.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.594258000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52570 --> mediaworks.dema.mil.kr:443 match Domain(mediaworks.dema.mil.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -428,7 +452,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.734894000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62611 --> mgugaklive.nowcdn.co.kr:443 match Domain(mgugaklive.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.655313000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52572 --> mgugaklive.nowcdn.co.kr:443 match Domain(mgugaklive.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -436,7 +460,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.796958000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62613 --> onair.cdn.tvchosun.com:443 match Domain(onair.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.718431000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52574 --> onair.cdn.tvchosun.com:443 match Domain(onair.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -444,7 +468,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.855190000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62615 --> onair2.cdn.tvchosun.com:443 match Domain(onair2.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.772792000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52576 --> onair2.cdn.tvchosun.com:443 match Domain(onair2.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -452,7 +476,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.919118000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62617 --> vod2.abn.co.kr:443 match Domain(vod2.abn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.831611000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52578 --> vod2.abn.co.kr:443 match Domain(vod2.abn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -460,7 +484,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:29.984764000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62619 --> 61.85.197.53:443 match IPCIDR(61.85.197.53/32) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.887771000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52580 --> 61.85.197.53:443 match IPCIDR(61.85.197.53/32) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -468,7 +492,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.045776000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62621 --> d8975dc3.wurl.com:443 match Domain(d8975dc3.wurl.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:53.952502000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52582 --> d8975dc3.wurl.com:443 match Domain(d8975dc3.wurl.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -476,7 +500,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.103351000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62623 --> d1si3n1st4nkgb.cloudfront.net:443 match Domain(d1si3n1st4nkgb.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.015593000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52584 --> d1si3n1st4nkgb.cloudfront.net:443 match Domain(d1si3n1st4nkgb.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -484,7 +508,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.168224000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62625 --> sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com:443 match Domain(sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.070527000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52586 --> sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com:443 match Domain(sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -492,7 +516,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.224293000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62627 --> livestream.pbskids.org:443 match Domain(livestream.pbskids.org) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.131579000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52588 --> livestream.pbskids.org:443 match Domain(livestream.pbskids.org) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -500,7 +524,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.285594000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62629 --> 2-fss-1.streamhoster.com:443 match Domain(2-fss-1.streamhoster.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.196475000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52590 --> 2-fss-1.streamhoster.com:443 match Domain(2-fss-1.streamhoster.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -508,7 +532,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.337280000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62631 --> amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv:443 match Domain(amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.252535000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52592 --> amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv:443 match Domain(amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -516,7 +540,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.402053000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62633 --> amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv:443 match Domain(amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.313107000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52594 --> amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv:443 match Domain(amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -524,7 +548,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.463768000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62635 --> amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv:443 match Domain(amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.371359000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52596 --> amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv:443 match Domain(amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -532,7 +556,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.523455000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62637 --> amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv:443 match Domain(amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.436026000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52598 --> amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv:443 match Domain(amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -540,7 +564,87 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:30.582914000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62639 --> cdn-uw2-prod.tsv2.amagi.tv:443 match Domain(cdn-uw2-prod.tsv2.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:58:54.496884000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52600 --> cdn-uw2-prod.tsv2.amagi.tv:443 match Domain(cdn-uw2-prod.tsv2.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "aka-live1050.delivery.roku.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.562902000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52602 --> aka-live1050.delivery.roku.com:443 match Domain(aka-live1050.delivery.roku.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.627577000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52604 --> amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv:443 match Domain(amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.678979000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52606 --> amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv:443 match Domain(amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3hqevbyoxtkoi.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.746482000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52608 --> d3hqevbyoxtkoi.cloudfront.net:443 match Domain(d3hqevbyoxtkoi.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3mr43kyql7wgk.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.801408000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52610 --> d3mr43kyql7wgk.cloudfront.net:443 match Domain(d3mr43kyql7wgk.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.858427000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52612 --> ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com:443 match Domain(ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "hls-kmosdt.lls.cdn.pbs.org",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.914499000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52614 --> hls-kmosdt.lls.cdn.pbs.org:443 match Domain(hls-kmosdt.lls.cdn.pbs.org) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "linear-859.frequency.stream",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:54.978355000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52616 --> linear-859.frequency.stream:443 match Domain(linear-859.frequency.stream) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "sk.delivery.roku.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:55.043067000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52618 --> sk.delivery.roku.com:443 match Domain(sk.delivery.roku.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "tgn.bozztv.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:58:55.110432000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52620 --> tgn.bozztv.com:443 match Domain(tgn.bozztv.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -548,7 +652,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:30.646925000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62641 --> video.bread-tv.com:443 match Domain(video.bread-tv.com) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:55.165212000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52622 --> video.bread-tv.com:443 match Domain(video.bread-tv.com) using 📺 IPTV中转[HK-01]\""
       },
       {
         "network": "tcp",
@@ -556,7 +660,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:30.709325000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62643 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:55.230617000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52624 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 📺 IPTV中转[HK-01]\""
       },
       {
         "network": "tcp",
@@ -564,7 +668,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:30.770788000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62645 --> amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv:443 match Domain(amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:58:55.286756000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52626 --> amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv:443 match Domain(amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv) using 📺 IPTV中转[HK-01]\""
       }
     ],
     "toml": [
@@ -574,7 +678,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.656056000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63432 --> live-auth.51kandianshi.com:443 match Domain(live-auth.51kandianshi.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.274918000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53412 --> live-auth.51kandianshi.com:443 match Domain(live-auth.51kandianshi.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -582,7 +686,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.719576000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63434 --> event.pull.hebtv.com:443 match Domain(event.pull.hebtv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.330532000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53414 --> event.pull.hebtv.com:443 match Domain(event.pull.hebtv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -590,7 +694,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.777317000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63436 --> hlsal-ldvt.qing.mgtv.com:443 match Domain(hlsal-ldvt.qing.mgtv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.392931000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53416 --> hlsal-ldvt.qing.mgtv.com:443 match Domain(hlsal-ldvt.qing.mgtv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -598,7 +702,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.837769000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63438 --> ali-xwl.cztv.com:443 match Domain(ali-xwl.cztv.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.440851000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53418 --> ali-xwl.cztv.com:443 match Domain(ali-xwl.cztv.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -606,7 +710,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.893032000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63440 --> r.jdshipin.com:443 match Domain(r.jdshipin.com) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.495720000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53420 --> r.jdshipin.com:443 match Domain(r.jdshipin.com) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -614,7 +718,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:53.945282000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63442 --> 2.fast.hidns.vip:443 match Domain(2.fast.hidns.vip) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.557020000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53422 --> 2.fast.hidns.vip:443 match Domain(2.fast.hidns.vip) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -622,7 +726,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🎯 全球直连",
-        "evidence": "time=\"2026-11-26T00:01:54.006241000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63444 --> 218.13.170.98:443 match IPCIDR(218.13.170.98/32) using 🎯 全球直连[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.609587000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53424 --> 218.13.170.98:443 match IPCIDR(218.13.170.98/32) using 🎯 全球直连[HK-01]\""
       },
       {
         "network": "tcp",
@@ -630,7 +734,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.067516000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63446 --> rthktv31-live.akamaized.net:443 match Domain(rthktv31-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.668614000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53427 --> rthktv31-live.akamaized.net:443 match Domain(rthktv31-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -638,7 +742,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.127908000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63448 --> rthktv32-live.akamaized.net:443 match Domain(rthktv32-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.728998000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53430 --> rthktv32-live.akamaized.net:443 match Domain(rthktv32-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -646,7 +750,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.186278000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63450 --> rthktv33-live.akamaized.net:443 match Domain(rthktv33-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.788921000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53432 --> rthktv33-live.akamaized.net:443 match Domain(rthktv33-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -654,7 +758,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.248675000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63452 --> rthktv34-live.akamaized.net:443 match Domain(rthktv34-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.852799000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53434 --> rthktv34-live.akamaized.net:443 match Domain(rthktv34-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -662,7 +766,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.306426000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63454 --> rthktv35-live.akamaized.net:443 match Domain(rthktv35-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.912393000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53436 --> rthktv35-live.akamaized.net:443 match Domain(rthktv35-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -670,7 +774,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.374941000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63456 --> rthkradio1-live.akamaized.net:443 match Domain(rthkradio1-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:18.971850000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53438 --> rthkradio1-live.akamaized.net:443 match Domain(rthkradio1-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -678,7 +782,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.432343000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63463 --> rthkradio2-live.akamaized.net:443 match Domain(rthkradio2-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.032242000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53440 --> rthkradio2-live.akamaized.net:443 match Domain(rthkradio2-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -686,7 +790,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.499669000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63466 --> rthkradio3-live.akamaized.net:443 match Domain(rthkradio3-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.095873000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53442 --> rthkradio3-live.akamaized.net:443 match Domain(rthkradio3-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -694,7 +798,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.562052000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63469 --> rthkradio4-live.akamaized.net:443 match Domain(rthkradio4-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.159199000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53444 --> rthkradio4-live.akamaized.net:443 match Domain(rthkradio4-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -702,7 +806,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.624790000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63471 --> rthkradio5-live.akamaized.net:443 match Domain(rthkradio5-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.217061000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53446 --> rthkradio5-live.akamaized.net:443 match Domain(rthkradio5-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -710,7 +814,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.687718000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63473 --> rthkradiopth-live.akamaized.net:443 match Domain(rthkradiopth-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.276602000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53448 --> rthkradiopth-live.akamaized.net:443 match Domain(rthkradiopth-live.akamaized.net) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -718,7 +822,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.748250000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63475 --> cdn3.indevs.in:443 match Domain(cdn3.indevs.in) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.334609000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53450 --> cdn3.indevs.in:443 match Domain(cdn3.indevs.in) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -726,7 +830,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.810888000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63477 --> cdn.qd.je:443 match Domain(cdn.qd.je) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.398629000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53452 --> cdn.qd.je:443 match Domain(cdn.qd.je) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -734,7 +838,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.868333000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63479 --> cdn6.cc.cd:443 match Domain(cdn6.cc.cd) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.460506000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53455 --> cdn6.cc.cd:443 match Domain(cdn6.cc.cd) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -742,7 +846,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.928624000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63481 --> live5.tdm.com.mo:443 match Domain(live5.tdm.com.mo) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.522742000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53457 --> live5.tdm.com.mo:443 match Domain(live5.tdm.com.mo) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -750,7 +854,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:54.989664000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63483 --> 10.fast.hidns.vip:443 match Domain(10.fast.hidns.vip) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.584762000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53459 --> 10.fast.hidns.vip:443 match Domain(10.fast.hidns.vip) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -758,7 +862,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:55.050913000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63485 --> petclub-samsungaus.amagi.tv:443 match Domain(petclub-samsungaus.amagi.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.642136000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53461 --> petclub-samsungaus.amagi.tv:443 match Domain(petclub-samsungaus.amagi.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -766,7 +870,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:55.111979000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63487 --> php.jdshipin.com:443 match Domain(php.jdshipin.com) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.704464000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53463 --> php.jdshipin.com:443 match Domain(php.jdshipin.com) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -774,7 +878,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:55.172670000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63489 --> hoytv-live-stream.hoy.tv:443 match Domain(hoytv-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.758553000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53465 --> hoytv-live-stream.hoy.tv:443 match Domain(hoytv-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -782,7 +886,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 香港节点",
-        "evidence": "time=\"2026-11-26T00:01:55.228412000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63491 --> ch77-live-stream.hoy.tv:443 match Domain(ch77-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.818890000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53467 --> ch77-live-stream.hoy.tv:443 match Domain(ch77-live-stream.hoy.tv) using 🇭🇰 香港节点[HK-01]\""
       },
       {
         "network": "tcp",
@@ -790,7 +894,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.286774000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63493 --> masterpl.hls.nhkworld.jp:443 match Domain(masterpl.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.876895000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53470 --> masterpl.hls.nhkworld.jp:443 match Domain(masterpl.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -798,7 +902,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.348677000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63495 --> media-tyo.hls.nhkworld.jp:443 match Domain(media-tyo.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:19.940274000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53472 --> media-tyo.hls.nhkworld.jp:443 match Domain(media-tyo.hls.nhkworld.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -806,7 +910,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.404120000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63497 --> d2p4mrcwl6ly4.cloudfront.net:443 match Domain(d2p4mrcwl6ly4.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.003335000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53474 --> d2p4mrcwl6ly4.cloudfront.net:443 match Domain(d2p4mrcwl6ly4.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -814,7 +918,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.465886000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63499 --> rch01e-alive-hls.akamaized.net:443 match Domain(rch01e-alive-hls.akamaized.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.069890000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53477 --> rch01e-alive-hls.akamaized.net:443 match Domain(rch01e-alive-hls.akamaized.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -822,7 +926,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.522746000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63501 --> japaneast.av.mk.io:443 match Domain(japaneast.av.mk.io) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.133574000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53479 --> japaneast.av.mk.io:443 match Domain(japaneast.av.mk.io) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -830,7 +934,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.578784000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63503 --> d1flvb4iqlercm.cloudfront.net:443 match Domain(d1flvb4iqlercm.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.189431000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53481 --> d1flvb4iqlercm.cloudfront.net:443 match Domain(d1flvb4iqlercm.cloudfront.net) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -838,7 +942,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.642652000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63505 --> stream3.shopch.jp:443 match Domain(stream3.shopch.jp) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.248035000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53483 --> stream3.shopch.jp:443 match Domain(stream3.shopch.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -846,7 +950,31 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇯🇵 日本节点",
-        "evidence": "time=\"2026-11-26T00:01:55.704373000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63507 --> tv-stream-test.daydreamer-json.cc:443 match Domain(tv-stream-test.daydreamer-json.cc) using 🇯🇵 日本节点[JP-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.304465000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53485 --> tv-stream-test.daydreamer-json.cc:443 match Domain(tv-stream-test.daydreamer-json.cc) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:59:20.368060000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53487 --> amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv:443 match Domain(amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "cdn-apne1.tsv2.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:59:20.436163000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53489 --> cdn-apne1.tsv2.amagi.tv:443 match Domain(cdn-apne1.tsv2.amagi.tv) using 🇯🇵 日本节点[JP-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "livetv.fastv.jp",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇯🇵 日本节点",
+        "evidence": "time=\"2026-11-26T00:59:20.498866000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53492 --> livetv.fastv.jp:443 match Domain(livetv.fastv.jp) using 🇯🇵 日本节点[JP-01]\""
       },
       {
         "network": "tcp",
@@ -854,7 +982,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:55.761379000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63509 --> 38.64.72.148:443 match IPCIDR(38.64.72.148/32) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.564042000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53494 --> 38.64.72.148:443 match IPCIDR(38.64.72.148/32) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -862,7 +990,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:55.824786000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63511 --> h5cul1yar48um3t.wcetv.com:443 match Domain(h5cul1yar48um3t.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.626940000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53496 --> h5cul1yar48um3t.wcetv.com:443 match Domain(h5cul1yar48um3t.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -870,7 +998,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:55.881371000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63513 --> live.wcetv.com:443 match Domain(live.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.684642000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53498 --> live.wcetv.com:443 match Domain(live.wcetv.com) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -878,7 +1006,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:55.947460000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63515 --> 5ddce30eb4b55.streamlock.net:443 match Domain(5ddce30eb4b55.streamlock.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.741856000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53500 --> 5ddce30eb4b55.streamlock.net:443 match Domain(5ddce30eb4b55.streamlock.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -886,7 +1014,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:56.007851000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63517 --> d3e05csss9c272.cloudfront.net:443 match Domain(d3e05csss9c272.cloudfront.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.804046000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53502 --> d3e05csss9c272.cloudfront.net:443 match Domain(d3e05csss9c272.cloudfront.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -894,7 +1022,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:56.064584000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63519 --> live.streamingfast.net:443 match Domain(live.streamingfast.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.858206000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53504 --> live.streamingfast.net:443 match Domain(live.streamingfast.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -902,7 +1030,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:56.127709000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63521 --> www.dalitv.com.tw:443 match Domain(www.dalitv.com.tw) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.916787000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53506 --> www.dalitv.com.tw:443 match Domain(www.dalitv.com.tw) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -910,7 +1038,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇭🇰 台湾节点",
-        "evidence": "time=\"2026-11-26T00:01:56.183622000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63523 --> streamipcfapp.akamaized.net:443 match Domain(streamipcfapp.akamaized.net) using 🇭🇰 台湾节点[TW-01]\""
+        "evidence": "time=\"2026-11-26T00:59:20.971746000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53508 --> streamipcfapp.akamaized.net:443 match Domain(streamipcfapp.akamaized.net) using 🇭🇰 台湾节点[TW-01]\""
       },
       {
         "network": "tcp",
@@ -918,7 +1046,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.249738000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63525 --> amdlive-ch01-ctnd-com.akamaized.net:443 match Domain(amdlive-ch01-ctnd-com.akamaized.net) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.034811000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53510 --> amdlive-ch01-ctnd-com.akamaized.net:443 match Domain(amdlive-ch01-ctnd-com.akamaized.net) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -926,7 +1054,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.301582000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63527 --> stream8.cinerama.uz:443 match Domain(stream8.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.103161000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53512 --> stream8.cinerama.uz:443 match Domain(stream8.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -934,7 +1062,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.364204000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63529 --> cache1.cinerama.uz:443 match Domain(cache1.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.167307000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53514 --> cache1.cinerama.uz:443 match Domain(cache1.cinerama.uz) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -942,7 +1070,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.427742000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63531 --> hlive.ktv.go.kr:443 match Domain(hlive.ktv.go.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.231044000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53516 --> hlive.ktv.go.kr:443 match Domain(hlive.ktv.go.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -950,7 +1078,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.494259000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63533 --> ebsonair.ebs.co.kr:443 match Domain(ebsonair.ebs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.293150000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53518 --> ebsonair.ebs.co.kr:443 match Domain(ebsonair.ebs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -958,7 +1086,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.546855000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63535 --> cdntv.tbs.seoul.kr:443 match Domain(cdntv.tbs.seoul.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.352053000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53520 --> cdntv.tbs.seoul.kr:443 match Domain(cdntv.tbs.seoul.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -966,7 +1094,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.606634000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63537 --> live.knou.ac.kr:443 match Domain(live.knou.ac.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.410424000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53522 --> live.knou.ac.kr:443 match Domain(live.knou.ac.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -974,7 +1102,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.668610000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63539 --> media.joycorp.co.kr:443 match Domain(media.joycorp.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.469465000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53524 --> media.joycorp.co.kr:443 match Domain(media.joycorp.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -982,7 +1110,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.733336000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63541 --> mediaworks.dema.mil.kr:443 match Domain(mediaworks.dema.mil.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.529387000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53526 --> mediaworks.dema.mil.kr:443 match Domain(mediaworks.dema.mil.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -990,7 +1118,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.785175000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63543 --> mgugaklive.nowcdn.co.kr:443 match Domain(mgugaklive.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.589311000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53528 --> mgugaklive.nowcdn.co.kr:443 match Domain(mgugaklive.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -998,7 +1126,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.841413000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63545 --> onair.cdn.tvchosun.com:443 match Domain(onair.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.648237000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53530 --> onair.cdn.tvchosun.com:443 match Domain(onair.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -1006,7 +1134,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.906794000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63547 --> onair2.cdn.tvchosun.com:443 match Domain(onair2.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.704946000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53532 --> onair2.cdn.tvchosun.com:443 match Domain(onair2.cdn.tvchosun.com) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -1014,7 +1142,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:56.966181000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63549 --> vod2.abn.co.kr:443 match Domain(vod2.abn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.771293000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53534 --> vod2.abn.co.kr:443 match Domain(vod2.abn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -1022,7 +1150,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.024762000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63551 --> 61.85.197.53:443 match IPCIDR(61.85.197.53/32) using 🇰🇷 韩国节点[KR-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.833585000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53536 --> 61.85.197.53:443 match IPCIDR(61.85.197.53/32) using 🇰🇷 韩国节点[KR-01]\""
       },
       {
         "network": "tcp",
@@ -1030,7 +1158,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.076194000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63553 --> d8975dc3.wurl.com:443 match Domain(d8975dc3.wurl.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.888022000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53538 --> d8975dc3.wurl.com:443 match Domain(d8975dc3.wurl.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1038,7 +1166,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.142841000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63555 --> d1si3n1st4nkgb.cloudfront.net:443 match Domain(d1si3n1st4nkgb.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:21.954658000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53540 --> d1si3n1st4nkgb.cloudfront.net:443 match Domain(d1si3n1st4nkgb.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1046,7 +1174,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.201767000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63557 --> sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com:443 match Domain(sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.004939000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53542 --> sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com:443 match Domain(sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1054,7 +1182,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.262958000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63559 --> livestream.pbskids.org:443 match Domain(livestream.pbskids.org) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.069839000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53544 --> livestream.pbskids.org:443 match Domain(livestream.pbskids.org) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1062,7 +1190,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.320059000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63561 --> 2-fss-1.streamhoster.com:443 match Domain(2-fss-1.streamhoster.com) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.135363000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53546 --> 2-fss-1.streamhoster.com:443 match Domain(2-fss-1.streamhoster.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1070,7 +1198,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.371010000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63563 --> amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv:443 match Domain(amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.192817000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53548 --> amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv:443 match Domain(amg00217-newsmax-newsmax-zeasn-022k9.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1078,7 +1206,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.431457000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63565 --> amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv:443 match Domain(amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.251742000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53550 --> amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv:443 match Domain(amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1086,7 +1214,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.495131000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63567 --> amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv:443 match Domain(amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.312085000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53552 --> amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv:443 match Domain(amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1094,7 +1222,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.563315000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63569 --> amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv:443 match Domain(amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.373715000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53554 --> amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv:443 match Domain(amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1102,7 +1230,87 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
-        "evidence": "time=\"2026-11-26T00:01:57.612963000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63571 --> cdn-uw2-prod.tsv2.amagi.tv:443 match Domain(cdn-uw2-prod.tsv2.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+        "evidence": "time=\"2026-11-26T00:59:22.435514000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53556 --> cdn-uw2-prod.tsv2.amagi.tv:443 match Domain(cdn-uw2-prod.tsv2.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "aka-live1050.delivery.roku.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.493334000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53558 --> aka-live1050.delivery.roku.com:443 match Domain(aka-live1050.delivery.roku.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.544578000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53560 --> amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv:443 match Domain(amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.612099000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53562 --> amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv:443 match Domain(amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3hqevbyoxtkoi.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.669603000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53564 --> d3hqevbyoxtkoi.cloudfront.net:443 match Domain(d3hqevbyoxtkoi.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3mr43kyql7wgk.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.724788000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53566 --> d3mr43kyql7wgk.cloudfront.net:443 match Domain(d3mr43kyql7wgk.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.792447000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53568 --> ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com:443 match Domain(ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "hls-kmosdt.lls.cdn.pbs.org",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.853086000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53570 --> hls-kmosdt.lls.cdn.pbs.org:443 match Domain(hls-kmosdt.lls.cdn.pbs.org) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "linear-859.frequency.stream",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.915851000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53572 --> linear-859.frequency.stream:443 match Domain(linear-859.frequency.stream) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "sk.delivery.roku.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:22.974252000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53574 --> sk.delivery.roku.com:443 match Domain(sk.delivery.roku.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "tgn.bozztv.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-26T00:59:23.030250000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53576 --> tgn.bozztv.com:443 match Domain(tgn.bozztv.com) using 🇺🇲 美国节点[US-01]\""
       },
       {
         "network": "tcp",
@@ -1110,7 +1318,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:57.680867000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63573 --> video.bread-tv.com:443 match Domain(video.bread-tv.com) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:23.085413000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53578 --> video.bread-tv.com:443 match Domain(video.bread-tv.com) using 📺 IPTV中转[HK-01]\""
       },
       {
         "network": "tcp",
@@ -1118,7 +1326,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:57.738033000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63575 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:23.143671000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53580 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 📺 IPTV中转[HK-01]\""
       },
       {
         "network": "tcp",
@@ -1126,7 +1334,7 @@
         "port": 443,
         "expected_provider": null,
         "expected_group": "📺 IPTV中转",
-        "evidence": "time=\"2026-11-26T00:01:57.795072000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63577 --> amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv:443 match Domain(amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv) using 📺 IPTV中转[HK-01]\""
+        "evidence": "time=\"2026-11-26T00:59:23.205218000+08:00\" level=info msg=\"[TCP] 127.0.0.1:53582 --> amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv:443 match Domain(amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv) using 📺 IPTV中转[HK-01]\""
       }
     ]
   }

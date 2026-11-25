@@ -55,17 +55,17 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 `fast.com` 及其子域单独走 `♻️ Speedtest`，优先于 UDP/443 规则。
 
-## IPTV 按地区分流（2026-11-25）
+## IPTV 按地区分流（2026-11-26）
 
-主播放列表的 74 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
+主播放列表的 98 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
 
 | 规则文件 | 节点组 | IPTV 线路 |
 | --- | --- | --- |
-| `HkMandatory.list` | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus、凤凰中文 / 资讯、ViuTV、Pet Club TV、HOY 76–78。澳视澳门、澳门资讯和澳门卫星 96 也走香港，当前配置没有澳门节点 |
+| `HkMandatory.list` | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus、凤凰中文 / 资讯、ViuTV、Pet Club TV、HOY 76–78。澳视澳门、澳门资讯、澳门卫星 96 和澳视葡文也走香港，当前配置没有澳门节点 |
 | `TwMandatory.list` | 台湾 | TVBS 欢乐线路、台视新闻、民视新闻台、原住民族电视台、客家电视台、人间卫视、大立电视台、CGNTV 中文台、GOOD 2 |
-| `JpMandatory.list` | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台 |
+| `JpMandatory.list` | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台，以及 Animax FREE、Lemino TV、手冢制作 TV 等日本 FAST 频道 |
 | `IPTV-KR.list` | 韩国 | Arirang、KBS WORLD、KTV、EBS、ABN、Gugak TV、NBS、OUN、TBS、TV Chosun、国防电视、SBS JTV 全州 |
-| `IPTV-US.list` | 美国 | Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台 |
+| `IPTV-US.list` | 美国 | Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台，以及 PBS KMOS、PBS Nature、FOX Weather、LiveNOW from FOX、Scripps News 等 |
 | `IPTV-Direct.list` | 直连 | 国内 4K 和广东珠江公网线路 |
 | `IPTV-Relay.list` | 📺 IPTV中转 | BreadTV、Love Nature 4K、CGTN 的 Rakuten 公网线路。默认香港，可单独切换 |
 

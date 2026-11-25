@@ -12,3 +12,15 @@ DOMAIN,amg00488-foxdigital-fox2sanfranciscoktvu-vizious-cshim.amagi.tv
 DOMAIN,amg00488-foxdigital-fox35orlandowofl-vizious-i7zzw.amagi.tv
 DOMAIN,amg01438-ewscrippscompan-courttv-tablo-nbcc7.amagi.tv
 DOMAIN,cdn-uw2-prod.tsv2.amagi.tv
+
+# 2026-11-26 补源的入口和媒体主机。
+DOMAIN,aka-live1050.delivery.roku.com
+DOMAIN,amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv
+DOMAIN,amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv
+DOMAIN,d3hqevbyoxtkoi.cloudfront.net
+DOMAIN,d3mr43kyql7wgk.cloudfront.net
+DOMAIN,ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com
+DOMAIN,hls-kmosdt.lls.cdn.pbs.org
+DOMAIN,linear-859.frequency.stream
+DOMAIN,sk.delivery.roku.com
+DOMAIN,tgn.bozztv.com

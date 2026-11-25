@@ -1,10 +1,10 @@
 {
-  "verified_at": "2026-11-26T00:01:36+08:00",
+  "verified_at": "2026-11-26T00:57:01+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 74,
-  "previous_public_streams": 72,
-  "new_public_streams": 2,
-  "exact_domain_rules": 67,
+  "public_streams": 98,
+  "previous_public_streams": 74,
+  "new_public_streams": 24,
+  "exact_domain_rules": 80,
   "single_ip_rules": 3,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
@@ -869,6 +869,290 @@
           "policy": "🇭🇰 台湾节点"
         }
       ]
+    },
+    {
+      "channel": "澳视葡文HD [公网]",
+      "url": "https://live5.tdm.com.mo/ch2/ch2.live/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live5.tdm.com.mo",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "日本时代剧 TVHD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/696074B664B80F46A876/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "Animax FREE 日本HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69608FB2725E0FA3B972/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "Lemino TVHD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/696082290000105F1525/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "日本露营与户外HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69607E1D725E0FB5AC23/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "Business Premium 日本HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69607EBD725E0F65BEE4/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "GOLF LIFE 日本HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69607D5C725E103DDF9D/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "九州全览HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/696090F573F51039B31F/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "PIA 落语HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69608EE9725E0F73BF30/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "围棋将棋 LightHD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69998C7B725E30DA4170/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "日本料理频道HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/696095BC725E0FE5F3E9/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "东海 LocipoHD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/69998DB5725E30535DA6/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "手冢制作 TVHD [公网FAST]",
+      "url": "https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-anime5-cmaf-rakutenjp/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
+          "policy": "🇯🇵 日本节点"
+        },
+        {
+          "host": "cdn-apne1.tsv2.amagi.tv",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "观旅日本HD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/6960965C64B80F2C027D/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS KMOS 密苏里HD [公网]",
+      "url": "https://hls-kmosdt.lls.cdn.pbs.org/hls/live/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "hls-kmosdt.lls.cdn.pbs.org",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "FOX WeatherHD [公网]",
+      "url": "https://aka-live1050.delivery.roku.com/2ff50939-341e-4fa8-becf-718769322f14/t2-origin/out/v1/live.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "aka-live1050.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "sk.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "LiveNOW from FOXHD [公网]",
+      "url": "https://aka-live1050.delivery.roku.com/eaf7d889-16e0-4c14-a299-a2932df9f467/t2-origin/out/v1/live.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "aka-live1050.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "sk.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "Scripps NewsHD [公网]",
+      "url": "https://aka-live1050.delivery.roku.com/a48b72c9-5755-4ede-9dac-9e51e4ca5cc8/t2-origin/out/v1/live.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "aka-live1050.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "sk.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "Documentary+HD [公网]",
+      "url": "https://ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-859-DOCUMENTARYPLUS-DOCUMENTARYPLUS/mt/documentaryplus/859/hls/master/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "linear-859.frequency.stream",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS NatureHD [公网]",
+      "url": "https://d3mr43kyql7wgk.cloudfront.net/PBS_Nature.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d3mr43kyql7wgk.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS TravelHD [公网]",
+      "url": "https://d3hqevbyoxtkoi.cloudfront.net/PBS_Travel.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d3hqevbyoxtkoi.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS Antiques RoadshowHD [公网]",
+      "url": "https://amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS RetroHD [公网]",
+      "url": "https://amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "Better Life Nature [公网]",
+      "url": "https://tgn.bozztv.com/betterlife/betternature/betternature/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "tgn.bozztv.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1083,6 +1367,24 @@
       "file": "JpMandatory.list"
     },
     {
+      "kind": "DOMAIN",
+      "value": "cdn-apne1.tsv2.amagi.tv",
+      "policy": "🇯🇵 日本节点",
+      "file": "JpMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg01287-rakutentvjapan-anime5-cmaf-rakutenjp-x4dre.amagi.tv",
+      "policy": "🇯🇵 日本节点",
+      "file": "JpMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "livetv.fastv.jp",
+      "policy": "🇯🇵 日本节点",
+      "file": "JpMandatory.list"
+    },
+    {
       "kind": "IP-CIDR",
       "value": "38.64.72.148/32",
       "policy": "🇭🇰 台湾节点",
@@ -1271,6 +1573,66 @@
     {
       "kind": "DOMAIN",
       "value": "cdn-uw2-prod.tsv2.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "linear-859.frequency.stream",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg02333-pbs-amg02333c6-vizio-us-4416.playouts.now.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d3mr43kyql7wgk.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "tgn.bozztv.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "sk.delivery.roku.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg00953-pbsusa-antiroadshow-xumo-x6ud5.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d3hqevbyoxtkoi.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "aka-live1050.delivery.roku.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "hls-kmosdt.lls.cdn.pbs.org",
       "policy": "🇺🇲 美国节点",
       "file": "IPTV-US.list"
     },
