@@ -1,13 +1,4 @@
-# 公共中转及国际节目：默认香港，可单独比较其他地区或直连。
-# 同一主机的不同频道不能仅靠域名规则分到不同地区。
-# TVB 翡翠/Plus 中转，以及凤凰入口与实际跳转主机。
-DOMAIN,cdn3.indevs.in
-DOMAIN,cdn.qd.je
-DOMAIN,cdn6.cc.cd
-# KBS WORLD 中转入口与实际媒体分片主机。
-DOMAIN,stream8.cinerama.uz
-DOMAIN,cache1.cinerama.uz
-# 国际节目专用分发主机。
+# 国际线路，供独立选择出口。
 DOMAIN,video.bread-tv.com
 DOMAIN,pb-ehs1glsha1juy.akamaized.net
 DOMAIN,amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv

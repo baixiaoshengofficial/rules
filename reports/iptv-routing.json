@@ -1,12 +1,12 @@
 {
-  "verified_at": "2026-11-25T21:41:31+08:00",
+  "verified_at": "2026-11-25T22:25:56+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 29,
-  "previous_public_streams": 26,
-  "new_public_streams": 3,
-  "exact_domain_rules": 30,
+  "public_streams": 42,
+  "previous_public_streams": 29,
+  "new_public_streams": 13,
+  "exact_domain_rules": 40,
   "single_ip_rules": 2,
-  "scope": "入口、跳转、已下载分片及主清单显式音轨主机；新规则尚需更新订阅和重载才能应用到家庭路由。",
+  "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
     {
       "channel": "苏州4K [公网]",
@@ -107,7 +107,7 @@
       "hosts": [
         {
           "host": "cdn3.indevs.in",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -129,11 +129,11 @@
       "hosts": [
         {
           "host": "cdn.qd.je",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         },
         {
           "host": "cdn6.cc.cd",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -144,11 +144,11 @@
       "hosts": [
         {
           "host": "cdn.qd.je",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         },
         {
           "host": "cdn6.cc.cd",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -159,7 +159,7 @@
       "hosts": [
         {
           "host": "cdn3.indevs.in",
-          "policy": "📺 IPTV中转"
+          "policy": "🇭🇰 香港节点"
         }
       ]
     },
@@ -207,11 +207,11 @@
       "hosts": [
         {
           "host": "cache1.cinerama.uz",
-          "policy": "📺 IPTV中转"
+          "policy": "🇰🇷 韩国节点"
         },
         {
           "host": "stream8.cinerama.uz",
-          "policy": "📺 IPTV中转"
+          "policy": "🇰🇷 韩国节点"
         }
       ]
     },
@@ -346,6 +346,153 @@
           "policy": "🇭🇰 香港节点"
         }
       ]
+    },
+    {
+      "channel": "澳视澳门",
+      "url": "https://live5.tdm.com.mo/ch1/ch1.live/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live5.tdm.com.mo",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "澳门资讯",
+      "url": "https://live5.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live5.tdm.com.mo",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "EBS 1TV",
+      "url": "https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ebsonair.ebs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "GSTV 日本珠宝",
+      "url": "https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "japaneast.av.mk.io",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "Weathernews LiVE",
+      "url": "https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "rch01e-alive-hls.akamaized.net",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "EBS Kids",
+      "url": "https://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ebsonair.ebs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "EBS 2TV",
+      "url": "https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ebsonair.ebs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "EBS Plus 1",
+      "url": "https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ebsonair.ebs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "PBS KIDS",
+      "url": "https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livestream.pbskids.org",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "NBC News NOW",
+      "url": "https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d1si3n1st4nkgb.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "KTV 韩国国民广播",
+      "url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "hlive.ktv.go.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "客家电视台",
+      "url": "https://h5cul1yar48um3t.wcetv.com/hls/hakkatv.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "h5cul1yar48um3t.wcetv.com",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "台视新闻",
+      "url": "https://live.wcetv.com/hls/master-ttvnews.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live.wcetv.com",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -395,95 +542,167 @@
       "kind": "DOMAIN",
       "value": "rthktv31-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthktv32-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthktv33-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthktv34-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthktv35-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradio1-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradio2-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradio3-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradio4-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradio5-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "rthkradiopth-live.akamaized.net",
       "policy": "🇭🇰 香港节点",
-      "file": "IPTV-HK.list"
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn3.indevs.in",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn.qd.je",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cdn6.cc.cd",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "live5.tdm.com.mo",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "masterpl.hls.nhkworld.jp",
       "policy": "🇯🇵 日本节点",
-      "file": "IPTV-JP.list"
+      "file": "JpMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "media-tyo.hls.nhkworld.jp",
       "policy": "🇯🇵 日本节点",
-      "file": "IPTV-JP.list"
+      "file": "JpMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "d2p4mrcwl6ly4.cloudfront.net",
       "policy": "🇯🇵 日本节点",
-      "file": "IPTV-JP.list"
+      "file": "JpMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "rch01e-alive-hls.akamaized.net",
+      "policy": "🇯🇵 日本节点",
+      "file": "JpMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "japaneast.av.mk.io",
+      "policy": "🇯🇵 日本节点",
+      "file": "JpMandatory.list"
     },
     {
       "kind": "IP-CIDR",
       "value": "38.64.72.148/32",
       "policy": "🇭🇰 台湾节点",
-      "file": "IPTV-TW.list"
+      "file": "TwMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "h5cul1yar48um3t.wcetv.com",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "live.wcetv.com",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
     },
     {
       "kind": "DOMAIN",
       "value": "amdlive-ch01-ctnd-com.akamaized.net",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "stream8.cinerama.uz",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cache1.cinerama.uz",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "hlive.ktv.go.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "IPTV-KR.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "ebsonair.ebs.co.kr",
       "policy": "🇰🇷 韩国节点",
       "file": "IPTV-KR.list"
     },
@@ -495,33 +714,21 @@
     },
     {
       "kind": "DOMAIN",
-      "value": "cdn3.indevs.in",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
+      "value": "d1si3n1st4nkgb.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
     },
     {
       "kind": "DOMAIN",
-      "value": "cdn.qd.je",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
+      "value": "sseu-xumoent-nbcnn-usyjr.fast.nbcuni.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
     },
     {
       "kind": "DOMAIN",
-      "value": "cdn6.cc.cd",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "stream8.cinerama.uz",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
-    },
-    {
-      "kind": "DOMAIN",
-      "value": "cache1.cinerama.uz",
-      "policy": "📺 IPTV中转",
-      "file": "IPTV-Relay.list"
+      "value": "livestream.pbskids.org",
+      "policy": "🇺🇲 美国节点",
+      "file": "IPTV-US.list"
     },
     {
       "kind": "DOMAIN",

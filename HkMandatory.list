@@ -1106,3 +1106,25 @@ DOMAIN-SUFFIX,trikepatrol.com
 DOMAIN-SUFFIX,tubesex.me
 DOMAIN-SUFFIX,matureporner.com
 DOMAIN-SUFFIX,fabhairypussy.com
+
+# IPTV 强制地区分流
+# 港台电视与香港电台；只匹配专用主机，不接管整个 Akamai。
+DOMAIN,rthktv31-live.akamaized.net
+DOMAIN,rthktv32-live.akamaized.net
+DOMAIN,rthktv33-live.akamaized.net
+DOMAIN,rthktv34-live.akamaized.net
+DOMAIN,rthktv35-live.akamaized.net
+DOMAIN,rthkradio1-live.akamaized.net
+DOMAIN,rthkradio2-live.akamaized.net
+DOMAIN,rthkradio3-live.akamaized.net
+DOMAIN,rthkradio4-live.akamaized.net
+DOMAIN,rthkradio5-live.akamaized.net
+DOMAIN,rthkradiopth-live.akamaized.net
+
+# TVB 与凤凰中转的入口和媒体主机。
+DOMAIN,cdn3.indevs.in
+DOMAIN,cdn.qd.je
+DOMAIN,cdn6.cc.cd
+
+# 当前路由器使用香港出口承接澳广视。
+DOMAIN,live5.tdm.com.mo

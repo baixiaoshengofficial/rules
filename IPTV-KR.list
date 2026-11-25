@@ -1,2 +1,7 @@
-# Arirang 专用直播主机；KBS 的公共中转放在 IPTV-Relay.list。
+# 韩国直播与 KBS WORLD 中转的入口、媒体主机。
 DOMAIN,amdlive-ch01-ctnd-com.akamaized.net
+DOMAIN,stream8.cinerama.uz
+DOMAIN,cache1.cinerama.uz
+
+DOMAIN,hlive.ktv.go.kr
+DOMAIN,ebsonair.ebs.co.kr

@@ -1,2 +1,11 @@
 # 域名关键字匹配
 DOMAIN-KEYWORD,dmm
+
+# IPTV 强制地区分流
+# NHK WORLD-JAPAN 入口、视频/音频分片，以及 CGNTV Japan 专用分发主机。
+DOMAIN,masterpl.hls.nhkworld.jp
+DOMAIN,media-tyo.hls.nhkworld.jp
+DOMAIN,d2p4mrcwl6ly4.cloudfront.net
+
+DOMAIN,rch01e-alive-hls.akamaized.net
+DOMAIN,japaneast.av.mk.io

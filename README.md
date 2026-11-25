@@ -57,27 +57,19 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 ## IPTV 按地区分流（2026-11-25）
 
-为 [shtelcomiptv 主播放列表](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/shtelconiptv.m3u) 增加七份规则集，覆盖当前公网源的入口、重定向及已观察到的视频/音频分片主机。规则放在下载规则之后、通用地区和媒体规则之前；最前面的局域网规则继续保护家庭组播代理。
+主播放列表的 42 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
 
-| 文件 | 出口 | 范围 |
+| 规则文件 | 节点组 | IPTV 线路 |
 | --- | --- | --- |
-| `IPTV-HK.list` | 香港节点 | 港台电视 31–35、香港电台六路广播的专用主机 |
-| `IPTV-JP.list` | 日本节点 | NHK WORLD-JAPAN 入口及分离音视频主机、CGNTV Japan |
-| `IPTV-TW.list` | 台湾节点 | TVBS 欢乐节目中转当前的单一 IP |
-| `IPTV-KR.list` | 新增韩国节点组 | Arirang 专用直播主机 |
-| `IPTV-US.list` | 美国节点 | Bloomberg TV+ 4K 当前 Wurl 主机 |
-| `IPTV-Relay.list` | 新增 `📺 IPTV中转`，默认香港 | TVB/凤凰/KBS 公共中转、BreadTV、Love Nature、CGTN 国际线路 |
-| `IPTV-Direct.list` | 直连 | 苏州、河北、湖南、浙江 4K 和广东珠江公网线路 |
+| `HkMandatory.list` | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus、凤凰中文 / 资讯。澳视澳门和澳门资讯也走香港，当前配置没有澳门节点 |
+| `TwMandatory.list` | 台湾 | TVBS 欢乐线路、台视新闻、客家电视台 |
+| `JpMandatory.list` | 日本 | NHK WORLD-JAPAN、CGNTV Japan、Weathernews LiVE、GSTV |
+| `IPTV-KR.list` | 韩国 | Arirang、KBS WORLD、KTV、EBS |
+| `IPTV-US.list` | 美国 | Bloomberg TV+ 4K、NBC News NOW、PBS KIDS |
+| `IPTV-Direct.list` | 直连 | 国内 4K 和广东珠江公网线路 |
+| `IPTV-Relay.list` | 📺 IPTV中转 | BreadTV、Love Nature 4K、CGTN 的 Rakuten 公网线路。默认香港，可单独切换 |
 
-只使用精确 `DOMAIN` 和两条 `/32,no-resolve` IP 规则，没有把 `akamaized.net`、`cloudfront.net`、`wurl.com` 等共享域名整体交给某地区。凤凰的 `cdn.qd.je` → `cdn6.cc.cd`、KBS 的 `stream8.cinerama.uz` → `cache1.cinerama.uz` 均覆盖。域名分流不能区分同一中转主机上的频道或 URL 路径；裸 IP 规则也会影响该 IP 上其他流量。
-
-韩国组沿用 60 秒检查和无匹配节点时 `REJECT` 的行为。`📺 IPTV中转` 可独立切换地区或直连，避免调整电视线路时改变通用出口。地区名称按现有配置保留，包括台湾组现有的 emoji。
-
-发布后需要在 Nikki/OpenClash **更新订阅，再重载配置**，让 Subconverter 展开新的七份 `.list`。它们不是原生定时 provider，仅刷新旧 provider 缓存不会加载此次改动。在面板确认有 `📺 IPTV中转` 和 `🇰🇷 韩国节点`，再重新打开播放器连接。
-
-已对原有 26 条公网线路下载媒体并解码：25 条首轮通过，香港电台第二台一次 TLS 超时后复测通过。港台电视 32、33、34 也通过两轮媒体解码和画面核对，已补入 IPTV 仓库；33、34 分别是央视一套和 CGTN Documentary 的转播线路。35 台虽然入口 HTTP 探测成功，但后续媒体清单返回 404，因此没有加入播放列表。
-
-地区出口 HTTP 探测中，NHK 日本节点响应约 60 ms、直连约 319 ms；Arirang 韩国节点约 61 ms、直连约 223 ms。这些是当次 HTTP 健康探测，不能代表视频吞吐、长时间稳定性或所有频道都会加速。未把新订阅部署到路由器，也未切换全局模式或现有策略选择。媒体测试及当前连接证据见 [IPTV 验证报告](reports/iptv-validation.md)。
+IPTV 条目按具体主机或单一 IP 匹配，在通用媒体和 GEOIP 之前。TVB、凤凰和 KBS 的中转入口及媒体主机现在直接匹配地区组。部署后在 Nikki/OpenClash 更新订阅并重载配置，Subconverter 会将这几份列表展开到配置。具体主机、测试结果和生效范围见 [IPTV 验证报告](reports/iptv-validation.md)。
 
 ## Google 分组边界
 

@@ -283,16 +283,16 @@ group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-Direct.list"
 
 [[rulesets]]
-group = "🇭🇰 香港节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-HK.list"
-
-[[rulesets]]
 group = "🇯🇵 日本节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-JP.list"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/JpMandatory.list"
 
 [[rulesets]]
 group = "🇭🇰 台湾节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-TW.list"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/TwMandatory.list"
+
+[[rulesets]]
+group = "🇭🇰 香港节点"
+ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/HkMandatory.list"
 
 [[rulesets]]
 group = "🇰🇷 韩国节点"
@@ -305,18 +305,6 @@ ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPT
 [[rulesets]]
 group = "📺 IPTV中转"
 ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/IPTV-Relay.list"
-
-[[rulesets]]
-group = "🇯🇵 日本节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/JpMandatory.list"
-
-[[rulesets]]
-group = "🇭🇰 台湾节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/TwMandatory.list"
-
-[[rulesets]]
-group = "🇭🇰 香港节点"
-ruleset = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/HkMandatory.list"
 
 [[rulesets]]
 group = "🎯 全球直连"

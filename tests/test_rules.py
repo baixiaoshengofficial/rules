@@ -45,13 +45,21 @@ def matches(name, host):
 
 IPTV_POLICIES = {
     "IPTV-Direct.list": "🎯 全球直连",
-    "IPTV-HK.list": "🇭🇰 香港节点",
-    "IPTV-JP.list": "🇯🇵 日本节点",
-    "IPTV-TW.list": "🇭🇰 台湾节点",
+    "HkMandatory.list": "🇭🇰 香港节点",
+    "JpMandatory.list": "🇯🇵 日本节点",
+    "TwMandatory.list": "🇭🇰 台湾节点",
     "IPTV-KR.list": "🇰🇷 韩国节点",
     "IPTV-US.list": "🇺🇲 美国节点",
     "IPTV-Relay.list": "📺 IPTV中转",
 }
+
+
+def iptv_rules(name):
+    source = (ROOT / name).read_text()
+    if name.endswith("Mandatory.list"):
+        source = source.split("# IPTV 强制地区分流\n", 1)[1]
+    return [line for line in source.splitlines() if line and not line.startswith("#")]
+
 
 IPTV_ROUTE_CASES = [
     ("rthktv32-live.akamaized.net", "🇭🇰 香港节点"),
@@ -61,11 +69,11 @@ IPTV_ROUTE_CASES = [
     ("d2p4mrcwl6ly4.cloudfront.net", "🇯🇵 日本节点"),
     ("amdlive-ch01-ctnd-com.akamaized.net", "🇰🇷 韩国节点"),
     ("d8975dc3.wurl.com", "🇺🇲 美国节点"),
-    ("cdn3.indevs.in", "📺 IPTV中转"),
-    ("cdn.qd.je", "📺 IPTV中转"),
-    ("cdn6.cc.cd", "📺 IPTV中转"),
-    ("stream8.cinerama.uz", "📺 IPTV中转"),
-    ("cache1.cinerama.uz", "📺 IPTV中转"),
+    ("cdn3.indevs.in", "🇭🇰 香港节点"),
+    ("cdn.qd.je", "🇭🇰 香港节点"),
+    ("cdn6.cc.cd", "🇭🇰 香港节点"),
+    ("stream8.cinerama.uz", "🇰🇷 韩国节点"),
+    ("cache1.cinerama.uz", "🇰🇷 韩国节点"),
     ("38.64.72.148", "🇭🇰 台湾节点"),
     ("2.fast.hidns.vip", "🎯 全球直连"),
     ("218.13.170.98", "🎯 全球直连"),
@@ -183,7 +191,7 @@ class RuleTests(unittest.TestCase):
             if filename in IPTV_POLICIES:
                 self.assertEqual(row["group"], IPTV_POLICIES[filename])
                 positions[filename] = i
-                for rule in rules(filename):
+                for rule in iptv_rules(filename):
                     kind, value, *_ = rule.split(",")
                     self.assertIn(kind, ("DOMAIN", "IP-CIDR"))
                     self.assertNotIn((kind, value), entries, "Conflicting IPTV routes")
@@ -191,7 +199,7 @@ class RuleTests(unittest.TestCase):
         self.assertEqual(set(positions), set(IPTV_POLICIES))
         sources = [row["ruleset"] for row in config["rulesets"]]
         download = next(i for i, s in enumerate(sources) if s.endswith("/rules/main/Download.list"))
-        broad = next(i for i, s in enumerate(sources) if s.endswith("/JpMandatory.list"))
+        broad = next(i for i, s in enumerate(sources) if s.endswith("/ChinaMedia.list"))
         for index in positions.values():
             self.assertLess(download, index)
             self.assertLess(index, broad)
