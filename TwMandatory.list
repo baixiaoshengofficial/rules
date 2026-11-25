@@ -5,7 +5,7 @@ DOMAIN-KEYWORD,hanime
 DOMAIN-SUFFIX,hanime1.me
 
 # IPTV 强制地区分流
-# 当前 TVBS 欢乐节目中转使用裸 IP；仅匹配这一台主机，不扩大到网段。
+# TVBS 欢乐节目和民视新闻台共用中转 IP，只匹配这一台主机。
 # IP 规则会影响该 IP 上其他端口/节目，不能按频道或 URL 路径区分。
 IP-CIDR,38.64.72.148/32,no-resolve
 
@@ -18,3 +18,6 @@ DOMAIN,5ddce30eb4b55.streamlock.net
 DOMAIN,d3e05csss9c272.cloudfront.net
 DOMAIN,live.streamingfast.net
 DOMAIN,www.dalitv.com.tw
+
+# 原住民族电视台的直播清单和媒体主机。
+DOMAIN,streamipcfapp.akamaized.net

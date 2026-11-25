@@ -1,10 +1,10 @@
 {
-  "verified_at": "2026-11-25T22:57:38+08:00",
+  "verified_at": "2026-11-26T00:01:36+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 72,
-  "previous_public_streams": 68,
-  "new_public_streams": 4,
-  "exact_domain_rules": 66,
+  "public_streams": 74,
+  "previous_public_streams": 72,
+  "new_public_streams": 2,
+  "exact_domain_rules": 67,
   "single_ip_rules": 3,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
@@ -847,6 +847,28 @@
           "policy": "🇰🇷 韩国节点"
         }
       ]
+    },
+    {
+      "channel": "民视新闻台",
+      "url": "http://38.64.72.148/hls/modn/list/4012/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "38.64.72.148",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "原住民族电视台",
+      "url": "https://streamipcfapp.akamaized.net/live/_definst_/live_720/key_b1500.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "streamipcfapp.akamaized.net",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1099,6 +1121,12 @@
     {
       "kind": "DOMAIN",
       "value": "www.dalitv.com.tw",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "streamipcfapp.akamaized.net",
       "policy": "🇭🇰 台湾节点",
       "file": "TwMandatory.list"
     },
