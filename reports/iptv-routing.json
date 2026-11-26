@@ -1,10 +1,10 @@
 {
-  "verified_at": "2026-11-26T17:37:03+08:00",
+  "verified_at": "2026-11-26T18:07:21+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 110,
-  "previous_public_streams": 101,
-  "new_public_streams": 9,
-  "exact_domain_rules": 85,
+  "public_streams": 111,
+  "previous_public_streams": 110,
+  "new_public_streams": 1,
+  "exact_domain_rules": 86,
   "single_ip_rules": 6,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
@@ -1313,6 +1313,21 @@
           "policy": "🇰🇷 韩国节点"
         }
       ]
+    },
+    {
+      "channel": "MBC 本台HD [公网中转]",
+      "url": "http://koreatv.dothome.co.kr/mbc.php",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "koreatv.dothome.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "live.imnews.imbc.com",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1733,6 +1748,12 @@
     {
       "kind": "DOMAIN",
       "value": "koreatv.dothome.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "live.imnews.imbc.com",
       "policy": "🇰🇷 韩国节点",
       "file": "KrMandatory.list"
     },

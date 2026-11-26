@@ -4,9 +4,9 @@
 
 原 `📺 IPTV中转` 策略组已从 INI 和 TOML 移除。软路由取流与连接记录确认 BreadTV、CGTN Rakuten 通过香港节点播放，Love Nature 4K 通过美国节点播放。CGTN Rakuten 走 `DIRECT` 时 TLS 连接超时。
 
-主播放列表 110 条公网线路的入口与已观察到的媒体主机均覆盖，共 85 条精确域名和 6 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
+主播放列表 111 条公网线路的入口与已观察到的媒体主机均覆盖，共 86 条精确域名和 6 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
 
-离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 894 次 TCP/UDP 路由探测，两份配置均验证了 91 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
+离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 896 次 TCP/UDP 路由探测，两份配置均验证了 92 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
 
 家庭网关现有节点的 HTTP 初查中，澳视澳门、澳门资讯、客家电视台、EBS 1TV 和 NBC News NOW 的入口在对应节点上返回 HTTP 200，直连对照未通过。13 条新增线路在当前家庭网络通过两轮媒体解码和人工画面核对。新规则在隔离实例验证，家庭网关要在更新订阅并重载后才会用上这份规则。HTTP 初查只探测入口响应。[补源、画面与地区探测记录](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/country-expansion.md)
 
@@ -21,3 +21,5 @@
 主流台复查新增 TVB 明珠台、ViuTVsix 和 SBS 江原 G1。香港两路复用已有入口和媒体域名规则，韩国组新增 G1 的单一 IP。软路由订阅更新并重载后应用这份配置。[主流台复查报告](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/mainstream-followup.md)
 
 播出时段复测新增无线新闻台、凤凰香港台、台湾五个主频和 KBS 1TV／2TV。香港组加入一个域名和一个单一 IP，台湾组加入五个主频共用的单一 IP，韩国组加入 KBS 的入口、媒体和密钥域名。台湾线路按指定使用 `twl` 验证。[播出时段复测报告](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/mainstream-daytime.md)
+
+MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的已有规则，新增精确媒体域名 `live.imnews.imbc.com`。SBS 本台的分流待播放复测通过后加入。[两台播放验证](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/seoul-main-tv.md)

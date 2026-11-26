@@ -28,3 +28,6 @@ DOMAIN,1tv.gscdn.kbs.co.kr
 DOMAIN,2tv.gscdn.kbs.co.kr
 DOMAIN,hls-key.play.kbs.co.kr
 DOMAIN,koreatv.dothome.co.kr
+
+# MBC 本台使用的实际媒体主机。
+DOMAIN,live.imnews.imbc.com
