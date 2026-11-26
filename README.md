@@ -57,15 +57,15 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 ## IPTV 按地区分流（2026-11-26）
 
-主播放列表的 112 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
+主播放列表的 129 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
 
 | 规则文件 | 节点组 | IPTV 线路 |
 | --- | --- | --- |
 | [HkMandatory.list](HkMandatory.list) | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus / 明珠 / 无线新闻、凤凰中文 / 资讯 / 香港、ViuTV / ViuTVsix、Pet Club TV、HOY 76–78、BreadTV、CGTN Rakuten。澳视澳门、澳门资讯、澳门卫星 96 和澳视葡文也走香港，当前配置没有澳门节点 |
 | [TwMandatory.list](TwMandatory.list) | 台湾 | 台视、中视、华视、民视、公视主频，以及 TVBS 欢乐线路、台视新闻、民视新闻台、原住民族电视台、客家电视台、人间卫视、大立电视台、CGNTV 中文台、GOOD 2 |
 | [JpMandatory.list](JpMandatory.list) | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台，以及 Animax FREE、Lemino TV、手冢制作 TV 等日本 FAST 频道 |
-| [KrMandatory.list](KrMandatory.list) | 韩国 | SBS 本台、MBC 本台、KBS 1TV、KBS 2TV、KBS WORLD、Arirang、KTV、EBS、ABN、Gugak TV、NBS、OUN、TBS、TV Chosun、国防电视、SBS JTV 全州和 SBS 江原 G1 |
-| [USMandatory.list](USMandatory.list) | 美国 | Love Nature 4K、Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台，以及 PBS KMOS、PBS Nature、FOX Weather、LiveNOW from FOX、Scripps News 等 |
+| [KrMandatory.list](KrMandatory.list) | 韩国 | SBS 本台、MBC 本台和地方台、YTN、KBS 1TV、KBS 2TV、KBS WORLD、Arirang、KTV、EBS、ABN、Gugak TV、NBS、OUN、TBS、TV Chosun、国防电视、SBS JTV 全州、江原 G1 和其他地方联播台 |
+| [USMandatory.list](USMandatory.list) | 美国 | Love Nature 4K、Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台，以及 PBS KMOS、PBS Nature、FOX Weather、WeatherNation、CBS News 24/7、LiveNOW from FOX、Scripps News 等 |
 | `IPTV-Direct.list` | 直连 | 国内 4K 和广东珠江公网线路 |
 
 IPTV 条目按具体主机或单一 IP 匹配，在通用媒体和 GEOIP 之前。TVB、凤凰和 KBS 的中转入口及媒体主机现在直接匹配地区组。部署后在 Nikki/OpenClash 更新订阅并重载配置，Subconverter 会将这几份列表展开到配置。具体主机、测试结果和生效范围见 [IPTV 验证报告](reports/iptv-validation.md)。

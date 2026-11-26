@@ -35,3 +35,21 @@ DOMAIN,live.imnews.imbc.com
 # SBS 本台固定入口与实际媒体主机。
 DOMAIN,www.hwado.net
 DOMAIN,tvlive.sbs.co.kr
+
+# 2026-11-27 地方台、新闻与气象直播的入口及媒体主机。
+IP-CIDR,1.222.207.80/32,no-resolve
+IP-CIDR,116.122.159.135/32,no-resolve
+IP-CIDR,203.251.91.122/32,no-resolve
+IP-CIDR,211.33.246.4/32,no-resolve
+DOMAIN,5c3639aa99149.streamlock.net
+DOMAIN,bbstv.clouducs.com
+DOMAIN,btn.nowcdn.co.kr
+DOMAIN,media.jibs.co.kr
+DOMAIN,nonghyup.flive.skcdn.com
+DOMAIN,ns1.tjmbc.co.kr
+DOMAIN,stream.chmbc.co.kr
+DOMAIN,stream.ubc.co.kr
+DOMAIN,stream1.knn.co.kr
+DOMAIN,vod.ikbc.co.kr
+DOMAIN,vod.mpmbc.co.kr
+DOMAIN,ytnlive.ytn.co.kr

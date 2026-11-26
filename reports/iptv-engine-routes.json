@@ -1,8 +1,8 @@
 {
   "mihomo": "v1.19.34",
   "subconverter": "v0.9.0-a0d4eab",
-  "full_suite_route_probes": 900,
-  "unique_iptv_targets_per_config": 94,
+  "full_suite_route_probes": 934,
+  "unique_iptv_targets_per_config": 111,
   "scope": "真实转换器及 Mihomo 隔离测试，出口为本地测试接收端。",
   "routes": {
     "ini": [
@@ -757,6 +757,142 @@
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
         "evidence": "time=\"2026-11-26T18:23:43.314211000+08:00\" level=info msg=\"[TCP] 127.0.0.1:49289 --> tvlive.sbs.co.kr:443 match Domain(tvlive.sbs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "1.222.207.80",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.407620000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51294 --> 1.222.207.80:443 match IPCIDR(1.222.207.80/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "116.122.159.135",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.463094000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51296 --> 116.122.159.135:443 match IPCIDR(116.122.159.135/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "203.251.91.122",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.520339000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51299 --> 203.251.91.122:443 match IPCIDR(203.251.91.122/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "211.33.246.4",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.573951000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51301 --> 211.33.246.4:443 match IPCIDR(211.33.246.4/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "5c3639aa99149.streamlock.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.629335000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51303 --> 5c3639aa99149.streamlock.net:443 match Domain(5c3639aa99149.streamlock.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "bbstv.clouducs.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.687599000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51305 --> bbstv.clouducs.com:443 match Domain(bbstv.clouducs.com) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "btn.nowcdn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.749642000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51307 --> btn.nowcdn.co.kr:443 match Domain(btn.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "media.jibs.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.800378000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51309 --> media.jibs.co.kr:443 match Domain(media.jibs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "nonghyup.flive.skcdn.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.856844000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51311 --> nonghyup.flive.skcdn.com:443 match Domain(nonghyup.flive.skcdn.com) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ns1.tjmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.918020000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51313 --> ns1.tjmbc.co.kr:443 match Domain(ns1.tjmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream.chmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:58.973439000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51315 --> stream.chmbc.co.kr:443 match Domain(stream.chmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream.ubc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:59.029051000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51317 --> stream.ubc.co.kr:443 match Domain(stream.ubc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream1.knn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:59.085653000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51319 --> stream1.knn.co.kr:443 match Domain(stream1.knn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "vod.ikbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:59.143146000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51321 --> vod.ikbc.co.kr:443 match Domain(vod.ikbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "vod.mpmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:59.199620000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51323 --> vod.mpmbc.co.kr:443 match Domain(vod.mpmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ytnlive.ytn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:08:59.254387000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51325 --> ytnlive.ytn.co.kr:443 match Domain(ytnlive.ytn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "cbsn-us.cbsnstream.cbsnews.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-27T07:09:00.535112000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51369 --> cbsn-us.cbsnstream.cbsnews.com:443 match Domain(cbsn-us.cbsnstream.cbsnews.com) using 🇺🇲 美国节点[US-01]\""
       }
     ],
     "toml": [
@@ -1511,6 +1647,142 @@
         "expected_provider": null,
         "expected_group": "🇰🇷 韩国节点",
         "evidence": "time=\"2026-11-26T18:24:10.509982000+08:00\" level=info msg=\"[TCP] 127.0.0.1:50281 --> tvlive.sbs.co.kr:443 match Domain(tvlive.sbs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "1.222.207.80",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.507019000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52307 --> 1.222.207.80:443 match IPCIDR(1.222.207.80/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "116.122.159.135",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.566081000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52309 --> 116.122.159.135:443 match IPCIDR(116.122.159.135/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "203.251.91.122",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.625297000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52311 --> 203.251.91.122:443 match IPCIDR(203.251.91.122/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "211.33.246.4",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.684687000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52313 --> 211.33.246.4:443 match IPCIDR(211.33.246.4/32) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "5c3639aa99149.streamlock.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.742515000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52315 --> 5c3639aa99149.streamlock.net:443 match Domain(5c3639aa99149.streamlock.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "bbstv.clouducs.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.801336000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52317 --> bbstv.clouducs.com:443 match Domain(bbstv.clouducs.com) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "btn.nowcdn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.860202000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52319 --> btn.nowcdn.co.kr:443 match Domain(btn.nowcdn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "media.jibs.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.918632000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52321 --> media.jibs.co.kr:443 match Domain(media.jibs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "nonghyup.flive.skcdn.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:26.977684000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52323 --> nonghyup.flive.skcdn.com:443 match Domain(nonghyup.flive.skcdn.com) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ns1.tjmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.033363000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52325 --> ns1.tjmbc.co.kr:443 match Domain(ns1.tjmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream.chmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.093789000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52327 --> stream.chmbc.co.kr:443 match Domain(stream.chmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream.ubc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.152216000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52329 --> stream.ubc.co.kr:443 match Domain(stream.ubc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "stream1.knn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.211518000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52331 --> stream1.knn.co.kr:443 match Domain(stream1.knn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "vod.ikbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.268511000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52333 --> vod.ikbc.co.kr:443 match Domain(vod.ikbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "vod.mpmbc.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.327604000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52335 --> vod.mpmbc.co.kr:443 match Domain(vod.mpmbc.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "ytnlive.ytn.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-27T07:09:27.385215000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52338 --> ytnlive.ytn.co.kr:443 match Domain(ytnlive.ytn.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "cbsn-us.cbsnstream.cbsnews.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-27T07:09:28.666679000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52382 --> cbsn-us.cbsnstream.cbsnews.com:443 match Domain(cbsn-us.cbsnstream.cbsnews.com) using 🇺🇲 美国节点[US-01]\""
       }
     ]
   }

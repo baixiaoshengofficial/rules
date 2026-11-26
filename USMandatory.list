@@ -28,3 +28,6 @@ DOMAIN,tgn.bozztv.com
 
 # 已在美国节点验证的 Love Nature 4K 线路。
 DOMAIN,pb-ehs1glsha1juy.akamaized.net
+
+# 2026-11-27 地方台、新闻与气象直播的入口及媒体主机。
+DOMAIN,cbsn-us.cbsnstream.cbsnews.com

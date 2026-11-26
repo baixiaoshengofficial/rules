@@ -1,11 +1,11 @@
 {
-  "verified_at": "2026-11-26T18:23:56+08:00",
+  "verified_at": "2026-11-27T07:08:33+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 112,
-  "previous_public_streams": 111,
-  "new_public_streams": 1,
-  "exact_domain_rules": 88,
-  "single_ip_rules": 6,
+  "public_streams": 129,
+  "previous_public_streams": 112,
+  "new_public_streams": 17,
+  "exact_domain_rules": 101,
+  "single_ip_rules": 10,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
     {
@@ -1343,6 +1343,201 @@
           "policy": "🇰🇷 韩国节点"
         }
       ]
+    },
+    {
+      "channel": "MBC 大田HD [公网]",
+      "url": "https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ns1.tjmbc.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "MBC 清州HD [公网]",
+      "url": "http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.33.246.4",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "NHTV 韩国农协HD [公网]",
+      "url": "http://nonghyup.flive.skcdn.com/nonghyup/_definst_/nhlive/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "116.122.159.135",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "nonghyup.flive.skcdn.com",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "韩国佛教广播 BBSHD [公网]",
+      "url": "http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "bbstv.clouducs.com",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "韩国佛教电视 BTNHD [公网]",
+      "url": "https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "btn.nowcdn.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "MBC 春川HD [公网]",
+      "url": "https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "stream.chmbc.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "MBC 丽水HD [公网]",
+      "url": "https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "5c3639aa99149.streamlock.net",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "MBC 木浦HD [公网]",
+      "url": "http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "vod.mpmbc.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 大邱庆北 TBCHD [公网]",
+      "url": "http://203.251.91.122:1935/on-air-Backup/tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "203.251.91.122",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 济州 JIBSHD [官方CDN]",
+      "url": "https://media.jibs.co.kr/stream/1/play.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "media.jibs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 釜山庆南 KNNHD [公网]",
+      "url": "https://stream1.knn.co.kr/hls/9ly4534y7dm2xfa123r2_tv/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "stream1.knn.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "YTN 韩国新闻HD [官方CDN]",
+      "url": "https://ytnlive.ytn.co.kr/ytn/_definst_/ytnlive_stream_20220426/medialist_9171188557012390620_hls.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "ytnlive.ytn.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 忠北 CJBHD [公网]",
+      "url": "http://1.222.207.80:1935/live/cjbtv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "1.222.207.80",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 光州 KBCHD [公网]",
+      "url": "https://vod.ikbc.co.kr/KBCTV/tv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "vod.ikbc.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "SBS 蔚山 UBCHD [公网]",
+      "url": "https://stream.ubc.co.kr/hls/ubctvstream/index.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "stream.ubc.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "CBS News 24/7HD [官方CDN]",
+      "url": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cbsn-us.cbsnstream.cbsnews.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "WeatherNation 美国气象HD [公网FAST]",
+      "url": "https://aka-live1050.delivery.roku.com/90ba101a-eef0-4c48-b464-b5ef935b5dcb/t2-origin/out/v1/live.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "aka-live1050.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "sk.delivery.roku.com",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1785,6 +1980,102 @@
       "file": "KrMandatory.list"
     },
     {
+      "kind": "IP-CIDR",
+      "value": "1.222.207.80/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "IP-CIDR",
+      "value": "116.122.159.135/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "IP-CIDR",
+      "value": "203.251.91.122/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "IP-CIDR",
+      "value": "211.33.246.4/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "5c3639aa99149.streamlock.net",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "bbstv.clouducs.com",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "btn.nowcdn.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "media.jibs.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "nonghyup.flive.skcdn.com",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "ns1.tjmbc.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "stream.chmbc.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "stream.ubc.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "stream1.knn.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "vod.ikbc.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "vod.mpmbc.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "ytnlive.ytn.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
       "kind": "DOMAIN",
       "value": "d8975dc3.wurl.com",
       "policy": "🇺🇲 美国节点",
@@ -1907,6 +2198,12 @@
     {
       "kind": "DOMAIN",
       "value": "pb-ehs1glsha1juy.akamaized.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "cbsn-us.cbsnstream.cbsnews.com",
       "policy": "🇺🇲 美国节点",
       "file": "USMandatory.list"
     }

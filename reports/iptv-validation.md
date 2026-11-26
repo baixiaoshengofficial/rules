@@ -4,9 +4,9 @@
 
 原 `📺 IPTV中转` 策略组已从 INI 和 TOML 移除。软路由取流与连接记录确认 BreadTV、CGTN Rakuten 通过香港节点播放，Love Nature 4K 通过美国节点播放。CGTN Rakuten 走 `DIRECT` 时 TLS 连接超时。
 
-主播放列表 112 条公网线路的入口与已观察到的媒体主机均覆盖，共 88 条精确域名和 6 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
+主播放列表 129 条公网线路的入口与已观察到的媒体主机均覆盖，共 101 条精确域名和 10 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
 
-离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 900 次 TCP/UDP 路由探测，两份配置均验证了 94 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
+离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 934 次 TCP/UDP 路由探测，两份配置均验证了 111 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
 
 家庭网关现有节点的 HTTP 初查中，澳视澳门、澳门资讯、客家电视台、EBS 1TV 和 NBC News NOW 的入口在对应节点上返回 HTTP 200，直连对照未通过。13 条新增线路在当前家庭网络通过两轮媒体解码和人工画面核对。新规则在隔离实例验证，家庭网关要在更新订阅并重载后才会用上这份规则。HTTP 初查只探测入口响应。[补源、画面与地区探测记录](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/country-expansion.md)
 
@@ -31,3 +31,7 @@ MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的�
 2026-11-27 更新软路由的 `subscribepro` 订阅并重载 Nikki，韩国组的生效规则由 15 条增至 22 条。连接记录确认 `www.hwado.net` 和 `tvlive.sbs.co.kr` 均命中精确域名规则并经 `🇰🇷 韩国节点` 转至 `kr_jp_cdt->oracle`，分别观察到 1 条和 158 条连接。操作前后核对的 36 个策略组类型、成员及固定选择一致。
 
 SBS 本台 720p 经该软路由连续取流 240.001 秒，H.264 视频和 AAC 音频均无超过 250 毫秒的时间戳间隔。全段解码通过，无分片跳过或 HTTP 错误。[实测样本和路由记录](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md#2026-11-27-软路由实测)
+
+## 2026-11-27 韩国地方台与美国新闻气象补源
+
+新增韩国 15 个频道和美国 2 个频道。`KrMandatory.list` 新增 12 个精确域名和 4 个单一 IP，覆盖 YTN、MBC 地方台及 SBS 地方联播台等。`USMandatory.list` 新增 CBS News 24/7 的专用媒体域名，WeatherNation 复用美国组已有的 Roku 主机规则。[本轮取流和画面复测](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/regional-local-expansion.md)
