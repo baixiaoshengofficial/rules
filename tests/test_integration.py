@@ -31,7 +31,7 @@ import urllib.request
 import yaml
 
 from test_rules import (NEGATIVE, POSITIVE, REGION_MEMBERS, ROOT, rules,
-                        IPTV_POLICIES, iptv_rules)
+                        IPTV_POLICIES, KOREA_HK_GROUP, iptv_rules)
 
 OWNER = "https://raw.githubusercontent.com/baixiaoshengofficial/rules/main/"
 GOOGLE_EXCEPTIONS = ["dl.google.com", "dl.l.google.com", "time.google.com"]
@@ -146,7 +146,17 @@ def check_conversion(document):
         group = groups[name]
         assert group["type"] == "fallback", group
         assert group["interval"] == 60, group
-        assert group["proxies"] == members + ["REJECT"], group
+        optional = [KOREA_HK_GROUP] if name == "🇰🇷 韩国节点" else []
+        assert group["proxies"] == members + optional + ["REJECT"], group
+    assert groups[KOREA_HK_GROUP] == {
+        "name": KOREA_HK_GROUP,
+        "type": "select",
+        "use": ["kr-via-hk"],
+    }
+    assert document["proxy-providers"]["kr-via-hk"] == {
+        "type": "inline",
+        "payload": [{"name": "kr-via-hk-disabled", "type": "reject"}],
+    }
     for name in ("🇭🇰 香港均衡", "🇯🇵 日本均衡", "🇭🇰 TW均衡", "🇸🇬 SG均衡"):
         assert groups[name]["strategy"] == "consistent-hashing", groups[name]
         assert len(groups[name]["proxies"]) >= 2, groups[name]
@@ -335,7 +345,7 @@ def runtime_checks(document, mihomo, directory, label):
         # payloads and group names remain unchanged. TEST-NET hosts prevent LAN
         # rules from masking the domain-provider checks.
         for group in document["proxy-groups"]:
-            if group["proxies"] == ["DIRECT"]:
+            if group.get("proxies") == ["DIRECT"]:
                 group["proxies"] = [document["proxies"][0]["name"]]
         fixture_hosts = [host for hosts in NEGATIVE.values() for host in hosts]
         fixture_hosts += [host for hosts in POSITIVE.values() for host in hosts]
@@ -538,7 +548,8 @@ def main():
                                 names=["LOCAL-ONLY"])
                 groups = {g["name"]: g for g in empty["proxy-groups"]}
                 for name in (*REGION_MEMBERS, "🏡 家宽节点"):
-                    assert groups[name]["proxies"] == ["REJECT"], groups[name]
+                    optional = [KOREA_HK_GROUP] if name == "🇰🇷 韩国节点" else []
+                    assert groups[name]["proxies"] == optional + ["REJECT"], groups[name]
             print("Subconverter:", fetch(args.subconverter_url.rstrip("/") + "/version").decode().strip())
             fallback_checks(documents["ini"], args.mihomo, directory)
             total = sum(runtime_checks(doc, args.mihomo, directory, kind)

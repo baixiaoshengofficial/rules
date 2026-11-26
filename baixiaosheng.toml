@@ -141,11 +141,17 @@ interval = 60
 rule = ["(?i)(日本|🇯🇵|japan|tokyo|osaka|(^|[^A-Za-z])JP([^A-Za-z]|$)|jpl$)", "[]REJECT"]
 
 [[custom_groups]]
+name = "🇰🇷 韩国（香港接入）"
+type = "select"
+rule = []
+use = ["kr-via-hk"]
+
+[[custom_groups]]
 name = "🇰🇷 韩国节点"
 type = "fallback"
 url = "https://cp.cloudflare.com/generate_204"
 interval = 60
-rule = ["(?i)(韩国|韓國|南韩|南韓|🇰🇷|korea|seoul|(^|[^A-Za-z])KR([^A-Za-z]|$))", "[]REJECT"]
+rule = ["(?i)(韩国|韓國|南韩|南韓|🇰🇷|korea|seoul|(^|[^A-Za-z])KR([^A-Za-z]|$))", "[]🇰🇷 韩国（香港接入）", "[]REJECT"]
 
 [[custom_groups]]
 name = "🇸🇬 新加坡节点"

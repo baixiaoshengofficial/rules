@@ -7,6 +7,13 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies: []
 proxy-groups: []
+proxy-providers:
+  kr-via-hk:
+    type: inline
+    # Nikki can replace this payload locally with the chained node.
+    payload:
+      - name: kr-via-hk-disabled
+        type: reject
 rule-providers:
   hongguo-ad:
     type: http

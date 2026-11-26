@@ -10,6 +10,7 @@ import tomllib
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
+KOREA_HK_GROUP = "🇰🇷 韩国（香港接入）"
 
 # These names must survive the converter's regex implementation as well as
 # Python's; integration checks compare the actual generated group members.
@@ -280,7 +281,7 @@ class RuleTests(unittest.TestCase):
         for name, group in groups.items():
             choices = group["rule"]
             self.assertEqual(len(choices), len(set(choices)), name)
-            self.assertTrue(choices, name)
+            self.assertTrue(choices or group.get("use"), name)
             refs = [ref[2:] for ref in choices if ref.startswith("[]")]
             self.assertTrue(set(refs) <= set(groups) | {"DIRECT", "REJECT"}, name)
             edges[name] = [ref for ref in refs if ref in groups]
