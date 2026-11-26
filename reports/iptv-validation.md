@@ -27,3 +27,7 @@ MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的�
 ## SBS 本台
 
 `KrMandatory.list` 包含固定入口 `www.hwado.net` 和媒体主机 `tvlive.sbs.co.kr`。INI 和 TOML 生成的配置均将两个域名分流到 `🇰🇷 韩国节点`。韩国出口由软路由上的韩国组成员决定。[SBS 播放复测](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md)
+
+2026-11-27 更新软路由的 `subscribepro` 订阅并重载 Nikki，韩国组的生效规则由 15 条增至 22 条。连接记录确认 `www.hwado.net` 和 `tvlive.sbs.co.kr` 均命中精确域名规则并经 `🇰🇷 韩国节点` 转至 `kr_jp_cdt->oracle`，分别观察到 1 条和 158 条连接。操作前后核对的 36 个策略组类型、成员及固定选择一致。
+
+SBS 本台 720p 经该软路由连续取流 240.001 秒，H.264 视频和 AAC 音频均无超过 250 毫秒的时间戳间隔。全段解码通过，无分片跳过或 HTTP 错误。[实测样本和路由记录](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md#2026-11-27-软路由实测)
