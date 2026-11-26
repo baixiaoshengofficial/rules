@@ -1141,3 +1141,7 @@ DOMAIN,php.jdshipin.com
 # HOY 76–78 的公开 HLS 入口和媒体主机。
 DOMAIN,hoytv-live-stream.hoy.tv
 DOMAIN,ch77-live-stream.hoy.tv
+
+# 2026-11-26 主流台补源的入口及媒体主机。
+IP-CIDR,43.152.224.209/32,no-resolve
+DOMAIN,h5cdn3.kylintv.tv

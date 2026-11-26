@@ -1,11 +1,11 @@
 {
-  "verified_at": "2026-11-26T01:25:20+08:00",
+  "verified_at": "2026-11-26T17:37:03+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 101,
-  "previous_public_streams": 98,
-  "new_public_streams": 3,
-  "exact_domain_rules": 80,
-  "single_ip_rules": 4,
+  "public_streams": 110,
+  "previous_public_streams": 101,
+  "new_public_streams": 9,
+  "exact_domain_rules": 85,
+  "single_ip_rules": 6,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
     {
@@ -1198,6 +1198,121 @@
           "policy": "🇰🇷 韩国节点"
         }
       ]
+    },
+    {
+      "channel": "TVB无线新闻台HD [公网中转]",
+      "url": "https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "h5cdn3.kylintv.tv",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "凤凰卫视香港台HD [公网中转]",
+      "url": "http://43.152.224.209/qctv.fengshows.cn/live/0701phk72.flv",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "43.152.224.209",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "台视主频HD [公网中转]",
+      "url": "http://211.72.174.95:8112/0.ts",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.72.174.95",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "中视主频HD [公网中转]",
+      "url": "http://211.72.174.95:8113/0.ts",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.72.174.95",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "华视主频HD [公网中转]",
+      "url": "http://211.72.174.95:8114/0.ts",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.72.174.95",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "民视主频HD [公网中转]",
+      "url": "http://211.72.174.95:8115/0.ts",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.72.174.95",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "公视主频HD [公网中转]",
+      "url": "http://211.72.174.95:8116/0.ts",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "211.72.174.95",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "KBS 1TVHD [公网中转]",
+      "url": "http://koreatv.dothome.co.kr/kbs1.php",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "1tv.gscdn.kbs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "hls-key.play.kbs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "koreatv.dothome.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "KBS 2TVHD [公网中转]",
+      "url": "http://koreatv.dothome.co.kr/kbs2.php",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "2tv.gscdn.kbs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "hls-key.play.kbs.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        },
+        {
+          "host": "koreatv.dothome.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -1376,6 +1491,18 @@
       "file": "HkMandatory.list"
     },
     {
+      "kind": "IP-CIDR",
+      "value": "43.152.224.209/32",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "h5cdn3.kylintv.tv",
+      "policy": "🇭🇰 香港节点",
+      "file": "HkMandatory.list"
+    },
+    {
       "kind": "DOMAIN",
       "value": "masterpl.hls.nhkworld.jp",
       "policy": "🇯🇵 日本节点",
@@ -1490,6 +1617,12 @@
       "file": "TwMandatory.list"
     },
     {
+      "kind": "IP-CIDR",
+      "value": "211.72.174.95/32",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
+    },
+    {
       "kind": "DOMAIN",
       "value": "amdlive-ch01-ctnd-com.akamaized.net",
       "policy": "🇰🇷 韩国节点",
@@ -1576,6 +1709,30 @@
     {
       "kind": "IP-CIDR",
       "value": "61.82.49.4/32",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "1tv.gscdn.kbs.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "2tv.gscdn.kbs.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "hls-key.play.kbs.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "koreatv.dothome.co.kr",
       "policy": "🇰🇷 韩国节点",
       "file": "KrMandatory.list"
     },

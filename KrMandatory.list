@@ -22,3 +22,9 @@ IP-CIDR,61.85.197.53/32,no-resolve
 
 # SBS 江原 G1 地方联播媒体主机。
 IP-CIDR,61.82.49.4/32,no-resolve
+
+# 2026-11-26 主流台补源的入口及媒体主机。
+DOMAIN,1tv.gscdn.kbs.co.kr
+DOMAIN,2tv.gscdn.kbs.co.kr
+DOMAIN,hls-key.play.kbs.co.kr
+DOMAIN,koreatv.dothome.co.kr

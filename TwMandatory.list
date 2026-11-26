@@ -21,3 +21,6 @@ DOMAIN,www.dalitv.com.tw
 
 # 原住民族电视台的直播清单和媒体主机。
 DOMAIN,streamipcfapp.akamaized.net
+
+# 2026-11-26 主流台补源的入口及媒体主机。
+IP-CIDR,211.72.174.95/32,no-resolve
