@@ -26,14 +26,4 @@ MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的�
 
 ## SBS 本台
 
-`KrMandatory.list` 包含固定入口 `www.hwado.net` 和媒体主机 `tvlive.sbs.co.kr`。两份订阅配置都将它们分流到 `🇰🇷 韩国节点`。节目实测通过的路径为 `hk_cdt->hkl → kr_oracle`，由韩国出网。[播放复测](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md)
-
-`🇰🇷 韩国节点` 内的 `🇰🇷 韩国（香港接入）` 从内联提供器 `kr-via-hk` 加载链路。韩国组默认优先尝试原有韩国节点；香港接入线路可在面板内选择。提供器初始只有拒绝流量的占位节点，需通过 Nikki 本地混入填入实际节点。使用实际节点在隔离 Mihomo 实例复测，Cloudflare 和 IPPure 均确认韩国出口，SBS 连续播放 45 秒无跳段。[Mihomo 前置代理](https://wiki.metacubex.one/en/config/proxies/dialer-proxy/) · [Nikki 混入先后顺序](https://github.com/nikkinikki-org/OpenWrt-nikki/blob/main/nikki/files/nikki.init)
-
-在 Nikki 自定义配置混入的 `proxy-providers.kr-via-hk.payload` 中使用现有 `kr_oracle` 节点的配置，名称改为 `kr_oracle_via_hk`，副本加上 `dialer-proxy: "hk_cdt->hkl"`。自动让 SBS 走两跳线路时，将以下两条放入本地 `nikki-rules`。更新订阅并重载后生效。节点凭据由本地混入提供。
-
-```yaml
-nikki-rules:
-  - DOMAIN,www.hwado.net,🇰🇷 韩国（香港接入）
-  - DOMAIN,tvlive.sbs.co.kr,🇰🇷 韩国（香港接入）
-```
+`KrMandatory.list` 包含固定入口 `www.hwado.net` 和媒体主机 `tvlive.sbs.co.kr`。INI 和 TOML 生成的配置均将两个域名分流到 `🇰🇷 韩国节点`。韩国出口由软路由上的韩国组成员决定。[SBS 播放复测](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md)

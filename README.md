@@ -70,8 +70,6 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 IPTV 条目按具体主机或单一 IP 匹配，在通用媒体和 GEOIP 之前。TVB、凤凰和 KBS 的中转入口及媒体主机现在直接匹配地区组。部署后在 Nikki/OpenClash 更新订阅并重载配置，Subconverter 会将这几份列表展开到配置。具体主机、测试结果和生效范围见 [IPTV 验证报告](reports/iptv-validation.md)。
 
-韩国组内的 `🇰🇷 韩国（香港接入）` 支持经香港连接 `kr_oracle`，最终仍由韩国出网。实际节点通过路由器的本地混入加载。[韩国两跳配置](reports/iptv-validation.md#sbs-本台)
-
 原 `📺 IPTV中转` 已从订阅配置移除。BreadTV 和 CGTN Rakuten 固定走香港，Love Nature 4K 固定走美国。CGTN 这条 Rakuten CDN 线路在软路由直连测试未通过，香港出口通过；组播 CGTN 仍由局域网规则处理。
 
 ## Google 分组边界

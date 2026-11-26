@@ -36,14 +36,7 @@ def render():
                     # Upstream INI parsing defaults to consistent-hashing.
                     group["strategy"] = "consistent-hashing"
                 rules = rules[:-2]
-            provider_prefix = "!!PROVIDER="
-            providers = [
-                provider for rule in rules if rule.startswith(provider_prefix)
-                for provider in rule.removeprefix(provider_prefix).split(",")
-            ]
-            group["rule"] = [rule for rule in rules if rule and not rule.startswith(provider_prefix)]
-            if providers:
-                group["use"] = providers
+            group["rule"] = [rule for rule in rules if rule]
             groups.append(group)
         else:
             settings[key] = value
