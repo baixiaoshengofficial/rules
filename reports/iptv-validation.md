@@ -4,9 +4,9 @@
 
 原 `📺 IPTV中转` 策略组已从 INI 和 TOML 移除。软路由取流与连接记录确认 BreadTV、CGTN Rakuten 通过香港节点播放，Love Nature 4K 通过美国节点播放。CGTN Rakuten 走 `DIRECT` 时 TLS 连接超时。
 
-主播放列表 111 条公网线路的入口与已观察到的媒体主机均覆盖，共 86 条精确域名和 6 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
+主播放列表 112 条公网线路的入口与已观察到的媒体主机均覆盖，共 88 条精确域名和 6 条单一 IP 规则。局域网组播通过第一层局域网规则优先匹配。[线路与规则映射](iptv-routing.json)
 
-离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 896 次 TCP/UDP 路由探测，两份配置均验证了 92 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
+离线检查通过。Subconverter 转换的 INI 与 TOML 输出相同，均未生成旧中转策略组。Mihomo 通过 900 次 TCP/UDP 路由探测，两份配置均验证了 94 个不同 IPTV 主机或 IP 的策略命中。[路由验证记录](iptv-engine-routes.json)
 
 家庭网关现有节点的 HTTP 初查中，澳视澳门、澳门资讯、客家电视台、EBS 1TV 和 NBC News NOW 的入口在对应节点上返回 HTTP 200，直连对照未通过。13 条新增线路在当前家庭网络通过两轮媒体解码和人工画面核对。新规则在隔离实例验证，家庭网关要在更新订阅并重载后才会用上这份规则。HTTP 初查只探测入口响应。[补源、画面与地区探测记录](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/country-expansion.md)
 
@@ -22,4 +22,16 @@
 
 播出时段复测新增无线新闻台、凤凰香港台、台湾五个主频和 KBS 1TV／2TV。香港组加入一个域名和一个单一 IP，台湾组加入五个主频共用的单一 IP，韩国组加入 KBS 的入口、媒体和密钥域名。台湾线路按指定使用 `twl` 验证。[播出时段复测报告](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/mainstream-daytime.md)
 
-MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的已有规则，新增精确媒体域名 `live.imnews.imbc.com`。SBS 本台的分流待播放复测通过后加入。[两台播放验证](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/seoul-main-tv.md)
+MBC 本台通过韩国出口连续播放，入口复用 `KrMandatory.list` 的已有规则，新增精确媒体域名 `live.imnews.imbc.com`。[两台播放验证](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/seoul-main-tv.md)
+
+## SBS 本台
+
+`KrMandatory.list` 新增固定入口 `www.hwado.net` 和媒体主机 `tvlive.sbs.co.kr`。INI 和 TOML 生成的配置均验证两个域名进入 `🇰🇷 韩国节点`。播放器实测的稳定路径由香港节点接入 `kr_oracle`，最终出口在韩国。家庭网关当前的韩国组以原节点接入，更新订阅后还需要针对 SBS 配置这条路径。[播放复测](https://github.com/baixiaoshengofficial/shtelcomiptv/blob/main/reports/sbs-route-retest.md)
+
+Nikki 可在本地配置混入的 `nikki-proxies` 中复制一份现有 `kr_oracle` 节点，副本名称设为 `SBS 韩国链路`，并给副本加上 `dialer-proxy: "hk_cdt->hkl"`。启用自定义配置混入并重载时，`nikki-rules` 中的下列规则会先于订阅规则匹配，使这两个主机使用副本。隔离 Mihomo 实例使用这两条域名规则，连续播放 40 秒，音视频无跳段，两条规则均有实际连接命中。节点凭据保留在路由器本地。[Nikki 配置合并顺序](https://github.com/nikkinikki-org/OpenWrt-nikki/blob/main/nikki/files/nikki.init) · [Mihomo dialer-proxy 文档](https://wiki.metacubex.one/en/config/proxies/dialer-proxy/)
+
+```yaml
+nikki-rules:
+  - DOMAIN,www.hwado.net,SBS 韩国链路
+  - DOMAIN,tvlive.sbs.co.kr,SBS 韩国链路
+```

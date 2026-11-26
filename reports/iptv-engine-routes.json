@@ -1,8 +1,8 @@
 {
   "mihomo": "v1.19.34",
   "subconverter": "v0.9.0-a0d4eab",
-  "full_suite_route_probes": 896,
-  "unique_iptv_targets_per_config": 92,
+  "full_suite_route_probes": 900,
+  "unique_iptv_targets_per_config": 94,
   "scope": "真实转换器及 Mihomo 隔离测试，出口为本地测试接收端。",
   "routes": {
     "ini": [
@@ -741,6 +741,22 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-26T18:10:16.955658000+08:00\" level=info msg=\"[TCP] 127.0.0.1:60487 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "www.hwado.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-26T18:23:43.253153000+08:00\" level=info msg=\"[TCP] 127.0.0.1:49287 --> www.hwado.net:443 match Domain(www.hwado.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "tvlive.sbs.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-26T18:23:43.314211000+08:00\" level=info msg=\"[TCP] 127.0.0.1:49289 --> tvlive.sbs.co.kr:443 match Domain(tvlive.sbs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       }
     ],
     "toml": [
@@ -1479,6 +1495,22 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-26T18:10:44.067033000+08:00\" level=info msg=\"[TCP] 127.0.0.1:61474 --> pb-ehs1glsha1juy.akamaized.net:443 match Domain(pb-ehs1glsha1juy.akamaized.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "www.hwado.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-26T18:24:10.453873000+08:00\" level=info msg=\"[TCP] 127.0.0.1:50279 --> www.hwado.net:443 match Domain(www.hwado.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "tvlive.sbs.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-26T18:24:10.509982000+08:00\" level=info msg=\"[TCP] 127.0.0.1:50281 --> tvlive.sbs.co.kr:443 match Domain(tvlive.sbs.co.kr) using 🇰🇷 韩国节点[KR-01]\""
       }
     ]
   }
