@@ -1,8 +1,8 @@
 {
   "mihomo": "v1.19.34",
   "subconverter": "v0.9.0-a0d4eab",
-  "full_suite_route_probes": 954,
-  "unique_iptv_targets_per_config": 121,
+  "full_suite_route_probes": 958,
+  "unique_iptv_targets_per_config": 123,
   "scope": "真实转换器及 Mihomo 隔离测试，出口为本地测试接收端。",
   "routes": {
     "ini": [
@@ -973,6 +973,22 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-28T11:29:04.849875000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57955 --> dbrb49pjoymg4.cloudfront.net:443 match Domain(dbrb49pjoymg4.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "live.ntdtv.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇭🇰 台湾节点",
+        "evidence": "time=\"2026-11-28T11:39:56.193411000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62029 --> live.ntdtv.com:443 match Domain(live.ntdtv.com) using 🇭🇰 台湾节点[TW-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "mobile.ccdntech.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇭🇰 台湾节点",
+        "evidence": "time=\"2026-11-28T11:39:56.248742000+08:00\" level=info msg=\"[TCP] 127.0.0.1:62032 --> mobile.ccdntech.com:443 match Domain(mobile.ccdntech.com) using 🇭🇰 台湾节点[TW-01]\""
       }
     ],
     "toml": [
@@ -1943,6 +1959,22 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-28T11:29:33.527658000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59016 --> dbrb49pjoymg4.cloudfront.net:443 match Domain(dbrb49pjoymg4.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "live.ntdtv.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇭🇰 台湾节点",
+        "evidence": "time=\"2026-11-28T11:40:25.371930000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63065 --> live.ntdtv.com:443 match Domain(live.ntdtv.com) using 🇭🇰 台湾节点[TW-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "mobile.ccdntech.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇭🇰 台湾节点",
+        "evidence": "time=\"2026-11-28T11:40:25.425393000+08:00\" level=info msg=\"[TCP] 127.0.0.1:63067 --> mobile.ccdntech.com:443 match Domain(mobile.ccdntech.com) using 🇭🇰 台湾节点[TW-01]\""
       }
     ]
   }

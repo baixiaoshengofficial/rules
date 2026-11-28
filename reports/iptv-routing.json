@@ -1,10 +1,10 @@
 {
-  "verified_at": "2026-11-28T11:27:16+08:00",
+  "verified_at": "2026-11-28T11:40:08+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 143,
-  "previous_public_streams": 129,
-  "new_public_streams": 14,
-  "exact_domain_rules": 111,
+  "public_streams": 146,
+  "previous_public_streams": 143,
+  "new_public_streams": 3,
+  "exact_domain_rules": 113,
   "single_ip_rules": 10,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
@@ -1736,6 +1736,39 @@
           "policy": "🇺🇲 美国节点"
         }
       ]
+    },
+    {
+      "channel": "唯心电视台 [公网]",
+      "url": "https://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "mobile.ccdntech.com",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "新唐人亚太台 [官方CDN]",
+      "url": "https://live.ntdtv.com/aplive200/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "live.ntdtv.com",
+          "policy": "🇭🇰 台湾节点"
+        }
+      ]
+    },
+    {
+      "channel": "TUY テレビユー山形HD [公网中转]",
+      "url": "https://tv-stream-test.daydreamer-json.cc/stream/1668b5a43560598b385ccf33fd2d5f43/hevc_1080_high/stream.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "tv-stream-test.daydreamer-json.cc",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -2042,6 +2075,18 @@
     {
       "kind": "IP-CIDR",
       "value": "211.72.174.95/32",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "live.ntdtv.com",
+      "policy": "🇭🇰 台湾节点",
+      "file": "TwMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "mobile.ccdntech.com",
       "policy": "🇭🇰 台湾节点",
       "file": "TwMandatory.list"
     },

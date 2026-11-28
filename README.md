@@ -57,13 +57,13 @@ Netflix 和国内媒体规则先匹配，随后检查自维护列表，再检查
 
 ## IPTV 按地区分流
 
-主播放列表的 143 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
+主播放列表的 146 条公网线路按入口、跳转和已观察到的媒体主机分流。以下地区列表直接绑定节点组。
 
 | 规则文件 | 节点组 | IPTV 线路 |
 | --- | --- | --- |
 | [HkMandatory.list](HkMandatory.list) | 香港 | 港台电视、香港电台、TVB 翡翠台 / Plus / 明珠 / 无线新闻、凤凰中文 / 资讯 / 香港、ViuTV / ViuTVsix、TVB 星河 / 千禧经典 / 娱乐新闻、天映电影、Pet Club TV、HOY 76–78、BreadTV、CGTN Rakuten。澳视澳门、澳门资讯、澳门卫星 96 和澳视葡文也走香港，当前配置没有澳门节点 |
-| [TwMandatory.list](TwMandatory.list) | 台湾 | 台视、中视、华视、民视、公视主频，以及 TVBS 欢乐线路、台视新闻、民视新闻台、原住民族电视台、客家电视台、人间卫视、大立电视台、CGNTV 中文台、GOOD 2 |
-| [JpMandatory.list](JpMandatory.list) | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台，以及 Animax FREE、Lemino TV、手冢制作 TV、韓流チャンネル等日本 FAST 频道 |
+| [TwMandatory.list](TwMandatory.list) | 台湾 | 台视、中视、华视、民视、公视主频，以及 TVBS 欢乐线路、台视新闻、民视新闻台、原住民族电视台、客家电视台、人间卫视、大立电视台、CGNTV 中文台、GOOD 2、新唐人亚太台、唯心电视台 |
+| [JpMandatory.list](JpMandatory.list) | 日本 | NHK WORLD-JAPAN、NHK 综合台、CGNTV Japan、Weathernews LiVE、GSTV、QVC、Shop Channel、樱桃电视台、TUY テレビユー山形，以及 Animax FREE、Lemino TV、手冢制作 TV、韓流チャンネル等日本 FAST 频道 |
 | [KrMandatory.list](KrMandatory.list) | 韩国 | SBS 本台、MBC 本台和地方台、联合新闻电视台、YTN、KBS 1TV、KBS 2TV、KBS WORLD、Arirang、KTV、EBS、ABN、Gugak TV、NBS、OUN、TBS、TV Chosun、国防电视、SBS JTV 全州、江原 G1 和其他地方联播台 |
 | [USMandatory.list](USMandatory.list) | 美国 | Love Nature 4K、Bloomberg TV+ 4K、NBC News NOW、PBS KIDS、Create TV、Court TV、Newsmax2、两路 FOX 地方台，以及 PBS KMOS、PBS Nature、FOX Weather、WeatherNation、CBS News 24/7、LiveNOW from FOX、Scripps News、ABC News Live、Reuters 60、AccuWeather NOW 等 |
 | `IPTV-Direct.list` | 直连 | 国内 4K 和广东珠江公网线路 |

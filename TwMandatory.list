@@ -24,3 +24,7 @@ DOMAIN,streamipcfapp.akamaized.net
 
 # 2026-11-26 主流台补源的入口及媒体主机。
 IP-CIDR,211.72.174.95/32,no-resolve
+
+# 2026-11-28 新唐人亚太台、唯心电视台的直播主机。
+DOMAIN,live.ntdtv.com
+DOMAIN,mobile.ccdntech.com
