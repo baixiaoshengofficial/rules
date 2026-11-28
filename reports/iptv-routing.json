@@ -1,10 +1,10 @@
 {
-  "verified_at": "2026-11-27T07:08:33+08:00",
+  "verified_at": "2026-11-28T11:27:16+08:00",
   "playlist_repository": "baixiaoshengofficial/shtelcomiptv",
-  "public_streams": 129,
-  "previous_public_streams": 112,
-  "new_public_streams": 17,
-  "exact_domain_rules": 101,
+  "public_streams": 143,
+  "previous_public_streams": 129,
+  "new_public_streams": 14,
+  "exact_domain_rules": 111,
   "single_ip_rules": 10,
   "scope": "入口、已观察到的媒体主机与规则匹配。更新订阅并重载后应用到家庭路由。",
   "streams": [
@@ -1538,6 +1538,204 @@
           "policy": "🇺🇲 美国节点"
         }
       ]
+    },
+    {
+      "channel": "TVB 星河台HD [公网中转]",
+      "url": "https://cdn3.indevs.in/stream/live/tvbxh/",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn3.indevs.in",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "TVB 千禧经典台HD [公网中转]",
+      "url": "http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbc",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn.qd.je",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "cdn3.indevs.in",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "php.jdshipin.com",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "TVB 娱乐新闻台HD [公网中转]",
+      "url": "http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn.qd.je",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "cdn6.cc.cd",
+          "policy": "🇭🇰 香港节点"
+        },
+        {
+          "host": "php.jdshipin.com",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "天映电影HD [公网中转]",
+      "url": "https://cdn3.indevs.in/stream/live/typd/",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "cdn3.indevs.in",
+          "policy": "🇭🇰 香港节点"
+        }
+      ]
+    },
+    {
+      "channel": "韓流チャンネルHD [公网FAST]",
+      "url": "https://livetv.fastv.jp/channel_assembly/6960905473F5101B6A17/master.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "livetv.fastv.jp",
+          "policy": "🇯🇵 日本节点"
+        }
+      ]
+    },
+    {
+      "channel": "MBC 忠州 [公网]",
+      "url": "https://5ee1ec6f32118.streamlock.net/live/livetv/playlist.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "5ee1ec6f32118.streamlock.net",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "联合新闻电视台 [公网]",
+      "url": "https://noh-slb-samsung-fastcdn.uplus.co.kr/yna.stream/noll_index-v3-a1.m3u8",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "noh-slb-samsung-fastcdn.uplus.co.kr",
+          "policy": "🇰🇷 韩国节点"
+        }
+      ]
+    },
+    {
+      "channel": "ABC News LiveHD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951517/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951517&ads.xumo_streamId=99951517&ads.channelName=ABC&ads._fw_content_genre=News%2CN&ads.xumo_contentId=58&ads.xumo_contentName=ABC&ads.xumo_providerId=58&ads.xumo_providerName=ABC&ads.xumo_channelName=ABC&ads._fw_h_x_country=US&ads._fw_content_language=en&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d3mw2ndjzji86k.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "Reuters 60HD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951197/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99951197&ads.xumo_streamId=99951197&ads.channelName=ReutersNow&ads._fw_content_genre=News%2CN%2CDN%2CLocal%2CLocalNews%2CNews-Local&ads.xumo_contentId=3850&ads.xumo_contentName=ReutersNow&ads.xumo_providerId=3850&ads.xumo_providerName=ReutersNow&ads.xumo_channelName=ReutersNow&ads._fw_h_x_country=US&ads._fw_content_language=en&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "BBC News 美国版HD [公网FAST]",
+      "url": "https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99951298&ads.xumo_streamId=99951298&ads.channelName=amcbbcnews_us&ads._fw_content_genre=News%2CN%2CDN%2CLocal%2CLocalNews%2CNews-Local&ads.xumo_contentId=4023&ads.xumo_contentName=AMCBBCNews&ads.xumo_providerId=4023&ads.xumo_providerName=AMCBBCNews&ads._fw_content_language=en&ads.xumo_platform=web",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "3a27f423.wurl.com",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "d3pxo1qcgzxtxs.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "AccuWeather NOWHD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991649/hls/playlist.m3u8?ads.xumo_channelId=99991649&ads._fw_content_language=en&ads._fw_content_genre=News%2CN%2CDN%2CWeather%2CLocal%2CLocalNews%2CNews-Local&ads.xumo_contentId=2729&ads.xumo_contentName=AccuWeather&ads.xumo_providerId=2729&ads.xumo_providerName=AccuWeather&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "accuweather-xumo.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "OAN PlusHD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951404/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99951404&ads.xumo_streamId=99951404&ads.channelName=HerringNetworksOANPlus&ads._fw_content_genre=News%2CN%2CDN%2CLocal%2CLocalNews%2CNews-Local&ads.xumo_contentId=4216&ads.xumo_contentName=HerringNetworksOANPlus&ads.xumo_providerId=4216&ads.xumo_providerName=HerringNetworksOANPlus&ads.xumo_channelName=HerringNetworksOANPlus&ads._fw_h_x_country=US&ads._fw_content_language=en&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "ABC 20/20HD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951518/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951518&ads.xumo_streamId=99951518&ads.channelName=ABCNews2020&ads._fw_content_genre=News%2CN&ads.xumo_contentId=4384&ads.xumo_contentName=ABCNews2020&ads.xumo_providerId=4384&ads.xumo_providerName=ABCNews2020&ads.xumo_channelName=ABCNews2020&ads._fw_h_x_country=US&ads._fw_content_language=en&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "d3mw2ndjzji86k.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
+    },
+    {
+      "channel": "History & WarfareHD [公网FAST]",
+      "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99951560/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99951560&ads.xumo_streamId=99951560&ads.channelName=BlueAntMediaHistoryWarfare&ads._fw_content_genre=Documentary%2CHistory%2CWar%2CBiography%2CDO%2CDN%2CIAB1%2CIAB1-5%2CIAB1-7&ads.xumo_contentId=4465&ads.xumo_contentName=BlueAntMediaHistoryWarfare&ads.xumo_providerId=4465&ads.xumo_providerName=BlueAntMediaHistoryWarfare&ads.xumo_channelName=BlueAntMediaHistoryWarfare&ads._fw_h_x_country=US&ads._fw_content_language=en&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo",
+      "latest_media_status": "passed",
+      "hosts": [
+        {
+          "host": "amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv",
+          "policy": "🇺🇲 美国节点"
+        },
+        {
+          "host": "dbrb49pjoymg4.cloudfront.net",
+          "policy": "🇺🇲 美国节点"
+        }
+      ]
     }
   ],
   "rules": [
@@ -2077,6 +2275,18 @@
     },
     {
       "kind": "DOMAIN",
+      "value": "5ee1ec6f32118.streamlock.net",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "noh-slb-samsung-fastcdn.uplus.co.kr",
+      "policy": "🇰🇷 韩国节点",
+      "file": "KrMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
       "value": "d8975dc3.wurl.com",
       "policy": "🇺🇲 美国节点",
       "file": "USMandatory.list"
@@ -2204,6 +2414,54 @@
     {
       "kind": "DOMAIN",
       "value": "cbsn-us.cbsnstream.cbsnews.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "3a27f423.wurl.com",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "accuweather-xumo.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d3mw2ndjzji86k.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "d3pxo1qcgzxtxs.cloudfront.net",
+      "policy": "🇺🇲 美国节点",
+      "file": "USMandatory.list"
+    },
+    {
+      "kind": "DOMAIN",
+      "value": "dbrb49pjoymg4.cloudfront.net",
       "policy": "🇺🇲 美国节点",
       "file": "USMandatory.list"
     }

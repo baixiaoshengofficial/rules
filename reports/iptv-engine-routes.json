@@ -1,8 +1,8 @@
 {
   "mihomo": "v1.19.34",
   "subconverter": "v0.9.0-a0d4eab",
-  "full_suite_route_probes": 934,
-  "unique_iptv_targets_per_config": 111,
+  "full_suite_route_probes": 954,
+  "unique_iptv_targets_per_config": 121,
   "scope": "真实转换器及 Mihomo 隔离测试，出口为本地测试接收端。",
   "routes": {
     "ini": [
@@ -893,6 +893,86 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-27T07:09:00.535112000+08:00\" level=info msg=\"[TCP] 127.0.0.1:51369 --> cbsn-us.cbsnstream.cbsnews.com:443 match Domain(cbsn-us.cbsnstream.cbsnews.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "5ee1ec6f32118.streamlock.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-28T11:29:03.056708000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57892 --> 5ee1ec6f32118.streamlock.net:443 match Domain(5ee1ec6f32118.streamlock.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "noh-slb-samsung-fastcdn.uplus.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-28T11:29:03.110719000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57894 --> noh-slb-samsung-fastcdn.uplus.co.kr:443 match Domain(noh-slb-samsung-fastcdn.uplus.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "3a27f423.wurl.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.447468000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57941 --> 3a27f423.wurl.com:443 match Domain(3a27f423.wurl.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "accuweather-xumo.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.506023000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57943 --> accuweather-xumo.amagi.tv:443 match Domain(accuweather-xumo.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.564623000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57945 --> amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv:443 match Domain(amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.621922000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57947 --> amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv:443 match Domain(amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.678137000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57949 --> amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv:443 match Domain(amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3mw2ndjzji86k.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.735353000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57951 --> d3mw2ndjzji86k.cloudfront.net:443 match Domain(d3mw2ndjzji86k.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3pxo1qcgzxtxs.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.793437000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57953 --> d3pxo1qcgzxtxs.cloudfront.net:443 match Domain(d3pxo1qcgzxtxs.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "dbrb49pjoymg4.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:04.849875000+08:00\" level=info msg=\"[TCP] 127.0.0.1:57955 --> dbrb49pjoymg4.cloudfront.net:443 match Domain(dbrb49pjoymg4.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
       }
     ],
     "toml": [
@@ -1783,6 +1863,86 @@
         "expected_provider": null,
         "expected_group": "🇺🇲 美国节点",
         "evidence": "time=\"2026-11-27T07:09:28.666679000+08:00\" level=info msg=\"[TCP] 127.0.0.1:52382 --> cbsn-us.cbsnstream.cbsnews.com:443 match Domain(cbsn-us.cbsnstream.cbsnews.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "5ee1ec6f32118.streamlock.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-28T11:29:31.764602000+08:00\" level=info msg=\"[TCP] 127.0.0.1:58950 --> 5ee1ec6f32118.streamlock.net:443 match Domain(5ee1ec6f32118.streamlock.net) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "noh-slb-samsung-fastcdn.uplus.co.kr",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇰🇷 韩国节点",
+        "evidence": "time=\"2026-11-28T11:29:31.822410000+08:00\" level=info msg=\"[TCP] 127.0.0.1:58952 --> noh-slb-samsung-fastcdn.uplus.co.kr:443 match Domain(noh-slb-samsung-fastcdn.uplus.co.kr) using 🇰🇷 韩国节点[KR-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "3a27f423.wurl.com",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.134453000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59002 --> 3a27f423.wurl.com:443 match Domain(3a27f423.wurl.com) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "accuweather-xumo.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.191808000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59004 --> accuweather-xumo.amagi.tv:443 match Domain(accuweather-xumo.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.248888000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59006 --> amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv:443 match Domain(amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.302520000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59008 --> amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv:443 match Domain(amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.358585000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59010 --> amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv:443 match Domain(amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3mw2ndjzji86k.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.414576000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59012 --> d3mw2ndjzji86k.cloudfront.net:443 match Domain(d3mw2ndjzji86k.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "d3pxo1qcgzxtxs.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.471278000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59014 --> d3pxo1qcgzxtxs.cloudfront.net:443 match Domain(d3pxo1qcgzxtxs.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
+      },
+      {
+        "network": "tcp",
+        "host": "dbrb49pjoymg4.cloudfront.net",
+        "port": 443,
+        "expected_provider": null,
+        "expected_group": "🇺🇲 美国节点",
+        "evidence": "time=\"2026-11-28T11:29:33.527658000+08:00\" level=info msg=\"[TCP] 127.0.0.1:59016 --> dbrb49pjoymg4.cloudfront.net:443 match Domain(dbrb49pjoymg4.cloudfront.net) using 🇺🇲 美国节点[US-01]\""
       }
     ]
   }

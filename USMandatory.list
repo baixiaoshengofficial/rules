@@ -31,3 +31,13 @@ DOMAIN,pb-ehs1glsha1juy.akamaized.net
 
 # 2026-11-27 地方台、新闻与气象直播的入口及媒体主机。
 DOMAIN,cbsn-us.cbsnstream.cbsnews.com
+
+# 2026-11-28 公网直播的入口及媒体主机。
+DOMAIN,3a27f423.wurl.com
+DOMAIN,accuweather-xumo.amagi.tv
+DOMAIN,amg00450-amg00450c2-xumo-us-7159.playouts.now.amagi.tv
+DOMAIN,amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv
+DOMAIN,amg01515-amg01515c89-amgplt0055.playout.now3.amagi.tv
+DOMAIN,d3mw2ndjzji86k.cloudfront.net
+DOMAIN,d3pxo1qcgzxtxs.cloudfront.net
+DOMAIN,dbrb49pjoymg4.cloudfront.net

@@ -53,3 +53,7 @@ DOMAIN,stream1.knn.co.kr
 DOMAIN,vod.ikbc.co.kr
 DOMAIN,vod.mpmbc.co.kr
 DOMAIN,ytnlive.ytn.co.kr
+
+# 2026-11-28 公网直播的入口及媒体主机。
+DOMAIN,5ee1ec6f32118.streamlock.net
+DOMAIN,noh-slb-samsung-fastcdn.uplus.co.kr
